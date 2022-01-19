@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="-10 -10 8.6805555 20"
+   width="500"
+   height="500"
+   version="1.1"
+   id="svg582"
+   sodipodi:docname="surface_energy_slide_graphic.svg"
+   inkscape:version="1.1.1 (1:1.1+202109281949+c3084ef5ed)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs586" />
+  <sodipodi:namedview
+     id="namedview584"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     fit-margin-top="10"
+     lock-margins="true"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:zoom="0.59027778"
+     inkscape:cx="448.94118"
+     inkscape:cy="239.71765"
+     inkscape:window-width="1920"
+     inkscape:window-height="1014"
+     inkscape:window-x="0"
+     inkscape:window-y="34"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg582" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="-3.0339737"
+     fill="#ffae25"
+     r="0.5"
+     id="circle2" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="-3.0339737"
+     fill="#ff8a1f"
+     r="0.5"
+     id="circle4" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="-2.0589736"
+     fill="#e5d830"
+     r="0.5"
+     id="circle6" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="-2.0589736"
+     fill="#27b5e7"
+     r="0.5"
+     id="circle8" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="-2.0589736"
+     fill="#87fd58"
+     r="0.5"
+     id="circle10" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="-1.0839739"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle12" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="-1.0839739"
+     fill="#55fa7c"
+     r="0.5"
+     id="circle14" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="-1.0839739"
+     fill="#2da3f2"
+     r="0.5"
+     id="circle16" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="-1.0839739"
+     fill="#3985f9"
+     r="0.5"
+     id="circle18" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="-1.0839739"
+     fill="#7bfd5f"
+     r="0.5"
+     id="circle20" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="-0.10897386"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle22" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="-0.10897386"
+     fill="#55fa7c"
+     r="0.5"
+     id="circle24" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="-0.10897386"
+     fill="#2da4f2"
+     r="0.5"
+     id="circle26" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="-0.10897386"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle28" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="-0.10897386"
+     fill="#4076f5"
+     r="0.5"
+     id="circle30" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="-0.10897386"
+     fill="#3c7ff8"
+     r="0.5"
+     id="circle32" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="-0.10897386"
+     fill="#79fe60"
+     r="0.5"
+     id="circle34" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="0.86602616"
+     fill="#feba27"
+     r="0.5"
+     id="circle36" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="0.86602616"
+     fill="#55fa7c"
+     r="0.5"
+     id="circle38" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="0.86602616"
+     fill="#2da4f2"
+     r="0.5"
+     id="circle40" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="0.86602616"
+     fill="#3d7cf7"
+     r="0.5"
+     id="circle42" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="0.86602616"
+     fill="#4074f5"
+     r="0.5"
+     id="circle44" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="0.86602616"
+     fill="#4272f3"
+     r="0.5"
+     id="circle46" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="0.86602616"
+     fill="#4172f3"
+     r="0.5"
+     id="circle48" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="0.86602616"
+     fill="#3d7df8"
+     r="0.5"
+     id="circle50" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="0.86602616"
+     fill="#78fe61"
+     r="0.5"
+     id="circle52" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="1.8410261"
+     fill="#e3d931"
+     r="0.5"
+     id="circle54" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="1.8410261"
+     fill="#2ba8f0"
+     r="0.5"
+     id="circle56" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="1.8410261"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle58" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="1.8410261"
+     fill="#4074f5"
+     r="0.5"
+     id="circle60" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="1.8410261"
+     fill="#4271f3"
+     r="0.5"
+     id="circle62" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="1.8410261"
+     fill="#4270f2"
+     r="0.5"
+     id="circle64" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="1.8410261"
+     fill="#4270f2"
+     r="0.5"
+     id="circle66" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="1.8410261"
+     fill="#4271f3"
+     r="0.5"
+     id="circle68" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="1.8410261"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle70" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="1.8410261"
+     fill="#78fe61"
+     r="0.5"
+     id="circle72" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="2.8160264"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle74" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="2.8160264"
+     fill="#54fa7c"
+     r="0.5"
+     id="circle76" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="2.8160264"
+     fill="#2da1f3"
+     r="0.5"
+     id="circle78" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="2.8160264"
+     fill="#3f77f6"
+     r="0.5"
+     id="circle80" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="2.8160264"
+     fill="#4271f3"
+     r="0.5"
+     id="circle82" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="2.8160264"
+     fill="#4270f2"
+     r="0.5"
+     id="circle84" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="2.8160264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle86" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="2.8160264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle88" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="2.8160264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle90" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="2.8160264"
+     fill="#4271f3"
+     r="0.5"
+     id="circle92" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="2.8160264"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle94" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="2.8160264"
+     fill="#78fe61"
+     r="0.5"
+     id="circle96" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="3.7910264"
+     fill="#feba27"
+     r="0.5"
+     id="circle98" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="3.7910264"
+     fill="#55fa7b"
+     r="0.5"
+     id="circle100" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="3.7910264"
+     fill="#2da4f2"
+     r="0.5"
+     id="circle102" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="3.7910264"
+     fill="#3d7cf7"
+     r="0.5"
+     id="circle104" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="3.7910264"
+     fill="#4174f4"
+     r="0.5"
+     id="circle106" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="3.7910264"
+     fill="#4271f3"
+     r="0.5"
+     id="circle108" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="3.7910264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle110" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="3.7910264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle112" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="3.7910264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle114" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="3.7910264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle116" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="3.7910264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle118" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="3.7910264"
+     fill="#4271f3"
+     r="0.5"
+     id="circle120" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="3.7910264"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle122" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="3.7910264"
+     fill="#78fe61"
+     r="0.5"
+     id="circle124" />
+  <circle
+     class="node"
+     cx="-11.015973"
+     cy="4.7660265"
+     fill="#e3d931"
+     r="0.5"
+     id="circle126" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="4.7660265"
+     fill="#2ba9ef"
+     r="0.5"
+     id="circle128" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="4.7660265"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle130" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="4.7660265"
+     fill="#4075f5"
+     r="0.5"
+     id="circle132" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="4.7660265"
+     fill="#4271f3"
+     r="0.5"
+     id="circle134" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="4.7660265"
+     fill="#4270f2"
+     r="0.5"
+     id="circle136" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="4.7660265"
+     fill="#426ff2"
+     r="0.5"
+     id="circle138" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="4.7660265"
+     fill="#436ff2"
+     r="0.5"
+     id="circle140" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="4.7660265"
+     fill="#436ff2"
+     r="0.5"
+     id="circle142" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="4.7660265"
+     fill="#436ff2"
+     r="0.5"
+     id="circle144" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="4.7660265"
+     fill="#436ff2"
+     r="0.5"
+     id="circle146" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="4.7660265"
+     fill="#426ff2"
+     r="0.5"
+     id="circle148" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="4.7660265"
+     fill="#4271f3"
+     r="0.5"
+     id="circle150" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="4.7660265"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle152" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="4.7660265"
+     fill="#78fe61"
+     r="0.5"
+     id="circle154" />
+  <circle
+     class="node"
+     cx="-12.965974"
+     cy="5.7410264"
+     fill="#ff9320"
+     r="0.5"
+     id="circle156" />
+  <circle
+     class="node"
+     cx="-11.990973"
+     cy="5.7410264"
+     fill="#58fb79"
+     r="0.5"
+     id="circle158" />
+  <circle
+     class="node"
+     cx="-11.015973"
+     cy="5.7410264"
+     fill="#2da2f3"
+     r="0.5"
+     id="circle160" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="5.7410264"
+     fill="#3f78f6"
+     r="0.5"
+     id="circle162" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="5.7410264"
+     fill="#4172f3"
+     r="0.5"
+     id="circle164" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="5.7410264"
+     fill="#4270f3"
+     r="0.5"
+     id="circle166" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="5.7410264"
+     fill="#4270f2"
+     r="0.5"
+     id="circle168" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="5.7410264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle170" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="5.7410264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle172" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="5.7410264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle174" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="5.7410264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle176" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="5.7410264"
+     fill="#436ff2"
+     r="0.5"
+     id="circle178" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="5.7410264"
+     fill="#426ff2"
+     r="0.5"
+     id="circle180" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="5.7410264"
+     fill="#4270f2"
+     r="0.5"
+     id="circle182" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="5.7410264"
+     fill="#4271f3"
+     r="0.5"
+     id="circle184" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="5.7410264"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle186" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="5.7410264"
+     fill="#78fe61"
+     r="0.5"
+     id="circle188" />
+  <circle
+     class="node"
+     cx="-12.965974"
+     cy="6.7160263"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle190" />
+  <circle
+     class="node"
+     cx="-11.990973"
+     cy="6.7160263"
+     fill="#3887f9"
+     r="0.5"
+     id="circle192" />
+  <circle
+     class="node"
+     cx="-11.015973"
+     cy="6.7160263"
+     fill="#3f77f6"
+     r="0.5"
+     id="circle194" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="6.7160263"
+     fill="#4173f4"
+     r="0.5"
+     id="circle196" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="6.7160263"
+     fill="#4272f3"
+     r="0.5"
+     id="circle198" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle200" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle202" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle204" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle206" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle208" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle210" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle212" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle214" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="6.7160263"
+     fill="#4271f3"
+     r="0.5"
+     id="circle216" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="6.7160263"
+     fill="#4173f4"
+     r="0.5"
+     id="circle218" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="6.7160263"
+     fill="#3c7ef8"
+     r="0.5"
+     id="circle220" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="6.7160263"
+     fill="#7afe60"
+     r="0.5"
+     id="circle222" />
+  <circle
+     class="node"
+     cx="-12.965974"
+     cy="7.6910262"
+     fill="#84fd5a"
+     r="0.5"
+     id="circle224" />
+  <circle
+     class="node"
+     cx="-11.990973"
+     cy="7.6910262"
+     fill="#378af9"
+     r="0.5"
+     id="circle226" />
+  <circle
+     class="node"
+     cx="-11.015973"
+     cy="7.6910262"
+     fill="#3c7ff8"
+     r="0.5"
+     id="circle228" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="7.6910262"
+     fill="#3d7ef8"
+     r="0.5"
+     id="circle230" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle232" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle234" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle236" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle238" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle240" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle242" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle244" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle246" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle248" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="7.6910262"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle250" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="7.6910262"
+     fill="#3c7ef8"
+     r="0.5"
+     id="circle252" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="7.6910262"
+     fill="#3789f9"
+     r="0.5"
+     id="circle254" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="7.6910262"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle256" />
+  <circle
+     class="node"
+     cx="-12.965974"
+     cy="8.6660252"
+     fill="#ff9020"
+     r="0.5"
+     id="circle258" />
+  <circle
+     class="node"
+     cx="-11.990973"
+     cy="8.6660252"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle260" />
+  <circle
+     class="node"
+     cx="-11.015973"
+     cy="8.6660252"
+     fill="#7afe60"
+     r="0.5"
+     id="circle262" />
+  <circle
+     class="node"
+     cx="-10.040973"
+     cy="8.6660252"
+     fill="#79fe61"
+     r="0.5"
+     id="circle264" />
+  <circle
+     class="node"
+     cx="-9.0659733"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle266" />
+  <circle
+     class="node"
+     cx="-8.0909719"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle268" />
+  <circle
+     class="node"
+     cx="-7.1159725"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle270" />
+  <circle
+     class="node"
+     cx="-6.1409721"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle272" />
+  <circle
+     class="node"
+     cx="-5.1659727"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle274" />
+  <circle
+     class="node"
+     cx="-4.1909723"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle276" />
+  <circle
+     class="node"
+     cx="-3.2159719"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle278" />
+  <circle
+     class="node"
+     cx="-2.2409728"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle280" />
+  <circle
+     class="node"
+     cx="-1.2659723"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle282" />
+  <circle
+     class="node"
+     cx="-0.29097235"
+     cy="8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle284" />
+  <circle
+     class="node"
+     cx="0.68402755"
+     cy="8.6660252"
+     fill="#7afe60"
+     r="0.5"
+     id="circle286" />
+  <circle
+     class="node"
+     cx="1.6590276"
+     cy="8.6660252"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle288" />
+  <circle
+     class="node"
+     cx="2.6340277"
+     cy="8.6660252"
+     fill="#ff9020"
+     r="0.5"
+     id="circle290" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-8.6660252"
+     fill="#ff9020"
+     r="0.5"
+     id="circle292" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-8.6660252"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle294" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-8.6660252"
+     fill="#7afe60"
+     r="0.5"
+     id="circle296" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle298" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle300" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle302" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle304" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle306" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle308" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle310" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle312" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle314" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-8.6660252"
+     fill="#78fe61"
+     r="0.5"
+     id="circle316" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-8.6660252"
+     fill="#79fe61"
+     r="0.5"
+     id="circle318" />
+  <circle
+     class="node"
+     cx="-0.31597245"
+     cy="-8.6660252"
+     fill="#7afe60"
+     r="0.5"
+     id="circle320" />
+  <circle
+     class="node"
+     cx="0.65902746"
+     cy="-8.6660252"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle322" />
+  <circle
+     class="node"
+     cx="1.634028"
+     cy="-8.6660252"
+     fill="#ff9020"
+     r="0.5"
+     id="circle324" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-7.6910248"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle326" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-7.6910248"
+     fill="#3789f9"
+     r="0.5"
+     id="circle328" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-7.6910248"
+     fill="#3c7ef8"
+     r="0.5"
+     id="circle330" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle332" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle334" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle336" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle338" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle340" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle342" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle344" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle346" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle348" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-7.6910248"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle350" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-7.6910248"
+     fill="#3d7ef8"
+     r="0.5"
+     id="circle352" />
+  <circle
+     class="node"
+     cx="-0.31597245"
+     cy="-7.6910248"
+     fill="#3c7ff8"
+     r="0.5"
+     id="circle354" />
+  <circle
+     class="node"
+     cx="0.65902746"
+     cy="-7.6910248"
+     fill="#378af9"
+     r="0.5"
+     id="circle356" />
+  <circle
+     class="node"
+     cx="1.634028"
+     cy="-7.6910248"
+     fill="#84fd5a"
+     r="0.5"
+     id="circle358" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-6.7160244"
+     fill="#7afe60"
+     r="0.5"
+     id="circle360" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-6.7160244"
+     fill="#3c7ef8"
+     r="0.5"
+     id="circle362" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-6.7160244"
+     fill="#4173f4"
+     r="0.5"
+     id="circle364" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle366" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle368" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle370" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle372" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle374" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle376" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle378" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle380" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-6.7160244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle382" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-6.7160244"
+     fill="#4272f3"
+     r="0.5"
+     id="circle384" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-6.7160244"
+     fill="#4173f4"
+     r="0.5"
+     id="circle386" />
+  <circle
+     class="node"
+     cx="-0.31597245"
+     cy="-6.7160244"
+     fill="#3f77f6"
+     r="0.5"
+     id="circle388" />
+  <circle
+     class="node"
+     cx="0.65902746"
+     cy="-6.7160244"
+     fill="#3887f9"
+     r="0.5"
+     id="circle390" />
+  <circle
+     class="node"
+     cx="1.634028"
+     cy="-6.7160244"
+     fill="#83fd5a"
+     r="0.5"
+     id="circle392" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-5.7410245"
+     fill="#78fe61"
+     r="0.5"
+     id="circle394" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-5.7410245"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle396" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-5.7410245"
+     fill="#4271f3"
+     r="0.5"
+     id="circle398" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-5.7410245"
+     fill="#4270f2"
+     r="0.5"
+     id="circle400" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-5.7410245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle402" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-5.7410245"
+     fill="#436ff2"
+     r="0.5"
+     id="circle404" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-5.7410245"
+     fill="#436ff2"
+     r="0.5"
+     id="circle406" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-5.7410245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle408" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-5.7410245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle410" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-5.7410245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle412" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-5.7410245"
+     fill="#4270f2"
+     r="0.5"
+     id="circle414" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-5.7410245"
+     fill="#4270f3"
+     r="0.5"
+     id="circle416" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-5.7410245"
+     fill="#4172f3"
+     r="0.5"
+     id="circle418" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-5.7410245"
+     fill="#3f78f6"
+     r="0.5"
+     id="circle420" />
+  <circle
+     class="node"
+     cx="-0.31597245"
+     cy="-5.7410245"
+     fill="#2da2f3"
+     r="0.5"
+     id="circle422" />
+  <circle
+     class="node"
+     cx="0.65902746"
+     cy="-5.7410245"
+     fill="#58fb79"
+     r="0.5"
+     id="circle424" />
+  <circle
+     class="node"
+     cx="1.634028"
+     cy="-5.7410245"
+     fill="#ff9320"
+     r="0.5"
+     id="circle426" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-4.7660246"
+     fill="#78fe61"
+     r="0.5"
+     id="circle428" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-4.7660246"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle430" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-4.7660246"
+     fill="#4271f3"
+     r="0.5"
+     id="circle432" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-4.7660246"
+     fill="#426ff2"
+     r="0.5"
+     id="circle434" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-4.7660246"
+     fill="#436ff2"
+     r="0.5"
+     id="circle436" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-4.7660246"
+     fill="#436ff2"
+     r="0.5"
+     id="circle438" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-4.7660246"
+     fill="#436ff2"
+     r="0.5"
+     id="circle440" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-4.7660246"
+     fill="#436ff2"
+     r="0.5"
+     id="circle442" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-4.7660246"
+     fill="#426ff2"
+     r="0.5"
+     id="circle444" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-4.7660246"
+     fill="#4270f2"
+     r="0.5"
+     id="circle446" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-4.7660246"
+     fill="#4271f3"
+     r="0.5"
+     id="circle448" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-4.7660246"
+     fill="#4075f5"
+     r="0.5"
+     id="circle450" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-4.7660246"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle452" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-4.7660246"
+     fill="#2ba9ef"
+     r="0.5"
+     id="circle454" />
+  <circle
+     class="node"
+     cx="-0.31597245"
+     cy="-4.7660246"
+     fill="#e3d931"
+     r="0.5"
+     id="circle456" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-3.7910247"
+     fill="#78fe61"
+     r="0.5"
+     id="circle458" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-3.7910247"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle460" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-3.7910247"
+     fill="#4271f3"
+     r="0.5"
+     id="circle462" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-3.7910247"
+     fill="#426ff2"
+     r="0.5"
+     id="circle464" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-3.7910247"
+     fill="#436ff2"
+     r="0.5"
+     id="circle466" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-3.7910247"
+     fill="#436ff2"
+     r="0.5"
+     id="circle468" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-3.7910247"
+     fill="#426ff2"
+     r="0.5"
+     id="circle470" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-3.7910247"
+     fill="#4270f2"
+     r="0.5"
+     id="circle472" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-3.7910247"
+     fill="#4271f3"
+     r="0.5"
+     id="circle474" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-3.7910247"
+     fill="#4074f5"
+     r="0.5"
+     id="circle476" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-3.7910247"
+     fill="#3d7cf7"
+     r="0.5"
+     id="circle478" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-3.7910247"
+     fill="#2ca4f2"
+     r="0.5"
+     id="circle480" />
+  <circle
+     class="node"
+     cx="-2.2659724"
+     cy="-3.7910247"
+     fill="#55fa7b"
+     r="0.5"
+     id="circle482" />
+  <circle
+     class="node"
+     cx="-1.2909724"
+     cy="-3.7910247"
+     fill="#feba27"
+     r="0.5"
+     id="circle484" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-2.8160245"
+     fill="#78fe61"
+     r="0.5"
+     id="circle486" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-2.8160245"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle488" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-2.8160245"
+     fill="#4271f3"
+     r="0.5"
+     id="circle490" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-2.8160245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle492" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-2.8160245"
+     fill="#436ff2"
+     r="0.5"
+     id="circle494" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-2.8160245"
+     fill="#426ff2"
+     r="0.5"
+     id="circle496" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-2.8160245"
+     fill="#4271f3"
+     r="0.5"
+     id="circle498" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-2.8160245"
+     fill="#4174f4"
+     r="0.5"
+     id="circle500" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-2.8160245"
+     fill="#3d7cf7"
+     r="0.5"
+     id="circle502" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-2.8160245"
+     fill="#2da4f2"
+     r="0.5"
+     id="circle504" />
+  <circle
+     class="node"
+     cx="-4.2159719"
+     cy="-2.8160245"
+     fill="#55fa7c"
+     r="0.5"
+     id="circle506" />
+  <circle
+     class="node"
+     cx="-3.2409725"
+     cy="-2.8160245"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle508" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-1.8410244"
+     fill="#78fe61"
+     r="0.5"
+     id="circle510" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-1.8410244"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle512" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-1.8410244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle514" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-1.8410244"
+     fill="#4270f2"
+     r="0.5"
+     id="circle516" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-1.8410244"
+     fill="#4270f2"
+     r="0.5"
+     id="circle518" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-1.8410244"
+     fill="#4271f3"
+     r="0.5"
+     id="circle520" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-1.8410244"
+     fill="#3f77f6"
+     r="0.5"
+     id="circle522" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-1.8410244"
+     fill="#2da1f3"
+     r="0.5"
+     id="circle524" />
+  <circle
+     class="node"
+     cx="-6.1659727"
+     cy="-1.8410244"
+     fill="#54fa7c"
+     r="0.5"
+     id="circle526" />
+  <circle
+     class="node"
+     cx="-5.1909723"
+     cy="-1.8410244"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle528" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="-0.86602461"
+     fill="#78fe61"
+     r="0.5"
+     id="circle530" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="-0.86602461"
+     fill="#3d7df8"
+     r="0.5"
+     id="circle532" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="-0.86602461"
+     fill="#4172f3"
+     r="0.5"
+     id="circle534" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="-0.86602461"
+     fill="#4272f3"
+     r="0.5"
+     id="circle536" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="-0.86602461"
+     fill="#4075f5"
+     r="0.5"
+     id="circle538" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="-0.86602461"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle540" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="-0.86602461"
+     fill="#2ba8f0"
+     r="0.5"
+     id="circle542" />
+  <circle
+     class="node"
+     cx="-7.1409721"
+     cy="-0.86602461"
+     fill="#e3d931"
+     r="0.5"
+     id="circle544" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="0.10897538"
+     fill="#79fe60"
+     r="0.5"
+     id="circle546" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="0.10897538"
+     fill="#3c7ff8"
+     r="0.5"
+     id="circle548" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="0.10897538"
+     fill="#4076f5"
+     r="0.5"
+     id="circle550" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="0.10897538"
+     fill="#3d7df7"
+     r="0.5"
+     id="circle552" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="0.10897538"
+     fill="#2ca4f2"
+     r="0.5"
+     id="circle554" />
+  <circle
+     class="node"
+     cx="-9.0909729"
+     cy="0.10897538"
+     fill="#55fa7b"
+     r="0.5"
+     id="circle556" />
+  <circle
+     class="node"
+     cx="-8.1159725"
+     cy="0.10897538"
+     fill="#feba27"
+     r="0.5"
+     id="circle558" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="1.0839753"
+     fill="#7bfd5f"
+     r="0.5"
+     id="circle560" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="1.0839753"
+     fill="#3985f9"
+     r="0.5"
+     id="circle562" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="1.0839753"
+     fill="#2da3f2"
+     r="0.5"
+     id="circle564" />
+  <circle
+     class="node"
+     cx="-11.040973"
+     cy="1.0839753"
+     fill="#55fa7c"
+     r="0.5"
+     id="circle566" />
+  <circle
+     class="node"
+     cx="-10.065974"
+     cy="1.0839753"
+     fill="#fcbc28"
+     r="0.5"
+     id="circle568" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="2.0589752"
+     fill="#87fd58"
+     r="0.5"
+     id="circle570" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="2.0589752"
+     fill="#27b5e7"
+     r="0.5"
+     id="circle572" />
+  <circle
+     class="node"
+     cx="-12.015973"
+     cy="2.0589752"
+     fill="#e5d830"
+     r="0.5"
+     id="circle574" />
+  <circle
+     class="node"
+     cx="-13.965974"
+     cy="3.0339756"
+     fill="#ff8a1f"
+     r="0.5"
+     id="circle576" />
+  <circle
+     class="node"
+     cx="-12.990973"
+     cy="3.0339756"
+     fill="#ffae25"
+     r="0.5"
+     id="circle578" />
+  <line
+     x1="5.1593451"
+     y1="-6.249999"
+     x2="-16.491289"
+     y2="6.250001"
+     style="stroke:#000000;stroke-width:0.05;stroke-dasharray:0.25"
+     id="line580" />
+</svg>
