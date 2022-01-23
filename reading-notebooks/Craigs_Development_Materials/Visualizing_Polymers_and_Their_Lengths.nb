@@ -9404,7 +9404,7 @@ customerReviews"]
 },
 WindowToolbars->"EditBar",
 WindowSize->{1213, 664},
-WindowMargins->{{56, Automatic}, {Automatic, 0}},
+WindowMargins->{{Automatic, 99}, {Automatic, 0}},
 DockedCells->Cell[
   BoxData[
    TagBox[
