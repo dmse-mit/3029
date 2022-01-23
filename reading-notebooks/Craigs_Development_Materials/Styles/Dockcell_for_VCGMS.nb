@@ -1,0 +1,157 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5506,        147]
+NotebookOptionsPosition[      4933,        129]
+NotebookOutlinePosition[      5330,        145]
+CellTagsIndexPosition[      5287,        142]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"dockedCell", " ", "=", 
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{"Item", "[", 
+       RowBox[{
+        RowBox[{"Row", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{
+             "\"\<A Visual and Computational Guide to Materials Science\>\"", 
+              ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"FontFamily", "->", "\"\<Copperplate\>\""}], ",", 
+                RowBox[{"FontSize", "->", "12"}]}], "}"}]}], 
+             "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Spacer", "[", "40", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<Georgios Varnavides and W Craig Carter\>\"", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"FontFamily", "->", "\"\<Copperplate\>\""}], ",", 
+                RowBox[{"FontSize", "->", "12"}]}], "}"}]}], 
+             "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Spacer", "[", "60", "]"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<\[Copyright]2012-2022\>\"", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"FontFamily", "->", "\"\<Copperplate\>\""}], ",", 
+                RowBox[{"FontSize", "->", "10"}]}], "}"}]}], 
+             "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "}"}], 
+          ",", 
+          RowBox[{"Spacer", "[", "1", "]"}]}], "]"}], ",", 
+        RowBox[{"Alignment", "\[Rule]", "Left"}]}], "]"}], "}"}], "}"}], ",", 
+    
+    RowBox[{"ItemSize", "\[Rule]", 
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{"80", ",", "6"}], "}"}], "}"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.851679869344401*^9, 3.851679891189211*^9}, {
+  3.851679922081962*^9, 3.8516801217029552`*^9}, {3.851680221922536*^9, 
+  3.8516803118911343`*^9}, {3.8516803555481157`*^9, 3.851680379415062*^9}},
+ CellLabel->
+  "1/20/22 16:13:00 \
+In[31]:=",ExpressionUUID->"103063de-22b5-4547-b449-72cda9b43b4a"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     ItemBox[
+      TemplateBox[{
+        TemplateBox[{1}, "Spacer1"], 
+        StyleBox[
+        "\"A Visual and Computational Guide to Materials Science\"", {
+         FontFamily -> "Copperplate", FontSize -> 12}, StripOnInput -> False], 
+        TemplateBox[{40}, "Spacer1"], 
+        StyleBox[
+        "\"Georgios Varnavides and W Craig Carter\"", {
+         FontFamily -> "Copperplate", FontSize -> 12}, StripOnInput -> False], 
+        TemplateBox[{60}, "Spacer1"], 
+        StyleBox[
+        "\"\[Copyright]2012-2022\"", {
+         FontFamily -> "Copperplate", FontSize -> 10}, StripOnInput -> False]},
+       "RowWithSeparator"],
+      Alignment->Left,
+      StripOnInput->False]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {80, 6}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{{3.851679874510213*^9, 3.8516798924452963`*^9}, {
+   3.8516799263821783`*^9, 3.851679965480447*^9}, {3.851680013759512*^9, 
+   3.8516800250921583`*^9}, {3.851680080809723*^9, 3.8516801224232473`*^9}, {
+   3.8516802240133944`*^9, 3.8516802937127647`*^9}, 3.851680380374586*^9},
+ CellLabel->
+  "1/20/22 16:13:00 \
+Out[31]=",ExpressionUUID->"dffe1144-44cd-4f40-bba7-ffdc6f6ffa08"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"SetOptions", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"EvaluationNotebook", "[", "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"DockedCells", "->", " ", "\[IndentingNewLine]", 
+    RowBox[{"Cell", "[", 
+     RowBox[{
+      RowBox[{"BoxData", "[", 
+       RowBox[{"ToBoxes", "[", "dockedCell", "]"}], "]"}], ",", " ", 
+      RowBox[{"Background", "\[Rule]", 
+       RowBox[{"RGBColor", "[", 
+        RowBox[{"0.84", ",", "0.69", ",", "0.48"}], "]"}]}]}], "]"}]}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.851678098990962*^9, 3.851678186237584*^9}, {
+  3.851679687461652*^9, 3.851679782108726*^9}, {3.851680127162215*^9, 
+  3.8516801379885063`*^9}, {3.851680192750132*^9, 3.8516802017655363`*^9}, {
+  3.851680403715221*^9, 3.85168043779427*^9}},
+ CellLabel->
+  "1/20/22 16:14:00 \
+In[33]:=",ExpressionUUID->"540914ee-e9ff-4635-80ef-094fe04ac05b"]
+},
+WindowSize->{808, 706},
+WindowMargins->{{183, Automatic}, {66, Automatic}},
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"98aa5b4a-d699-4b97-90f0-fbb97fcf3e3d"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2208, 51, 546, "Input",ExpressionUUID->"103063de-22b5-4547-b449-72cda9b43b4a"],
+Cell[2791, 75, 1218, 30, 56, "Output",ExpressionUUID->"dffe1144-44cd-4f40-bba7-ffdc6f6ffa08"]
+}, Open  ]],
+Cell[4024, 108, 905, 19, 182, "Input",ExpressionUUID->"540914ee-e9ff-4635-80ef-094fe04ac05b"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
