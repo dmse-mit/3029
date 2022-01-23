@@ -1,7 +1,9 @@
 ---
 sidebar_position: 1
+title: Introduction
+hide_title: true
 ---
 
-# Welcome
+# Introduction
 
 Welcome to 3.029! 
