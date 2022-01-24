@@ -1,10 +1,10 @@
 import React from 'react';
-import * as WolframNotebookEmbedder from 'wolfram-notebook-embedder';
+import {embed} from 'wolfram-notebook-embedder';
 
 class NotebookEmbed extends React.Component {
 
   componentDidMount() {
-    this.embedding=WolframNotebookEmbedder.embed(
+    this.embedding=embed(
 	    this.props.url, 
 	    this.el,
 	    {
