@@ -1532,6 +1532,22 @@
     tslib "^2.3.1"
     url-loader "^4.1.1"
 
+"@gvarnavi/lattice-vibrations-lj@https://api.observablehq.com/d/6e0bd14519e69ae6.tgz?v=3":
+  version "161.0.0"
+  resolved "https://api.observablehq.com/d/6e0bd14519e69ae6.tgz?v=3#d8cf587666c2b760c3778264d8e9708b1f357d7d"
+
+"@gvarnavi/lennard-jones-potential@https://api.observablehq.com/d/47b6948443d96383.tgz?v=3":
+  version "107.0.0"
+  resolved "https://api.observablehq.com/d/47b6948443d96383.tgz?v=3#333edf44dc990a06f587c41b6e36038574fb41d8"
+
+"@gvarnavi/molecular-dynamics-lj@https://api.observablehq.com/d/e5be4773dba2e95b.tgz?v=3":
+  version "127.0.0"
+  resolved "https://api.observablehq.com/d/e5be4773dba2e95b.tgz?v=3#9614476250e670409249adacf5bb9ee174c09f40"
+
+"@gvarnavi/surfarce-energy-lj@https://api.observablehq.com/d/9de37462d00fe937.tgz?v=3":
+  version "217.0.0"
+  resolved "https://api.observablehq.com/d/9de37462d00fe937.tgz?v=3#2957fccb20594926b16f627c0a477dd0a7f3f361"
+
 "@hapi/hoek@^9.0.0":
   version "9.2.1"
   resolved "https://registry.yarnpkg.com/@hapi/hoek/-/hoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
