@@ -22,6 +22,7 @@
             <name>Elsa Olivetti</name>
             <uri>https://olivetti.mit.edu/</uri>
         </author>
+        <category label="hello" term="hello"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Example Post]]></title>
@@ -29,10 +30,11 @@
         <link href="https://dmse-mit.github.io/3029/announcements/example"/>
         <updated>2022-01-19T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Dummy heading]]></summary>
-        <content type="html"><![CDATA[<h2>Dummy heading</h2><p>Dummy example post</p>]]></content>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="dummy-heading">Dummy heading<a class="hash-link" href="#dummy-heading" title="Direct link to heading">​</a></h2><p>Dummy example post</p>]]></content>
         <author>
             <name>Georgios Varnavides</name>
             <uri>https://gvarnavides.com/</uri>
         </author>
+        <category label="test" term="test"/>
     </entry>
 </feed>

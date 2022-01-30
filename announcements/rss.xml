@@ -14,6 +14,7 @@
             <pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Welcome !]]></description>
             <content:encoded><![CDATA[<p>Welcome !</p>]]></content:encoded>
+            <category>hello</category>
         </item>
         <item>
             <title><![CDATA[Example Post]]></title>
@@ -21,7 +22,8 @@
             <guid>example</guid>
             <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Dummy heading]]></description>
-            <content:encoded><![CDATA[<h2>Dummy heading</h2><p>Dummy example post</p>]]></content:encoded>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="dummy-heading">Dummy heading<a class="hash-link" href="#dummy-heading" title="Direct link to heading">​</a></h2><p>Dummy example post</p>]]></content:encoded>
+            <category>test</category>
         </item>
     </channel>
 </rss>
