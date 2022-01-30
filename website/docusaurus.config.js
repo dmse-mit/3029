@@ -90,7 +90,7 @@ const config = {
               },
               {
                 label: 'Slack',
-                href: 'mit-3029-sp22.slack.com',
+                href: 'https:/mit-3029-sp22.slack.com',
               },
             ],
           },
