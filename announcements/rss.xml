@@ -4,26 +4,18 @@
         <title>3.029 Blog</title>
         <link>https://dmse-mit.github.io/3029/announcements</link>
         <description>3.029 Blog</description>
-        <lastBuildDate>Mon, 31 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 30 Jan 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
-            <title><![CDATA[Welcome]]></title>
+            <title><![CDATA[Welcome!]]></title>
             <link>https://dmse-mit.github.io/3029/announcements/welcome</link>
             <guid>welcome</guid>
-            <pubDate>Mon, 31 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Welcome !]]></description>
-            <content:encoded><![CDATA[<p>Welcome !</p>]]></content:encoded>
-            <category>hello</category>
-        </item>
-        <item>
-            <title><![CDATA[Example Post]]></title>
-            <link>https://dmse-mit.github.io/3029/announcements/example</link>
-            <guid>example</guid>
-            <pubDate>Wed, 19 Jan 2022 00:00:00 GMT</pubDate>
-            <description><![CDATA[Dummy heading]]></description>
-            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="dummy-heading">Dummy heading<a class="hash-link" href="#dummy-heading" title="Direct link to heading">​</a></h2><p>Dummy example post</p>]]></content:encoded>
-            <category>test</category>
+            <pubDate>Sun, 30 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey everyone,]]></description>
+            <content:encoded><![CDATA[<p>Hey everyone,</p><p>Welcome to 3.029! The teaching team is very excited for this semester, and looks forward to meeting you and getting to know each of you better. </p><p>Our first lecture will take place tomorrow (Monday, 01/31) 1:00pm-2:30pm in room 4-261. A few important notes ahead of tomorrow:</p><ul><li><p>Lectures will be in-person, and you are encouraged to attend the live lectures when possible. If this is generally not feasible for you, or makes you uncomfortable, please get in touch. Additionally, lectures will be recorded on zoom, and uploaded on the 3.029 <a href="https://canvas.mit.edu/courses/13469" target="_blank" rel="noopener noreferrer">canvas page</a>.</p></li><li><p>We will be piloting a custom web-based platform to deliver the lecture and reading notebooks for the class, which you can access here: <a href="https://dmse-mit.github.io/3029/" target="_blank" rel="noopener noreferrer">https://dmse-mit.github.io/3029/</a>. Feel free to peruse the site, but we will also spend some time navigating it together tomorrow.</p></li><li><p>We will reserve <a href="https://canvas.mit.edu/courses/13469" target="_blank" rel="noopener noreferrer">canvas</a> use for i) class-wide announcements, ii) acessing the zoom recordings, and iii) submitting/grading of assignments.</p></li><li><p>Finally, we have set up a <a href="https://mit-3029-sp22.slack.com" target="_blank" rel="noopener noreferrer">Slack workspace</a> for the class for interactions outside the regularly-scheduled lecture and office hours. You should be receiving an invite to join from me shortly.</p></li></ul><p>See you tomorrow!<br>
+<!-- -->George</p>]]></content:encoded>
+            <category>welcome</category>
         </item>
     </channel>
 </rss>

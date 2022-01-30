@@ -2,18 +2,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dmse-mit.github.io/3029/announcements</id>
     <title>3.029 Blog</title>
-    <updated>2022-01-31T00:00:00.000Z</updated>
+    <updated>2022-01-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dmse-mit.github.io/3029/announcements"/>
     <subtitle>3.029 Blog</subtitle>
     <icon>https://dmse-mit.github.io/3029/img/favicon.ico</icon>
     <entry>
-        <title type="html"><![CDATA[Welcome]]></title>
+        <title type="html"><![CDATA[Welcome!]]></title>
         <id>welcome</id>
         <link href="https://dmse-mit.github.io/3029/announcements/welcome"/>
-        <updated>2022-01-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Welcome !]]></summary>
-        <content type="html"><![CDATA[<p>Welcome !</p>]]></content>
+        <updated>2022-01-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hey everyone,]]></summary>
+        <content type="html"><![CDATA[<p>Hey everyone,</p><p>Welcome to 3.029! The teaching team is very excited for this semester, and looks forward to meeting you and getting to know each of you better. </p><p>Our first lecture will take place tomorrow (Monday, 01/31) 1:00pm-2:30pm in room 4-261. A few important notes ahead of tomorrow:</p><ul><li><p>Lectures will be in-person, and you are encouraged to attend the live lectures when possible. If this is generally not feasible for you, or makes you uncomfortable, please get in touch. Additionally, lectures will be recorded on zoom, and uploaded on the 3.029 <a href="https://canvas.mit.edu/courses/13469" target="_blank" rel="noopener noreferrer">canvas page</a>.</p></li><li><p>We will be piloting a custom web-based platform to deliver the lecture and reading notebooks for the class, which you can access here: <a href="https://dmse-mit.github.io/3029/" target="_blank" rel="noopener noreferrer">https://dmse-mit.github.io/3029/</a>. Feel free to peruse the site, but we will also spend some time navigating it together tomorrow.</p></li><li><p>We will reserve <a href="https://canvas.mit.edu/courses/13469" target="_blank" rel="noopener noreferrer">canvas</a> use for i) class-wide announcements, ii) acessing the zoom recordings, and iii) submitting/grading of assignments.</p></li><li><p>Finally, we have set up a <a href="https://mit-3029-sp22.slack.com" target="_blank" rel="noopener noreferrer">Slack workspace</a> for the class for interactions outside the regularly-scheduled lecture and office hours. You should be receiving an invite to join from me shortly.</p></li></ul><p>See you tomorrow!<br>
+<!-- -->George</p>]]></content>
         <author>
             <name>Georgios Varnavides</name>
             <uri>https://gvarnavides.com/</uri>
@@ -22,19 +23,6 @@
             <name>Elsa Olivetti</name>
             <uri>https://olivetti.mit.edu/</uri>
         </author>
-        <category label="hello" term="hello"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Example Post]]></title>
-        <id>example</id>
-        <link href="https://dmse-mit.github.io/3029/announcements/example"/>
-        <updated>2022-01-19T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Dummy heading]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_mojV" id="dummy-heading">Dummy heading<a class="hash-link" href="#dummy-heading" title="Direct link to heading">​</a></h2><p>Dummy example post</p>]]></content>
-        <author>
-            <name>Georgios Varnavides</name>
-            <uri>https://gvarnavides.com/</uri>
-        </author>
-        <category label="test" term="test"/>
+        <category label="welcome" term="welcome"/>
     </entry>
 </feed>
