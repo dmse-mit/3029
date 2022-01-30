@@ -11,6 +11,16 @@ import 'react-nbviewer/dist/index.css';
 
 // Cleans up json to remove newlines from math envs
 const clean_up_json = (object) => {
+
+  let metadata = object.metadata;
+
+  const language =
+    metadata.kernelspec.language == "Wolfram Language"
+      ? "mathematica"
+      : metadata.kernelspec.language;
+
+  metadata.kernelspec.language = language;
+
   return {
     cells: object.cells.map((el) => {
       if (el.cell_type == "markdown") {
@@ -21,6 +31,7 @@ const clean_up_json = (object) => {
             /(\${1,2})((?:\\.|[\s\S])*?)\1/g,
             (m, tag, src) => tag + src.replace(/\r?\n/g, "") + tag
           );
+
         return {
           cell_type: el.cell_type,
           id: el.id,
@@ -31,7 +42,7 @@ const clean_up_json = (object) => {
         return el;
       }
     }),
-    metadata: object.metadata,
+    metadata: metadata,
     nbformat: object.nbformat,
     nbformat_minor: object.nbformat_minor
   };
