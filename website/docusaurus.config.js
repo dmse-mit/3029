@@ -86,11 +86,11 @@ const config = {
               },
               {
                 label: 'Canvas',
-                href: 'https://github.com/dmse-mit/3029',
+                href: 'https://canvas.mit.edu/courses/13469',
               },
               {
                 label: 'Slack',
-                href: 'https://github.com/dmse-mit/3029',
+                href: 'https:/mit-3029-sp22.slack.com',
               },
             ],
           },

@@ -14,8 +14,12 @@
     "write-heading-ids": "docusaurus write-heading-ids"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.14",
-    "@docusaurus/preset-classic": "2.0.0-beta.14",
+    "@docusaurus/core": "^2.0.0-beta.15",
+    "@docusaurus/preset-classic": "^2.0.0-beta.15",
+    "@gvarnavi/lattice-vibrations-lj": "https://api.observablehq.com/d/6e0bd14519e69ae6.tgz?v=3",
+    "@gvarnavi/lennard-jones-potential": "https://api.observablehq.com/d/47b6948443d96383.tgz?v=3",
+    "@gvarnavi/molecular-dynamics-lj": "https://api.observablehq.com/d/e5be4773dba2e95b.tgz?v=3",
+    "@gvarnavi/surfarce-energy-lj": "https://api.observablehq.com/d/9de37462d00fe937.tgz?v=3",
     "@mdx-js/react": "^1.6.21",
     "@observablehq/runtime": "4",
     "axios": "^0.25.0",
