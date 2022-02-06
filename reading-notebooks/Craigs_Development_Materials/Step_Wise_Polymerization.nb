@@ -1,0 +1,758 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     33652,        750]
+NotebookOptionsPosition[     32064,        714]
+NotebookOutlinePosition[     32460,        730]
+CellTagsIndexPosition[     32417,        727]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "Subtitle",
+ CellChangeTimes->{{3.8531551193121758`*^9, 
+  3.853155164537261*^9}},ExpressionUUID->"d2d1d5bc-e17f-4fa5-a8d1-\
+29a312af2c05"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Initial code to do step wise polymerization simulations.  6 Feb. 2022\
+\>", "Section",
+ CellChangeTimes->{
+  3.853155165793206*^9},ExpressionUUID->"4859a45a-a556-441d-9860-\
+1655e4c4980a"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Uncommented right now.
+
+Code is currently in a function that is too long. It needs to be chunked out \
+so it can be explained.
+
+Code is simple. The bookkeeping is tedious.
+
+It should probably be 3D
+
+Periodic?
+
+Continuous Feed?\
+\>", "Subsection",
+ CellChangeTimes->{{3.853155169243084*^9, 
+  3.853155288384288*^9}},ExpressionUUID->"13014e8c-0b8f-4b45-82e5-\
+a22c9ee8d605"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"proc", "=", 
+   RowBox[{"HardcorePointProcess", "[", 
+    RowBox[{"20", ",", "3", ",", "2"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{
+  3.8527187866943493`*^9, {3.852718890509068*^9, 3.852718890672132*^9}, {
+   3.8528878696748343`*^9, 3.852887870263976*^9}, {3.852889532664887*^9, 
+   3.852889548231*^9}, {3.853131589493806*^9, 3.8531316251074553`*^9}, {
+   3.85313171856728*^9, 3.853131719889461*^9}, {3.8531317812658577`*^9, 
+   3.853131816327731*^9}, {3.8531327980908117`*^9, 3.853132798197062*^9}, {
+   3.85314966678754*^9, 3.853149674991735*^9}, {3.853149836970407*^9, 
+   3.853149837270117*^9}, {3.853150186296794*^9, 3.8531501870973883`*^9}, {
+   3.8531503055018387`*^9, 3.853150332713459*^9}, {3.8531503991051397`*^9, 
+   3.853150400759012*^9}, 3.853150494226112*^9},
+ CellLabel->"2/6/22 17:09:39 (extra_kernel) In[2]:=",
+ CellID->361480177,ExpressionUUID->"e3e13eaa-b10c-4e7c-b135-aa391d301a47"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"reg", " ", "=", 
+   RowBox[{"Rectangle", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"-", "50"}], ",", 
+       RowBox[{"-", "50"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"50", ",", "50"}], "}"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.85271879351155*^9, 3.852718823822916*^9}, {
+  3.853131731031193*^9, 3.8531317713776217`*^9}},
+ CellLabel->"2/6/22 17:09:39 (extra_kernel) In[3]:=",
+ CellID->150792824,ExpressionUUID->"e829efaf-bf07-431a-ac43-ae9e6c8f50ce"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"particles", "=", 
+   RowBox[{
+    RowBox[{"RandomPointConfiguration", "[", 
+     RowBox[{"proc", ",", "reg"}], "]"}], "[", "\"\<Points\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{
+  3.8527188322553587`*^9, {3.8527189756387444`*^9, 3.85271898176375*^9}},
+ CellLabel->"2/6/22 17:09:39 (extra_kernel) In[4]:=",
+ CellID->32148238,ExpressionUUID->"543cafec-2a36-4ef6-bd75-022ea8e7a989"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "RandomPointConfiguration", "bdmcmc", 
+   "\"The number of iterations \\!\\(\\*RowBox[{\\\"8000\\\"}]\\) is \
+insufficient for the birth-death point process sampling to converge. Please \
+specify a larger number for \\\"LengthOfRun\\\" or use a different initial \
+state.\"", 2, 4, 3, 17451618261687273389, "extra_kernel"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{{3.853150324940611*^9, 3.853150336540316*^9}, 
+   3.853150405277217*^9, 3.8531504985015383`*^9, 3.853151973390356*^9, 
+   3.853152579816551*^9},
+ CellLabel->
+  "2/6/22 17:09:39 During evaluation of (extra_kernel) \
+In[4]:=",ExpressionUUID->"1f2468e9-5185-4c0a-a59a-282fa753b4e5"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Circle", "[", 
+     RowBox[{"#", ",", 
+      RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", "particles"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.85271884119398*^9, 3.8527188816777077`*^9}},
+ CellLabel->
+  "2/6/22 17:09:39 (extra_kernel) \
+In[5]:=",ExpressionUUID->"eafbe795-9b65-400d-8b77-5d33023868be"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{
+   RowBox[{"polymerGraphic", "[", 
+    RowBox[{"{", 
+     RowBox[{
+     "particles_", ",", "terminatingParticles_", ",", "internalParticles_"}], 
+     "}"}], "]"}], ":=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"MapIndexed", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{
+             "#2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+             ",", "#1"}], "]"}], ",", 
+           RowBox[{"Circle", "[", 
+            RowBox[{"#1", ",", 
+             FractionBox["1", "2"]}], "]"}]}], "}"}], "&"}], ",", 
+        "particles"}], "]"}], ",", "Red", ",", 
+      RowBox[{"MapIndexed", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{
+             "#2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+             ",", "#1"}], "]"}], ",", 
+           RowBox[{"Circle", "[", 
+            RowBox[{"#1", ",", 
+             FractionBox["1", "2"]}], "]"}]}], "}"}], "&"}], ",", 
+        "terminatingParticles"}], "]"}], ",", "Blue", ",", 
+      RowBox[{"MapIndexed", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"Text", "[", 
+            RowBox[{
+             RowBox[{
+             "#2", "\[LeftDoubleBracket]", "1", "\[RightDoubleBracket]"}], 
+             ",", "#1"}], "]"}], ",", 
+           RowBox[{"Circle", "[", 
+            RowBox[{"#1", ",", 
+             FractionBox["1", "2"]}], "]"}]}], "}"}], "&"}], ",", 
+        "internalParticles"}], "]"}]}], "}"}], "]"}]}], "*)"}]], "Input",
+ CellChangeTimes->{3.85313247736876*^9, 
+  3.853155307669855*^9},ExpressionUUID->"c489ac06-5351-459c-9b52-\
+341c8b530f6d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"polymerGraphic", "[", 
+   RowBox[{"{", 
+    RowBox[{
+    "particles_", ",", "terminatingParticles_", ",", "internalParticles_"}], 
+    "}"}], "]"}], ":=", 
+  RowBox[{"Graphics", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"White", ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Disk", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", "particles"}], ",", 
+      "\[IndentingNewLine]", "Yellow", ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Disk", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+       "terminatingParticles"}], ",", "\[IndentingNewLine]", "Orange", ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Disk", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+       "internalParticles"}]}], "\[IndentingNewLine]", "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"ImageSize", "->", "400"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Background", "\[Rule]", "Black"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"Ticks", "\[Rule]", "None"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"PlotRange", "->", 
+     RowBox[{"50", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}]}]}], 
+   "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.853132575198642*^9, 3.853132696478178*^9}, {
+  3.853133145816444*^9, 3.853133154409624*^9}, {3.853133342100122*^9, 
+  3.853133366056507*^9}, {3.853150044608592*^9, 3.853150153451185*^9}, {
+  3.853150233652903*^9, 3.8531502350913486`*^9}, {3.853150513010881*^9, 
+  3.853150513897138*^9}, {3.853152590941745*^9, 3.853152621071642*^9}},
+ CellLabel->
+  "2/6/22 17:10:21 (extra_kernel) \
+In[18]:=",ExpressionUUID->"37adffcb-b4f6-4c41-be58-a4324c406530"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"deletePositions", "[", 
+   RowBox[{"list_List", ",", " ", "positions_"}], "]"}], ":=", " ", 
+  "\[IndentingNewLine]", 
+  RowBox[{"Which", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Length", "[", "list", "]"}], "==", "0"}], ",", 
+    RowBox[{"{", "}"}], ",", "\[IndentingNewLine]", "True", ",", 
+    RowBox[{"list", "[", 
+     RowBox[{"[", "\[IndentingNewLine]", 
+      RowBox[{"Complement", "[", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"Range", "[", 
+         RowBox[{"Length", "[", "list", "]"}], "]"}], ",", 
+        RowBox[{"Union", "[", 
+         RowBox[{"Flatten", "[", 
+          RowBox[{"{", "positions", "}"}], "]"}], "]"}]}], "]"}], "]"}], 
+     "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.85304323067675*^9, 3.853043292541194*^9}, {
+  3.85304344959816*^9, 3.85304345368015*^9}, {3.853043659867045*^9, 
+  3.853043702296917*^9}, {3.853129844938744*^9, 3.853129856792557*^9}},
+ CellLabel->
+  "2/6/22 17:09:54 (extra_kernel) \
+In[7]:=",ExpressionUUID->"8f2e717d-8662-4f2a-98d3-559e4a6cd0f7"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"updateParticles", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "activeParticles_", ",", "terminatingParticles_", ",", 
+       "internalParticles_"}], "}"}], ",", " ", "dx_", ",", " ", 
+     "domainSize_"}], "]"}], ":=", " ", "\[IndentingNewLine]", 
+   RowBox[{"Block", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"newTerminatingParticles", "=", "terminatingParticles"}], ",", 
+       
+       RowBox[{"newInternalParticles", "=", "internalParticles"}], ",", 
+       "newActiveParticlePositions", ",", 
+       RowBox[{"remainingActiveParticles", "=", 
+        RowBox[{"{", "}"}]}], ",", "isolatedCollisions", ",", 
+       "endPointCollisions", ",", "polymerCollisions", ",", 
+       "activeNearestPairs", ",", "terminatingNearestPairs", ",", 
+       "eliminateRandomStep", ",", "activeNF", ",", 
+       RowBox[{"collisionSelector", "=", 
+        RowBox[{"Select", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"#Distance", "<", 
+            RowBox[{"1", "+", 
+             FractionBox["dx", "2"]}]}], "&&", 
+           RowBox[{"#Me", "<", "#Index"}]}], "&"}], "]"}]}], ",", "reactions",
+        ",", 
+       RowBox[{"isolatedParticleToDoublets", "=", 
+        RowBox[{"{", "}"}]}], ",", 
+       RowBox[{"isolatedParticleToTerminating", "=", 
+        RowBox[{"{", "}"}]}], ",", 
+       RowBox[{"terminatingParticlesToPolymer", "=", 
+        RowBox[{"{", "}"}]}], ",", "terminatingReactions", ",", 
+       RowBox[{"newEvent", "=", "False"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"newActiveParticlePositions", " ", "=", " ", 
+       RowBox[{"Clip", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"activeParticles", "+", " ", 
+          RowBox[{"dx", " ", 
+           RowBox[{"AngleVector", "/@", 
+            RowBox[{"RandomReal", "[", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"0", ",", 
+                RowBox[{"2", "Pi"}]}], "}"}], ",", 
+              RowBox[{"Length", "[", "activeParticles", "]"}]}], "]"}]}]}]}], 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"domainSize", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"-", "1"}], ",", "1"}], "}"}]}]}], "\[IndentingNewLine]", 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"activeNF", "=", " ", 
+       RowBox[{"Nearest", "[", 
+        RowBox[{"newActiveParticlePositions", "->", "All"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"activeNearestPairs", "=", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Append", "[", 
+          RowBox[{
+           RowBox[{"<|", 
+            RowBox[{"\"\<Me\>\"", " ", "->", 
+             RowBox[{
+              RowBox[{"First", "[", "#", "]"}], "[", "\"\<Index\>\"", "]"}]}],
+             "|>"}], ",", 
+           RowBox[{"Last", "[", "#", "]"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"activeNF", "[", 
+         RowBox[{"newActiveParticlePositions", ",", "2"}], "]"}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"reactions", " ", "=", 
+       RowBox[{
+        RowBox[{"Select", "[", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"#Distance", " ", "<", " ", 
+              RowBox[{"1", " ", "+", " ", 
+               RowBox[{"dx", "/", "2"}]}]}], "&&", " ", 
+             RowBox[{"#Me", " ", "<", " ", "#Index"}]}], ")"}], " ", "&"}], 
+          ")"}], "]"}], "[", "activeNearestPairs", "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "reactions", "]"}], ">", "0"}], ",", 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"newEvent", "=", " ", "True"}], ";", "\[IndentingNewLine]", 
+         RowBox[{"isolatedParticleToDoublets", "=", "\[IndentingNewLine]", 
+          RowBox[{"Flatten", "@", 
+           RowBox[{"Table", "[", "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"Module", "[", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"me", " ", "=", " ", 
+                  RowBox[{"reactor", "[", "\"\<Me\>\"", "]"}]}], ",", 
+                 "\[IndentingNewLine]", 
+                 RowBox[{"it", " ", "=", " ", 
+                  RowBox[{"reactor", "[", "\"\<Index\>\"", "]"}]}], ",", 
+                 "\[IndentingNewLine]", "dr", " ", ",", "\[IndentingNewLine]",
+                  "dist"}], "}"}], ",", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"dr", " ", "=", " ", 
+                 RowBox[{
+                  RowBox[{"activeParticles", "[", 
+                   RowBox[{"[", "me", "]"}], "]"}], "-", " ", 
+                  RowBox[{"activeParticles", "[", 
+                   RowBox[{"[", "it", "]"}], "]"}]}]}], ";", 
+                "\[IndentingNewLine]", 
+                RowBox[{"dist", " ", "=", " ", 
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"Sqrt", "[", 
+                    RowBox[{"dr", ".", "dr"}], "]"}], "-", "1"}], ")"}], "/", 
+                  "2"}]}], ";", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"newActiveParticlePositions", "[", 
+                  RowBox[{"[", "me", "]"}], "]"}], " ", "=", " ", 
+                 RowBox[{
+                  RowBox[{"activeParticles", "[", 
+                   RowBox[{"[", "me", "]"}], "]"}], " ", "-", " ", 
+                  RowBox[{"dist", " ", "dr"}]}]}], ";", "\[IndentingNewLine]", 
+                RowBox[{
+                 RowBox[{"newActiveParticlePositions", "[", 
+                  RowBox[{"[", "it", "]"}], "]"}], " ", "=", " ", 
+                 RowBox[{
+                  RowBox[{"activeParticles", "[", 
+                   RowBox[{"[", "it", "]"}], "]"}], " ", "+", " ", 
+                  RowBox[{"dist", " ", "dr"}]}]}], ";", "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{"me", ",", "it"}], "}"}]}]}], "\[IndentingNewLine]", 
+              "]"}], ",", "\[IndentingNewLine]", 
+             RowBox[{"{", 
+              RowBox[{"reactor", ",", "reactions"}], "}"}]}], 
+            "\[IndentingNewLine]", "]"}]}]}]}]}], "\[IndentingNewLine]", 
+       "]"}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "internalParticles", "]"}], ">", "0"}], ",", 
+        RowBox[{"(*", 
+         RowBox[{
+         "eliminate", " ", "collisions", " ", "between", " ", "active", " ", 
+          "and", " ", "internal", " ", "polymer"}], "*)"}], 
+        "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"eliminateRandomStep", "=", 
+          RowBox[{
+           RowBox[{"Select", "[", 
+            RowBox[{
+             RowBox[{"#Distance", " ", "<", " ", 
+              RowBox[{"1", " ", "+", " ", 
+               RowBox[{"dx", "/", "2"}]}]}], "&"}], "]"}], "[", 
+           RowBox[{"Flatten", "[", 
+            RowBox[{"activeNF", "[", "internalParticles", "]"}], "]"}], 
+           "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"eliminateRandomStep", " ", "=", " ", 
+          RowBox[{"eliminateRandomStep", "[", 
+           RowBox[{"[", 
+            RowBox[{"All", ",", "\"\<Index\>\""}], "]"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"(*", 
+          RowBox[{
+           RowBox[{"Echo", "[", 
+            RowBox[{
+            "eliminateRandomStep", ",", "\"\<eliminateRandomStep\>\""}], 
+            "]"}], ";"}], "*)"}], "\[IndentingNewLine]", 
+         RowBox[{
+          RowBox[{"newActiveParticlePositions", "[", 
+           RowBox[{"[", "eliminateRandomStep", "]"}], "]"}], "=", " ", 
+          RowBox[{"activeParticles", "[", 
+           RowBox[{"[", "eliminateRandomStep", "]"}], "]"}]}]}]}], 
+       "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"If", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", "terminatingParticles", "]"}], ">", "0"}], 
+        ",", 
+        RowBox[{"(*", 
+         RowBox[{
+         "capture", " ", "active", " ", "particles", " ", "near", " ", 
+          "ends"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"terminatingNearestPairs", "=", " ", 
+          RowBox[{"Flatten", "@", 
+           RowBox[{"activeNF", "[", "terminatingParticles", "]"}]}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"terminatingNearestPairs", "=", 
+          RowBox[{"MapIndexed", "[", 
+           RowBox[{
+            RowBox[{
+             RowBox[{"Append", "[", 
+              RowBox[{"#", ",", 
+               RowBox[{"<|", 
+                RowBox[{"\"\<Terminator\>\"", "->", 
+                 RowBox[{"#2", "[", 
+                  RowBox[{"[", "1", "]"}], "]"}]}], "|>"}]}], "]"}], "&"}], 
+            ",", "terminatingNearestPairs"}], "]"}]}], ";", 
+         "\[IndentingNewLine]", 
+         RowBox[{"terminatingReactions", "=", 
+          RowBox[{
+           RowBox[{"Select", "[", 
+            RowBox[{
+             RowBox[{"#Distance", "<", 
+              RowBox[{"1", " ", "+", " ", 
+               RowBox[{"dx", "/", "2"}]}]}], "&"}], "]"}], "[", 
+           "terminatingNearestPairs", "]"}]}], ";", "\[IndentingNewLine]", 
+         RowBox[{"If", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Length", "[", "terminatingReactions", "]"}], ">", "0"}], 
+           ",", 
+           RowBox[{"(*", 
+            RowBox[{
+            "add", " ", "active", " ", "particles", " ", "to", " ", "ends", 
+             " ", "of", " ", "polymers"}], "*)"}], "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"newEvent", "=", " ", "True"}], ";", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+             RowBox[{"{", 
+              RowBox[{
+              "isolatedParticleToTerminating", ",", "\[IndentingNewLine]", 
+               "terminatingParticlesToPolymer"}], "}"}], "=", 
+             "\[IndentingNewLine]", 
+             RowBox[{"Transpose", "[", "\[IndentingNewLine]", 
+              RowBox[{"Table", "[", "\[IndentingNewLine]", 
+               RowBox[{
+                RowBox[{"Block", "[", "\[IndentingNewLine]", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"terminator", " ", "=", " ", 
+                    RowBox[{"reaction", "[", "\"\<Terminator\>\"", "]"}]}], 
+                    ",", 
+                    RowBox[{"active", "=", " ", 
+                    RowBox[{"reaction", "[", "\"\<Index\>\"", "]"}]}], ",", 
+                    "dr", ",", "dist"}], "}"}], ",", "\[IndentingNewLine]", 
+                  RowBox[{
+                   RowBox[{"dr", " ", "=", " ", 
+                    RowBox[{
+                    RowBox[{"terminatingParticles", "[", 
+                    RowBox[{"[", "terminator", "]"}], "]"}], "-", 
+                    RowBox[{"newActiveParticlePositions", "[", 
+                    RowBox[{"[", "active", "]"}], "]"}]}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"dist", " ", "=", " ", 
+                    RowBox[{"Sqrt", "[", 
+                    RowBox[{"dr", ".", "dr"}], "]"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{
+                    RowBox[{"newActiveParticlePositions", "[", 
+                    RowBox[{"[", "active", "]"}], "]"}], " ", "+=", " ", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"dist", "-", "1"}], ")"}], "dr"}]}], ";", 
+                   "\[IndentingNewLine]", 
+                   RowBox[{"{", 
+                    RowBox[{"active", ",", "terminator"}], "}"}]}]}], 
+                 "\[IndentingNewLine]", "]"}], ",", "\[IndentingNewLine]", 
+                RowBox[{"{", 
+                 RowBox[{"reaction", ",", "terminatingReactions"}], "}"}]}], 
+               "\[IndentingNewLine]", "]"}], "\[IndentingNewLine]", 
+              "]"}]}]}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+          "]"}]}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
+      RowBox[{"(*", 
+       RowBox[{
+       "possible", " ", "events", "\[IndentingNewLine]", "two", " ", 
+        "actives", " ", "to", " ", "doublet", " ", "creating", " ", "two", 
+        " ", "terminators", "\[IndentingNewLine]", "active", " ", "to", " ", 
+        "terminator", " ", "with", " ", "terminator", " ", "to", " ", 
+        "internal"}], "\[IndentingNewLine]", "*)"}], "\[IndentingNewLine]", 
+      RowBox[{"If", "[", "\[IndentingNewLine]", 
+       RowBox[{"newEvent", ",", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"remainingActiveParticles", "=", 
+          RowBox[{"deletePositions", "[", "\[IndentingNewLine]", 
+           RowBox[{"newActiveParticlePositions", ",", 
+            RowBox[{"Catenate", "[", 
+             RowBox[{"{", 
+              RowBox[{
+              "isolatedParticleToDoublets", ",", 
+               "isolatedParticleToTerminating"}], "}"}], "]"}]}], "]"}]}], 
+         ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+         RowBox[{"newInternalParticles", " ", "=", " ", 
+          RowBox[{"Union", "@", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", 
+             RowBox[{"newInternalParticles", ",", 
+              RowBox[{"newTerminatingParticles", "[", 
+               RowBox[{"[", "terminatingParticlesToPolymer", "]"}], "]"}]}], 
+             "}"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+         "\[IndentingNewLine]", 
+         RowBox[{
+         "newTerminatingParticles", " ", "=", " ", "\[IndentingNewLine]", 
+          RowBox[{"Union", "@", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", "\[IndentingNewLine]", 
+             RowBox[{
+              RowBox[{"newActiveParticlePositions", "[", 
+               RowBox[{"[", 
+                RowBox[{"Union", "@", 
+                 RowBox[{"Flatten", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                   "isolatedParticleToDoublets", ",", 
+                    "isolatedParticleToTerminating"}], "}"}], "]"}]}], "]"}], 
+               "]"}], "\[IndentingNewLine]", ",", 
+              RowBox[{"deletePositions", "[", 
+               RowBox[{
+               "newTerminatingParticles", ",", 
+                "terminatingParticlesToPolymer"}], "]"}]}], "}"}], "]"}]}]}], 
+         ";", "\[IndentingNewLine]", 
+         RowBox[{"{", 
+          RowBox[{
+          "remainingActiveParticles", ",", "newTerminatingParticles", ",", 
+           "newInternalParticles"}], "}"}]}], ",", "\[IndentingNewLine]", 
+        RowBox[{"{", 
+         RowBox[{
+         "newActiveParticlePositions", ",", "terminatingParticles", ",", 
+          "internalParticles"}], "}"}]}], "\[IndentingNewLine]", "]"}]}]}], 
+    "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.852719167787373*^9, 3.8527193358646183`*^9}, {
+   3.85273134197637*^9, 3.85273135802906*^9}, {3.8527314516769943`*^9, 
+   3.8527314648320713`*^9}, {3.852732884289462*^9, 3.852732960130377*^9}, {
+   3.852733000670683*^9, 3.8527330306549683`*^9}, {3.852739313173771*^9, 
+   3.85273932386372*^9}, {3.852779983634048*^9, 3.852779983980237*^9}, {
+   3.852780138982004*^9, 3.852780139316366*^9}, {3.852780182408214*^9, 
+   3.852780262998719*^9}, {3.852780295487379*^9, 3.8527803660410347`*^9}, {
+   3.8527804023577623`*^9, 3.852780480063431*^9}, {3.8527805139544773`*^9, 
+   3.8527805226702223`*^9}, {3.852781279390926*^9, 3.852781305880959*^9}, {
+   3.852783041486771*^9, 3.852783127315838*^9}, {3.8527831670627193`*^9, 
+   3.852783173189006*^9}, {3.852783220054055*^9, 3.852783228206881*^9}, {
+   3.8527833223185177`*^9, 3.8527833259115868`*^9}, {3.852783364266552*^9, 
+   3.8527833774054728`*^9}, {3.852783556330336*^9, 3.852783565497033*^9}, {
+   3.85278422684181*^9, 3.85278428450078*^9}, {3.852784390479362*^9, 
+   3.852784406389011*^9}, {3.852784502773486*^9, 3.852784680043311*^9}, {
+   3.8527847113365583`*^9, 3.8527847396829453`*^9}, {3.852784830727974*^9, 
+   3.852784831672535*^9}, 3.8527849528836517`*^9, {3.852785756541808*^9, 
+   3.852785757092917*^9}, 3.8527865497614107`*^9, {3.852786903739585*^9, 
+   3.8527870269573298`*^9}, {3.85278790628959*^9, 3.852787968882346*^9}, {
+   3.852788009861149*^9, 3.8527880349129066`*^9}, {3.852788068010993*^9, 
+   3.8527881165139303`*^9}, {3.852807054133333*^9, 3.8528070676599894`*^9}, {
+   3.852807153242278*^9, 3.852807365078628*^9}, {3.85280742708352*^9, 
+   3.8528074742346573`*^9}, {3.852807507893805*^9, 3.8528075399520187`*^9}, {
+   3.8528081589348993`*^9, 3.852808334236363*^9}, {3.852809092577772*^9, 
+   3.85280909861796*^9}, {3.85280916230247*^9, 3.852809488146655*^9}, {
+   3.852809553578477*^9, 3.852809600529374*^9}, {3.852809715877953*^9, 
+   3.852809981674493*^9}, {3.8528100301787024`*^9, 3.8528100381107397`*^9}, {
+   3.852813472200387*^9, 3.852813650685577*^9}, 3.852813685986403*^9, {
+   3.852813726169606*^9, 3.852813901350273*^9}, {3.8528140329377537`*^9, 
+   3.852814117365644*^9}, {3.852814149430423*^9, 3.852814152107826*^9}, {
+   3.852814188568592*^9, 3.85281419959155*^9}, {3.85281482035562*^9, 
+   3.852814823432653*^9}, {3.8528148628844023`*^9, 3.852814906070365*^9}, {
+   3.8528150328817797`*^9, 3.852815148143121*^9}, {3.852815368331394*^9, 
+   3.852815396914207*^9}, {3.852815434560829*^9, 3.85281546886654*^9}, {
+   3.852815561599702*^9, 3.8528156115331507`*^9}, {3.852815690031973*^9, 
+   3.852815719543229*^9}, {3.852815750794557*^9, 3.852815779300803*^9}, {
+   3.852815875061758*^9, 3.852815902026252*^9}, {3.8528159552077503`*^9, 
+   3.852816027512589*^9}, {3.852816086369424*^9, 3.8528161548578377`*^9}, {
+   3.852816185638904*^9, 3.852816187549818*^9}, {3.852816222538229*^9, 
+   3.852816250613483*^9}, 3.8528163356504707`*^9, {3.852816384046754*^9, 
+   3.85281639147079*^9}, {3.852816422951647*^9, 3.8528164328985987`*^9}, {
+   3.852816560815536*^9, 3.8528166585236473`*^9}, {3.852816716002564*^9, 
+   3.8528167662789717`*^9}, 3.8528168692100277`*^9, {3.852817080127101*^9, 
+   3.852817117221737*^9}, {3.852817299277647*^9, 3.852817346911738*^9}, {
+   3.852884679708253*^9, 3.85288472615543*^9}, 3.852884758482916*^9, {
+   3.8528851090339327`*^9, 3.852885118538569*^9}, {3.852885154979723*^9, 
+   3.852885155565287*^9}, 3.8528851945618973`*^9, {3.852885350033947*^9, 
+   3.8528854268459682`*^9}, {3.8528854704169493`*^9, 3.852885526046525*^9}, {
+   3.852885610965828*^9, 3.852885676472526*^9}, {3.8528857406654177`*^9, 
+   3.852885857975627*^9}, {3.852885938336029*^9, 3.852886000641203*^9}, {
+   3.852886036341208*^9, 3.852886200702113*^9}, {3.852887755069055*^9, 
+   3.852887760425762*^9}, {3.8529787070203876`*^9, 3.8529787279785767`*^9}, {
+   3.852978767406361*^9, 3.852978782421542*^9}, {3.852978829276958*^9, 
+   3.852978924037402*^9}, {3.852978979282062*^9, 3.852979008913496*^9}, {
+   3.852979043709436*^9, 3.852979087958651*^9}, {3.8529792342718887`*^9, 
+   3.852979238216951*^9}, {3.852979450466475*^9, 3.852979601924211*^9}, {
+   3.852979682613008*^9, 3.852979742940357*^9}, {3.852979832497159*^9, 
+   3.8529799574161882`*^9}, {3.852979998907886*^9, 3.852980063717304*^9}, {
+   3.852980098915289*^9, 3.852980161791238*^9}, {3.85298022341296*^9, 
+   3.852980225532148*^9}, {3.8529802632729597`*^9, 3.8529803433644333`*^9}, {
+   3.852980524423443*^9, 3.852980547922299*^9}, {3.8529806112622547`*^9, 
+   3.85298070867204*^9}, {3.8529807576608*^9, 3.852980767215754*^9}, {
+   3.852980849104878*^9, 3.852980849926909*^9}, {3.852980906906227*^9, 
+   3.852980914435383*^9}, {3.852980951882229*^9, 3.852980985601289*^9}, {
+   3.852981029071068*^9, 3.852981042143194*^9}, {3.852981075566189*^9, 
+   3.852981172656908*^9}, {3.852981209018764*^9, 3.852981216253491*^9}, {
+   3.852981251139751*^9, 3.852981311586526*^9}, 3.852981343826339*^9, {
+   3.852981375104759*^9, 3.852981428415444*^9}, {3.852981761936139*^9, 
+   3.8529819331446457`*^9}, 3.852982533085968*^9, {3.8529825664635477`*^9, 
+   3.852982568761834*^9}, 3.852982729513033*^9, {3.85298280850492*^9, 
+   3.852982823472494*^9}, {3.852982870439797*^9, 3.852982972130417*^9}, 
+   3.852983225192645*^9, {3.8530404828095493`*^9, 3.85304050035637*^9}, {
+   3.8530412375588703`*^9, 3.8530413053837633`*^9}, 3.8530413440727377`*^9, 
+   3.853041388227624*^9, {3.8530414263425694`*^9, 3.853041441243637*^9}, {
+   3.853041547842184*^9, 3.853041558707424*^9}, {3.853041659143627*^9, 
+   3.8530416692433643`*^9}, 3.853041768172744*^9, {3.8530419361086893`*^9, 
+   3.853041983240382*^9}, {3.853042091470574*^9, 3.853042259815783*^9}, {
+   3.8530423102453327`*^9, 3.853042442043128*^9}, {3.853042480437138*^9, 
+   3.853042557307132*^9}, {3.853042694558672*^9, 3.853042709323621*^9}, 
+   3.853042745931945*^9, {3.8530427938908243`*^9, 3.8530429605972843`*^9}, {
+   3.853043009944887*^9, 3.853043034182127*^9}, {3.8530430679380417`*^9, 
+   3.853043086792089*^9}, {3.853043122291326*^9, 3.853043137202178*^9}, {
+   3.853043348979447*^9, 3.8530433748301773`*^9}, {3.853043406532195*^9, 
+   3.8530434281385393`*^9}, {3.853043466094887*^9, 3.8530434683252687`*^9}, {
+   3.8530435110865307`*^9, 3.853043609870007*^9}, {3.853043773302196*^9, 
+   3.853043870629424*^9}, {3.853043960703788*^9, 3.853044027926787*^9}, {
+   3.853044072898715*^9, 3.853044130917831*^9}, {3.853044173163795*^9, 
+   3.853044260665155*^9}, {3.8530445721400833`*^9, 3.85304458234986*^9}, 
+   3.85304461661755*^9, 3.853044724962384*^9, 3.853044793583387*^9, {
+   3.8530449197957478`*^9, 3.8530449211259623`*^9}, {3.853047438082165*^9, 
+   3.853047441171585*^9}, {3.853048179734437*^9, 3.8530482164577*^9}, {
+   3.85312641884559*^9, 3.853126428473514*^9}, {3.853126548584545*^9, 
+   3.85312661049057*^9}, {3.853126705502201*^9, 3.853126769322402*^9}, {
+   3.853129238535121*^9, 3.8531292406896133`*^9}, {3.8531294110024757`*^9, 
+   3.8531294154034643`*^9}, {3.853130068221118*^9, 3.853130088609592*^9}, {
+   3.853130120845765*^9, 3.853130170631444*^9}, 3.853130276830649*^9, {
+   3.853130312756393*^9, 3.853130324192915*^9}, {3.853130416661145*^9, 
+   3.853130422331546*^9}, {3.8531311004847517`*^9, 3.853131144916813*^9}, {
+   3.853131181163629*^9, 3.853131184455991*^9}, {3.853131549150525*^9, 
+   3.853131566680307*^9}, {3.8531318859412518`*^9, 3.853131902945826*^9}},
+ CellLabel->
+  "2/6/22 17:09:56 (extra_kernel) \
+In[8]:=",ExpressionUUID->"78d4b92e-d1e0-4118-a00b-af22209f793b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{837, 813},
+WindowMargins->{{172, Automatic}, {Automatic, 4}},
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"4cd9618b-fba0-453f-a343-38ad38a54b30"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 148, 3, 67, "Subtitle",ExpressionUUID->"d2d1d5bc-e17f-4fa5-a8d1-29a312af2c05"],
+Cell[CellGroupData[{
+Cell[753, 29, 198, 5, 132, "Section",ExpressionUUID->"4859a45a-a556-441d-9860-1655e4c4980a"],
+Cell[CellGroupData[{
+Cell[976, 38, 382, 16, 433, "Subsection",ExpressionUUID->"13014e8c-0b8f-4b45-82e5-a22c9ee8d605"],
+Cell[1361, 56, 945, 16, 51, "Input",ExpressionUUID->"e3e13eaa-b10c-4e7c-b135-aa391d301a47",
+ CellID->361480177],
+Cell[2309, 74, 537, 14, 51, "Input",ExpressionUUID->"e829efaf-bf07-431a-ac43-ae9e6c8f50ce",
+ CellID->150792824],
+Cell[CellGroupData[{
+Cell[2871, 92, 426, 10, 51, "Input",ExpressionUUID->"543cafec-2a36-4ef6-bd75-022ea8e7a989",
+ CellID->32148238],
+Cell[3300, 104, 694, 13, 78, "Message",ExpressionUUID->"1f2468e9-5185-4c0a-a59a-282fa753b4e5"]
+}, Open  ]],
+Cell[4009, 120, 384, 11, 51, "Input",ExpressionUUID->"eafbe795-9b65-400d-8b77-5d33023868be"],
+Cell[4396, 133, 1880, 55, 137, "Input",ExpressionUUID->"c489ac06-5351-459c-9b52-341c8b530f6d"],
+Cell[6279, 190, 2075, 52, 390, "Input",ExpressionUUID->"37adffcb-b4f6-4c41-be58-a4324c406530"],
+Cell[8357, 244, 1102, 25, 208, "Input",ExpressionUUID->"8f2e717d-8662-4f2a-98d3-559e4a6cd0f7"],
+Cell[9462, 271, 22562, 438, 3336, "Input",ExpressionUUID->"78d4b92e-d1e0-4118-a00b-af22209f793b"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
