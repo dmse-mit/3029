@@ -34,7 +34,7 @@ His roles in 3.029 include:
  - Delivering lectures
  - Holding office hours and answering questions via Slack/email
 
-_Office hours:_ TBA following poll  
+_Office hours:_ Mondays 4-5pm (location TBD) 
 _email:_ gvarnavi [at] mit [dot] edu  
 _Preferred pronouns:_ he/him, and thank you for asking!
 
@@ -78,10 +78,10 @@ As such, all lectures will additionally be recorded and uploaded on the 3.029 [c
 
 ### Want More?
 
-In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers: 
-- **Data-Visualization Hour** (even weeks)  
+In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Thursday 8-9pm (location TBD): 
+- **Data-Visualization Hour** (biweekly, starting 02/10)  
   We will visualize raw datasets from recent materials science journal articles and see if we can **a)** arrive at the same conclusions as the authors and **b)** uncover more facets of the dataset!
-- **Show and Tell** (odd weeks)  
+- **Show and Tell** (biweekly, starting 02/17)  
   _Reading_ code others have written can be just as effective as writing code.
   In these sessions, you are encouraged to bring a blog or stack-exchange post you saw recently which inspired you and we will dissect the code together!
   
@@ -120,7 +120,22 @@ If you feel that we are not living up to this pledge, please speak directly to o
 
 ## (Tentative) Schedule of Topics
 
-:::caution
-Coming soon.
-:::
+|      Week     	|                        Monday Lecture                       	|         Wednesday Lecture         	|     Thursday Get-together    	|           Assignments          	|
+|:-------------:	|:-----------------------------------------------------------:	|:---------------------------------:	|:----------------------------:	|:------------------------------:	|
+| 01/31 - 02/04 	|                   Intro & Simple Pendulum                   	|       Hamiltonian Mechanics       	|               -              	|                -               	|
+| 02/07 - 02/11 	|                       Lattice Dynamics                      	|    VdW Gas - Equation of State    	|         Data-Viz Hour        	|          P1 Out: 02/07         	|
+| 02/14 - 02/18 	|              VdW Gas - Helmoltz Common Tangent              	|      Legendre Transformations     	|       Code Show & Tell       	| P1 Due: 02/16<br/>P2 Out: 02/16 	|
+| 02/21 - 02/25 	| **Note:** Tuesday 02/22 (Pres. day)<br/>Stability Conditions 	|  Physical Properties of Crystals  	|         Data-Viz Hour        	|                -               	|
+| 02/28 - 03/04 	|                    Molecular Dynamics I                     	|       Molecular Dynamics II       	|       Code Show & Tell       	| P2 Due: 03/02<br/>P3 Out: 03/02 	|
+| 03/07 - 03/11 	|                      Polymer Statistics                     	|        Ideal Solution Model       	|         Data-Viz Hour        	|                -               	|
+| 03/14 - 03/18 	|                    Regular Solution Model                   	| Chemical Potential Common Tangent 	| **_N/A (George Traveling)_** 	| P3 Due: 03/16<br/>P4 Out: 03/16 	|
+| 03/21 - 03/25 	|                   **_N/A (Spring Break)_**                  	|      **_N/A (Spring Break)_**     	|   **_N/A (Spring Break)_**   	|                -               	|
+| 03/28 - 04/01 	|                    Binary Phase Diagrams                    	|      Tertiary Phase Diagrams      	|       Code Show & Tell       	| P4 Due: 03/30<br/>P5 Out: 03/30 	|
+| 04/04 - 04/08 	|                        Surface Energy                       	|         Wulff Construction        	|         Data-Viz Hour        	|                -               	|
+| 04/11 - 04/15 	|                   Statistical Mechanics I                   	|      Statistical Mechanics II     	|       Code Show & Tell       	| P5 Due: 04/13<br/>P6 Out: 04/13 	|
+| 04/18 - 04/22 	|                  **_N/A (Patriots' Day)_**                  	|        Kinetic Monte Carlo        	|         Data-Viz Hour        	|                -               	|
+| 04/25 - 04/29 	|                  Order-Disorder Transitions                 	|    Fourier Series & Transforms    	|       Code Show & Tell       	|          P6 Due: 04/27         	|
+| 05/02 - 05/06 	|                    Diffraction & Imaging                    	|        Final Presentations        	|         Data-Viz Hour        	|                -               	|
+| 05/09 - 05/13 	|                       Students' Choice                      	|                 -                 	|               -              	|    Final Projects Due: 05/09   	|
+
 
