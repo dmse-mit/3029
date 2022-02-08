@@ -34,7 +34,7 @@ His roles in 3.029 include:
  - Delivering lectures
  - Holding office hours and answering questions via Slack/email
 
-_Office hours:_ Mondays 4-5pm (location TBD) 
+_Office hours:_ Mondays 4-5pm (location TBD)   
 _email:_ gvarnavi [at] mit [dot] edu  
 _Preferred pronouns:_ he/him, and thank you for asking!
 
