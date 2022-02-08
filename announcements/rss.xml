@@ -4,9 +4,20 @@
         <title>3.029 Blog</title>
         <link>https://dmse-mit.github.io/3029/announcements</link>
         <description>3.029 Blog</description>
-        <lastBuildDate>Sun, 30 Jan 2022 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 07 Feb 2022 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Assignment 01]]></title>
+            <link>https://dmse-mit.github.io/3029/announcements/pset-01</link>
+            <guid>pset-01</guid>
+            <pubDate>Mon, 07 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[Hey everyone,]]></description>
+            <content:encoded><![CDATA[<p>Hey everyone,</p><p>Assignment 01 has now been posted to canvas, and will be due next Wednesday, 02/16 at 1PM.
+As we discussed in lecture today, it should be fairly short - consisting of two problems (chaotic dynamical systems and normal modes on a ring).</p><p>A few additional announcements:  </p><ul><li>The <a href="https://dmse-mit.github.io/3029/docs/intro#tentative-schedule-of-topics" target="_blank" rel="noopener noreferrer">syllabus</a> has been updated to reflect the tentative schedule of topics, as well as assignment due dates. Please check these against your other core DMSE classes, and let me know if there are any major conflcts - we can be flexible.  </li><li>Following the poll results, I will hold office hours on Mondays 4-5pm. I will update you once I have a room reservation.  </li><li>Similarly, our regularly-scheduled get-togethers will be Thursdays 8-9pm, starting this week 02/10. I will prepare for "Data-Viz Hour" (unless I hear from you that you prefer we introduce Jupyter notebooks), and again I will update you with the room once I have a reservation.</li></ul><p>See you on Wednesday for our first thermo-related lecture!<br>
+<!-- -->George</p>]]></content:encoded>
+            <category>psets</category>
+        </item>
         <item>
             <title><![CDATA[Welcome!]]></title>
             <link>https://dmse-mit.github.io/3029/announcements/welcome</link>
