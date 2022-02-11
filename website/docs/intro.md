@@ -34,7 +34,7 @@ His roles in 3.029 include:
  - Delivering lectures
  - Holding office hours and answering questions via Slack/email
 
-_Office hours:_ Mondays 4-5pm (location TBD)   
+_Office hours:_ Mondays 4-5pm, 36-705  
 _email:_ gvarnavi [at] mit [dot] edu  
 _Preferred pronouns:_ he/him, and thank you for asking!
 
@@ -78,7 +78,7 @@ As such, all lectures will additionally be recorded and uploaded on the 3.029 [c
 
 ### Want More?
 
-In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Thursday 8-9pm (location TBD): 
+In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Thursday 8-9pm in 36-705:   
 - **Data-Visualization Hour** (biweekly, starting 02/10)  
   We will visualize raw datasets from recent materials science journal articles and see if we can **a)** arrive at the same conclusions as the authors and **b)** uncover more facets of the dataset!
 - **Show and Tell** (biweekly, starting 02/17)  
