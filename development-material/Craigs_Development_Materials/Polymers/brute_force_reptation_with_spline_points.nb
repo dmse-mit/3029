@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     57092,       1436]
-NotebookOptionsPosition[     54123,       1380]
-NotebookOutlinePosition[     54520,       1396]
-CellTagsIndexPosition[     54477,       1393]
+NotebookDataLength[     57126,       1435]
+NotebookOptionsPosition[     54156,       1379]
+NotebookOutlinePosition[     54553,       1395]
+CellTagsIndexPosition[     54510,       1392]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -782,7 +782,13 @@ Cell[BoxData[
       RowBox[{"reverse", "=", " ", 
        RowBox[{"RandomChoice", "[", 
         RowBox[{"{", 
-         RowBox[{"Reverse", ",", "Identity"}], "}"}], "]"}]}]}], "}"}], ",", 
+         RowBox[{"Reverse", ",", "Identity"}], "}"}], "]"}]}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"bias", " ", "=", " ", 
+       RowBox[{"RandomReal", "[", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "0.1"}], ",", "0.1"}], "}"}], "]"}]}]}], "}"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{
@@ -826,9 +832,10 @@ Cell[BoxData[
             RowBox[{
              RowBox[{"{", 
               RowBox[{
-               RowBox[{"-", "d\[Alpha]"}], ",", "d\[Alpha]"}], "}"}], ",", 
-             "10"}], "]"}], "]"}]}]}], "]"}]}]}], ";", "\[IndentingNewLine]", 
-     
+               RowBox[{
+                RowBox[{"-", "d\[Alpha]"}], "+", " ", "bias"}], ",", 
+               RowBox[{"d\[Alpha]", "+", "bias"}]}], "}"}], ",", "10"}], 
+            "]"}], "]"}]}]}], "]"}]}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"interpolation", "=", 
       RowBox[{"Interpolation", "[", 
        RowBox[{"MapIndexed", "[", 
@@ -858,10 +865,10 @@ Cell[BoxData[
   3.85420108162182*^9, 3.854201117582329*^9}, {3.854201296642445*^9, 
   3.854201300841381*^9}, {3.8542013323779287`*^9, 3.8542013633932467`*^9}, {
   3.854201665512904*^9, 3.854201689218087*^9}, {3.8542025568526573`*^9, 
-  3.854202603184026*^9}},
+  3.854202603184026*^9}, {3.8542030401354713`*^9, 3.854203122808514*^9}},
  CellLabel->
-  "2/18/22 20:50:05 (extra_kernel) \
-In[948]:=",ExpressionUUID->"999846b9-1154-4618-a716-057235045595"],
+  "2/18/22 20:58:43 (extra_kernel) \
+In[968]:=",ExpressionUUID->"999846b9-1154-4618-a716-057235045595"],
 
 Cell[CellGroupData[{
 
@@ -1265,8 +1272,8 @@ Cell[BoxData[
  CellChangeTimes->{{3.854202342879704*^9, 3.854202360372003*^9}, 
    3.854202763159189*^9},
  CellLabel->
-  "2/18/22 20:52:54 (extra_kernel) \
-In[956]:=",ExpressionUUID->"8f034744-6c1a-4d38-9159-1d4277a287f6"],
+  "2/18/22 20:58:48 (extra_kernel) \
+In[969]:=",ExpressionUUID->"8f034744-6c1a-4d38-9159-1d4277a287f6"],
 
 Cell[CellGroupData[{
 
@@ -1283,8 +1290,8 @@ Cell[BoxData[
   3.854202362810462*^9, 3.854202388512986*^9}, {3.854202432290916*^9, 
   3.854202503319008*^9}},
  CellLabel->
-  "2/18/22 20:53:19 (extra_kernel) \
-In[964]:=",ExpressionUUID->"05cf632f-2a8f-4db7-9166-01795abf7595"],
+  "2/18/22 20:59:39 (extra_kernel) \
+In[982]:=",ExpressionUUID->"05cf632f-2a8f-4db7-9166-01795abf7595"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1293,14 +1300,12 @@ Cell[BoxData[
 by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
 decrease in the merit function. You may need more than \
 \\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 964, 6109, 17457654932417324053, "extra_kernel"},
+meet these tolerances.\"", 2, 982, 6181, 17457654932417324053, "extra_kernel"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.854202524458816*^9, {3.8542026123148527`*^9, 3.85420262227883*^9}, {
-   3.8542027814474993`*^9, 3.854202799852607*^9}},
+ CellChangeTimes->{{3.8542031405237083`*^9, 3.854203179554592*^9}},
  CellLabel->
-  "2/18/22 20:53:19 During evaluation of (extra_kernel) \
-In[964]:=",ExpressionUUID->"86e4257c-fec9-4e6d-a240-85b83f08a0a7"],
+  "2/18/22 20:59:39 During evaluation of (extra_kernel) \
+In[982]:=",ExpressionUUID->"88d454c6-0793-4fd5-a15c-2c874eac5906"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1309,14 +1314,12 @@ Cell[BoxData[
 by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
 decrease in the merit function. You may need more than \
 \\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 964, 6110, 17457654932417324053, "extra_kernel"},
+meet these tolerances.\"", 2, 982, 6182, 17457654932417324053, "extra_kernel"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.854202524458816*^9, {3.8542026123148527`*^9, 3.85420262227883*^9}, {
-   3.8542027814474993`*^9, 3.854202800195343*^9}},
+ CellChangeTimes->{{3.8542031405237083`*^9, 3.854203179686062*^9}},
  CellLabel->
-  "2/18/22 20:53:20 During evaluation of (extra_kernel) \
-In[964]:=",ExpressionUUID->"a02d362d-8ad9-4d65-b17c-e35cca3fe5bf"],
+  "2/18/22 20:59:39 During evaluation of (extra_kernel) \
+In[982]:=",ExpressionUUID->"86443d4d-1f66-4a78-9b13-e455350585d8"],
 
 Cell[BoxData[
  TemplateBox[{
@@ -1325,29 +1328,25 @@ Cell[BoxData[
 by AccuracyGoal and PrecisionGoal but was unable to find a sufficient \
 decrease in the merit function. You may need more than \
 \\!\\(\\*RowBox[{\\\"MachinePrecision\\\"}]\\) digits of working precision to \
-meet these tolerances.\"", 2, 964, 6111, 17457654932417324053, "extra_kernel"},
+meet these tolerances.\"", 2, 982, 6183, 17457654932417324053, "extra_kernel"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.854202524458816*^9, {3.8542026123148527`*^9, 3.85420262227883*^9}, {
-   3.8542027814474993`*^9, 3.854202800335712*^9}},
+ CellChangeTimes->{{3.8542031405237083`*^9, 3.85420317980477*^9}},
  CellLabel->
-  "2/18/22 20:53:20 During evaluation of (extra_kernel) \
-In[964]:=",ExpressionUUID->"cfd63ee1-f024-4161-8990-9462d6586c6e"],
+  "2/18/22 20:59:39 During evaluation of (extra_kernel) \
+In[982]:=",ExpressionUUID->"5c06ca3d-7912-459c-a8f1-a70b5cb85453"],
 
 Cell[BoxData[
  TemplateBox[{
   "General", "stop", 
    "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"FindRoot\\\", \
 \\\"::\\\", \\\"lstol\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
-during this calculation.\"", 2, 964, 6112, 17457654932417324053, 
+during this calculation.\"", 2, 982, 6184, 17457654932417324053, 
    "extra_kernel"},
   "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.854202524458816*^9, {3.8542026123148527`*^9, 3.85420262227883*^9}, {
-   3.8542027814474993`*^9, 3.854202800343091*^9}},
+ CellChangeTimes->{{3.8542031405237083`*^9, 3.8542031798116617`*^9}},
  CellLabel->
-  "2/18/22 20:53:20 During evaluation of (extra_kernel) \
-In[964]:=",ExpressionUUID->"08387e45-b836-41cb-8bf7-21e032f05780"]
+  "2/18/22 20:59:39 During evaluation of (extra_kernel) \
+In[982]:=",ExpressionUUID->"a144a1f3-ba19-4a6a-b418-684588188877"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1370,7 +1369,7 @@ Cell[BoxData[
  DynamicBox[ToBoxes[
    Graphics[
     Map[Disk[#, 1/2]& , $CellContext`positions]], StandardForm],
-  ImageSizeCache->{450., {30., 36.}}]], "Output",
+  ImageSizeCache->{450., {49., 55.}}]], "Output",
  CellChangeTimes->{3.854202428471756*^9, 3.8542024790757227`*^9},
  CellLabel->
   "2/18/22 20:47:59 (extra_kernel) \
@@ -1420,27 +1419,25 @@ Cell[CellGroupData[{
 Cell[27719, 648, 555, 15, 78, "Input",ExpressionUUID->"7c894326-fce5-40e3-bc48-6e28a358dd11"],
 Cell[28277, 665, 4524, 101, 364, "Output",ExpressionUUID->"f81db693-a5d0-4ba6-9786-e0536e8d4fdf"]
 }, Open  ]],
-Cell[32816, 769, 3633, 94, 390, "Input",ExpressionUUID->"999846b9-1154-4618-a716-057235045595"],
+Cell[32816, 769, 3969, 101, 442, "Input",ExpressionUUID->"999846b9-1154-4618-a716-057235045595"],
 Cell[CellGroupData[{
-Cell[36474, 867, 207, 5, 37, "Input",ExpressionUUID->"4ffd4a8a-72a0-4da9-ace1-f2d200e717ff"],
-Cell[36684, 874, 6347, 194, 447, "Output",ExpressionUUID->"c869e6e5-943f-483f-a787-fb72d02326f6"]
+Cell[36810, 874, 207, 5, 37, "Input",ExpressionUUID->"4ffd4a8a-72a0-4da9-ace1-f2d200e717ff"],
+Cell[37020, 881, 6347, 194, 447, "Output",ExpressionUUID->"c869e6e5-943f-483f-a787-fb72d02326f6"]
 }, Open  ]],
-Cell[43046, 1071, 6841, 197, 1248, "Input",ExpressionUUID->"8f034744-6c1a-4d38-9159-1d4277a287f6"],
+Cell[43382, 1078, 6841, 197, 1248, "Input",ExpressionUUID->"8f034744-6c1a-4d38-9159-1d4277a287f6"],
 Cell[CellGroupData[{
-Cell[49912, 1272, 532, 14, 51, "Input",ExpressionUUID->"05cf632f-2a8f-4db7-9166-01795abf7595"],
-Cell[50447, 1288, 742, 14, 78, "Message",ExpressionUUID->"86e4257c-fec9-4e6d-a240-85b83f08a0a7"],
-Cell[51192, 1304, 742, 14, 78, "Message",ExpressionUUID->"a02d362d-8ad9-4d65-b17c-e35cca3fe5bf"],
-Cell[51937, 1320, 742, 14, 78, "Message",ExpressionUUID->"cfd63ee1-f024-4161-8990-9462d6586c6e"],
-Cell[52682, 1336, 603, 13, 35, "Message",ExpressionUUID->"08387e45-b836-41cb-8bf7-21e032f05780"]
+Cell[50248, 1279, 532, 14, 51, "Input",ExpressionUUID->"05cf632f-2a8f-4db7-9166-01795abf7595"],
+Cell[50783, 1295, 666, 12, 78, "Message",ExpressionUUID->"88d454c6-0793-4fd5-a15c-2c874eac5906"],
+Cell[51452, 1309, 666, 12, 78, "Message",ExpressionUUID->"86443d4d-1f66-4a78-9b13-e455350585d8"],
+Cell[52121, 1323, 665, 12, 78, "Message",ExpressionUUID->"5c06ca3d-7912-459c-a8f1-a70b5cb85453"],
+Cell[52789, 1337, 529, 11, 35, "Message",ExpressionUUID->"a144a1f3-ba19-4a6a-b418-684588188877"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[53322, 1354, 425, 12, 51, "Input",ExpressionUUID->"03cd459c-81d6-4001-b693-4e688237f9d4"],
-Cell[53750, 1368, 345, 8, 101, "Output",ExpressionUUID->"22038411-a95f-4fa9-b28b-1d30e84bac1e"]
+Cell[53355, 1353, 425, 12, 51, "Input",ExpressionUUID->"03cd459c-81d6-4001-b693-4e688237f9d4"],
+Cell[53783, 1367, 345, 8, 139, "Output",ExpressionUUID->"22038411-a95f-4fa9-b28b-1d30e84bac1e"]
 }, Open  ]]
 }, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
