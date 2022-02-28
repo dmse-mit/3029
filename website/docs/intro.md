@@ -78,7 +78,7 @@ As such, all lectures will additionally be recorded and uploaded on the 3.029 [c
 
 ### Want More?
 
-In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Tuesday 4-5pm in 36-705:   
+In addition to lectures, we will be piloting two **optional** regularly-scheduled sessions, every **Tuesday 4-5pm in 8-425**:   
 - **Data-Visualization Hour** (biweekly, starting 02/10)  
   We will visualize raw datasets from recent materials science journal articles and see if we can **a)** arrive at the same conclusions as the authors and **b)** uncover more facets of the dataset!
 - **Show and Tell** (biweekly, starting 02/17)  
