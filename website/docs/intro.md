@@ -78,7 +78,7 @@ As such, all lectures will additionally be recorded and uploaded on the 3.029 [c
 
 ### Want More?
 
-In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Thursday 8-9pm in 36-705:   
+In addition to lectures, we will be piloting two **optional** regularly-scheduled get-togethers, every Tuesday 4-5pm in 36-705:   
 - **Data-Visualization Hour** (biweekly, starting 02/10)  
   We will visualize raw datasets from recent materials science journal articles and see if we can **a)** arrive at the same conclusions as the authors and **b)** uncover more facets of the dataset!
 - **Show and Tell** (biweekly, starting 02/17)  
@@ -120,22 +120,21 @@ If you feel that we are not living up to this pledge, please speak directly to o
 
 ## (Tentative) Schedule of Topics
 
-|      Week     	|                        Monday Lecture                       	|         Wednesday Lecture         	|     Thursday Get-together    	|           Assignments          	|
-|:-------------:	|:-----------------------------------------------------------:	|:---------------------------------:	|:----------------------------:	|:------------------------------:	|
-| 01/31 - 02/04 	|                   Intro & Simple Pendulum                   	|       Hamiltonian Mechanics       	|               -              	|                -               	|
-| 02/07 - 02/11 	|                       Lattice Dynamics                      	|    VdW Gas - Equation of State    	|         Data-Viz Hour        	|          P1 Out: 02/07         	|
-| 02/14 - 02/18 	|              VdW Gas - Helmoltz Common Tangent              	|      Legendre Transformations     	|       Code Show & Tell       	| P1 Due: 02/16<br/>P2 Out: 02/16 	|
-| 02/21 - 02/25 	| **Note:** Tuesday 02/22 (Pres. day)<br/>Stability Conditions 	|  Physical Properties of Crystals  	|         Data-Viz Hour        	|                -               	|
-| 02/28 - 03/04 	|                    Molecular Dynamics I                     	|       Molecular Dynamics II       	|       Code Show & Tell       	| P2 Due: 03/02<br/>P3 Out: 03/02 	|
-| 03/07 - 03/11 	|                      Polymer Statistics                     	|        Ideal Solution Model       	|         Data-Viz Hour        	|                -               	|
-| 03/14 - 03/18 	|                    Regular Solution Model                   	| Chemical Potential Common Tangent 	| **_N/A (George Traveling)_** 	| P3 Due: 03/16<br/>P4 Out: 03/16 	|
-| 03/21 - 03/25 	|                   **_N/A (Spring Break)_**                  	|      **_N/A (Spring Break)_**     	|   **_N/A (Spring Break)_**   	|                -               	|
-| 03/28 - 04/01 	|                    Binary Phase Diagrams                    	|      Tertiary Phase Diagrams      	|       Code Show & Tell       	| P4 Due: 03/30<br/>P5 Out: 03/30 	|
-| 04/04 - 04/08 	|                        Surface Energy                       	|         Wulff Construction        	|         Data-Viz Hour        	|                -               	|
-| 04/11 - 04/15 	|                   Statistical Mechanics I                   	|      Statistical Mechanics II     	|       Code Show & Tell       	| P5 Due: 04/13<br/>P6 Out: 04/13 	|
-| 04/18 - 04/22 	|                  **_N/A (Patriots' Day)_**                  	|        Kinetic Monte Carlo        	|         Data-Viz Hour        	|                -               	|
-| 04/25 - 04/29 	|                  Order-Disorder Transitions                 	|    Fourier Series & Transforms    	|       Code Show & Tell       	|          P6 Due: 04/27         	|
-| 05/02 - 05/06 	|                    Diffraction & Imaging                    	|        Final Presentations        	|         Data-Viz Hour        	|                -               	|
-| 05/09 - 05/13 	|                       Students' Choice                      	|                 -                 	|               -              	|    Final Projects Due: 05/09   	|
-
+|      Week     	|                        Monday Lecture                       	|   Tuesday Session   		|         Wednesday Lecture         	|           Assignments          	|
+|:-------------:	|:-----------------------------------------------------------:	|:------------------------:	|:---------------------------------:	|:------------------------------:	|
+| 01/31 - 02/04 	|                   Intro & Simple Pendulum                   	|             -            	|       Hamiltonian Mechanics       	|                -               	|
+| 02/07 - 02/11 	|                       Lattice Dynamics                      	|       Data-Viz Hour      	|    VdW Gas - Equation of State    	|          P1 Out: 02/07         	|
+| 02/14 - 02/18 	|              VdW Gas - Helmoltz Common Tangent              	|     Code Show & Tell     	|      Legendre Transformations     	| P1 Due: 02/16<br/>P2 Out: 02/16 	|
+| 02/21 - 02/25 	| **Note:** Tues 02/22 (Pres day)<br/>Stability Conditions 	|       Data-Viz Hour      	|  Physical Properties of Crystals  	|                -               	|
+| 02/28 - 03/04 	|                      Polymer Statistics                     	|     Code Show & Tell     	|      Step-Wise Polymerization     	| P2 Due: 03/02<br/>P3 Out: 03/02 	|
+| 03/07 - 03/11 	|                      Molecular Dynamics                     	|       Data-Viz Hour      	|        Ideal Solution Model       	|                -               	|
+| 03/14 - 03/18 	|                    Regular Solution Model                   	|     Code Show & Tell     	| Chemical Potential Common Tangent 	| P3 Due: 03/16<br/>P4 Out: 03/16 	|
+| 03/21 - 03/25 	|                   **_N/A (Spring Break)_**                  	| **_N/A (Spring Break)_** 	|      **_N/A (Spring Break)_**     	|                -               	|
+| 03/28 - 04/01 	|                    Binary Phase Diagrams                    	|       Data-Viz Hour      	|      Tertiary Phase Diagrams      	| P4 Due: 03/30<br/>P5 Out: 03/30 	|
+| 04/04 - 04/08 	|                        Surface Energy                       	|     Code Show & Tell     	|         Wulff Construction        	|                -               	|
+| 04/11 - 04/15 	|                   Statistical Mechanics I                   	|       Data-Viz Hour      	|      Statistical Mechanics II     	| P5 Due: 04/13<br/>P6 Out: 04/13 	|
+| 04/18 - 04/22 	|                  **_N/A (Patriots' Day)_**                  	|     Code Show & Tell     	|        Kinetic Monte Carlo        	|                -               	|
+| 04/25 - 04/29 	|                  Order-Disorder Transitions                 	|       Data-Viz Hour      	|    Fourier Series & Transforms    	|          P6 Due: 04/27         	|
+| 05/02 - 05/06 	|                    Diffraction & Imaging                    	|     Code Show & Tell     	|        Final Presentations        	|                -               	|
+| 05/09 - 05/13 	|                       Students' Choice                      	|             -            	|                 -                 	|    Final Projects Due: 05/09   	|
 
