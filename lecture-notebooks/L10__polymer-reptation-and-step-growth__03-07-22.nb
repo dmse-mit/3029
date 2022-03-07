@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    454514,       9449]
+NotebookDataLength[    454599,       9451]
 NotebookOptionsPosition[    433490,       9081]
-NotebookOutlinePosition[    433885,       9097]
-CellTagsIndexPosition[    433842,       9094]
+NotebookOutlinePosition[    434010,       9099]
+CellTagsIndexPosition[    433967,       9096]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -9081,6 +9081,8 @@ Cell[BoxData[
 },
 WindowSize->{1440., 760.5},
 WindowMargins->{{0, Automatic}, {0, Automatic}},
+PrivateNotebookOptions->{"CloudPublishPath"->"/Published/3029-SP22__L10__\
+polymer-reptation-and-step-growth__03-07-22.nb"},
 FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"a0b0502b-fca7-4e65-9604-970b93e09968"
@@ -9438,7 +9440,7 @@ Cell[392825, 8225, 1253, 32, 113, "Input",ExpressionUUID->"77ce739b-bb11-48f3-b5
 Cell[CellGroupData[{
 Cell[394103, 8261, 1579, 42, 154, "Input",ExpressionUUID->"a3d5bc92-a40f-425e-9f07-8e0c6e9e50ba"],
 Cell[395685, 8305, 819, 25, 72, "Echo",ExpressionUUID->"0e077e1f-6fea-44b4-8602-a95a38363437"],
-Cell[396507, 8332, 32045, 608, 449, 16749, 356, "CachedBoxData", "BoxData", "Output",ExpressionUUID->"29e5b09c-db72-422e-b01a-8fe76a3a88c4"]
+Cell[396507, 8332, 32045, 608, 449, "Output",ExpressionUUID->"29e5b09c-db72-422e-b01a-8fe76a3a88c4"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
