@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    368884,       7220]
-NotebookOptionsPosition[    363599,       7117]
-NotebookOutlinePosition[    364018,       7134]
-CellTagsIndexPosition[    363975,       7131]
+NotebookDataLength[    285230,       5608]
+NotebookOptionsPosition[    279600,       5497]
+NotebookOutlinePosition[    280026,       5514]
+CellTagsIndexPosition[    279983,       5511]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -70,8 +70,10 @@ Cell[CellGroupData[{
 
 Cell[BoxData[{
  RowBox[{
+  RowBox[{"SeedRandom", "[", "1111", "]"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
   RowBox[{"listOfPositions", "=", 
-   RowBox[{"hexagonalDimerConfiguration", "[", "65", "]"}]}], 
+   RowBox[{"hexagonalDimerConfiguration", "[", "35", "]"}]}], 
   ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"Echo", "[", 
@@ -94,1860 +96,463 @@ Cell[BoxData[{
   RowBox[{"Graphics", "[", 
    RowBox[{"chainGraphic", "/@", "listOfPositions"}], "]"}]}]}], "Input",
  CellChangeTimes->CompressedData["
-1:eJxTTMoPSmViYGAQAWIQnWGr/uHlzjeOz/zawXRYiP9XEC0hJPoNROsJF/G9
+1:eJxTTMoPSmViYGCQAWIQnWGr/uHlzjeOz/zawXRYiP9XEC0hJPoNROsJF/G9
 AtKbD7EIgGix7szzH4F00eVCMD3DeOVNEH2B6SaYnpJzaPlnIM0s+g9M8xjK
 7QTRU+uMdoNopvIl70C0xYKVYNpGJPgrWF1bJJg2X8nD8AVkz3l+MJ276iAr
 iH6ZeBxMf9nxXQRE10bPFAXR5QqR078B6QINn5kgmu15ueEPIH0lvNUERFdI
 LqgG0f+nLAXT55Zf7QLR22JvgWmd8tyM30B60d1l2SBarS+25T+QnjUtBUw3
-sj/rAdErF/H3guivu37OAdEmkZPmgWgAHjDA5w==
+sj/rAdErF/H3guivu37OAdEmkZPmgehLjoaKDLveOGa8UVAC0TkZTz/xAWk1
+qdgvINr+31QzQSC9ZdM3MP2Fdbs/iA5rehEAFk998l8JSL/4+RxMe336cVoF
+SLPJXDgDov886xdTBZkXPBFM7/j4VBZEu719CaYBRBUE2Q==
   "],
  CellLabel->
-  "In[845]:=",ExpressionUUID->"71f1b1d7-38e3-4e5a-bcf3-afb41675e040"],
+  "In[633]:=",ExpressionUUID->"71f1b1d7-38e3-4e5a-bcf3-afb41675e040"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Number of Dimers\"\>",
-   "EchoLabel"], "  ", "304"}]], "Echo",
+   "EchoLabel"], "  ", "85"}]], "Echo",
  CellChangeTimes->{
-  3.8556131728695917`*^9},ExpressionUUID->"e6a85da2-bfa9-4822-86c5-\
-93924e0f2dc2"],
+  3.855689967870523*^9},ExpressionUUID->"756eb4a8-c4f7-49c2-b0c2-\
+418fd0150cd7"],
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Bounding Box Collisions\"\>",
    "EchoLabel"], "  ", "0"}]], "Echo",
  CellChangeTimes->{
-  3.855613173052669*^9},ExpressionUUID->"86d7bf4b-bb3b-46f9-9178-\
-a347d58dbf18"]
+  3.855689967904339*^9},ExpressionUUID->"d81fdd98-ed97-4c2f-a408-\
+6eb342ec3682"]
 }, Open  ]],
 
 Cell[BoxData[
- GraphicsBox[{{
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+ GraphicsBox[{{{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.499338850607263, 30.31184463898543}, NCache[
+     DiskBox[{-16.500844407860438, 11.258442781070293}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-32.389623617905045, 29.856440386570572}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-17.49251378233961, 11.387252142997475}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.500078026354718, 23.38189429072916}, NCache[
+     DiskBox[{-14.499384636626333, 14.722487830017773}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-31.71431711723177, 22.405113039915975}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-15.496323767150427, 14.644306182363966}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.499991654821585, 26.846605551975667}, NCache[
+     DiskBox[{-16.499888246475226, 4.331089199033915}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.467333631514148, 27.100080403052697}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-15.702122089040706, 4.93405616168789}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.50000814852839, 30.311762311001537}, NCache[
+     DiskBox[{-14.499184806643466, 7.793957414290244}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.499904274877295, 30.297349243581394}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-14.241026914383388, 8.760060153476834}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.49916549518155, 16.455426287335175}, NCache[
+     DiskBox[{-12.499555098865104, 11.25817062230457}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-31.068292099260475, 17.357838674599137}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-11.940520324215932, 10.429026412451453}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.499388145188775, 19.919012181502875}, NCache[
+     DiskBox[{-10.5006879830274, 14.721691904999636}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-29.665763428066665, 18.932949675752198}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-9.849333933321759, 13.962917958470063}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.499449287083053, 23.382998950208723}, NCache[
+     DiskBox[{-16.500467204792375, -2.597316436403469}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-27.59369432000469, 24.378547981532442}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-17.4954816689088, -2.697047154836187}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.49912401481118, 26.84640131855997}, NCache[
+     DiskBox[{-14.500629250121127, 0.8669913463862777}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-25.5882035860631, 25.850376805816648}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-15.393537383700309, 1.3172302440707657}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.500695678063835, 30.31136990314755}, NCache[
+     DiskBox[{-12.500156528780419, 4.329182802578423}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.50391183628596, 30.231232691001527}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-13.378949411968236, 4.806386185276455}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.49955079626308, 9.526620440886058}, NCache[
+     DiskBox[{-10.499361868658692, 7.793949050178095}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.821753951128247, 10.261869675312907}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-11.330121418045644, 7.2373176002020925}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.499734135935267, 12.989595675681919}, NCache[
+     DiskBox[{-8.499131511382789, 11.257920289120262}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.247367259102127, 13.653707649029613}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-8.666042635550989, 12.243892234273321}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.499027836358124, 16.454572235569554}, NCache[
+     DiskBox[{-6.4998072574237735, 14.72307645465536}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.094591409633647, 17.257880414407097}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-7.12605995332294, 13.943456315819127}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.50036729726057, 19.919014002875887}, NCache[
+     DiskBox[{-16.499454934724813, -9.526105939932274}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-24.56181557105364, 20.264152608705473}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-16.232212017972536, -8.562476745975523}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.49934722826616, 23.38288232070781}, NCache[
+     DiskBox[{-14.499714621106214, -6.062666528295712}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.703429720090263, 23.98828740837975}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-13.499902118746208, -6.043302641169905}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499208301774445, 26.84710119380878}, NCache[
+     DiskBox[{-12.499103308747797, -2.5983636120629434}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.28617414589965, 27.464097757964776}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-12.712192959759104, -1.621330961312786}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.49992788564556, 30.310145532070933}, NCache[
+     DiskBox[{-10.500066653259896, 0.8652725212709185}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-18.71398718140145, 30.92844740770473}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-11.461880402501368, 1.138977310724928}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.499000922294883, 2.598341050977793}, NCache[
+     DiskBox[{-8.500029560932658, 4.33078203819823}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-31.809238746894593, 1.6476820731168367}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-9.426087052311244, 3.9533995761499763}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.50065171558053, 6.06125298187927}, NCache[
+     DiskBox[{-6.500670759813679, 7.793562449669598}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.520822545399323, 6.261089908551999}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-7.145084928050913, 8.558239100140314}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.49958509573696, 9.525754796734638}, NCache[
+     DiskBox[{-4.500465174851154, 11.258195912104743}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-27.44322948849973, 10.52416555665909}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-5.267984534523087, 10.61717014621948}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.500959372330627, 12.991182925317704}, NCache[
+     DiskBox[{-2.5006267162052205, 14.723098625888165}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-25.887356460164984, 12.068850398235888}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-3.343096979646567, 15.261841472909884}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.500525625749603, 16.4544485061521}, NCache[
+     DiskBox[{-16.499641516785577, -16.453580520516656}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-24.49311662532357, 16.332944977130303}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-16.07914124938818, -15.54628810617676}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499628408640874, 19.91889580042536}, NCache[
+     DiskBox[{-14.499757886699086, -12.990849839301058}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.50140983490964, 19.85923275442549}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-14.477472648239113, -13.990601492536392}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.50014851500415, 23.38274293121997}, NCache[
+     DiskBox[{-12.499439353103927, -9.526417127708916}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.499933962905462, 23.40345665046034}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-13.497809916612733, -9.583480407662945}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.50056111554031, 26.846021366412547}, NCache[
+     DiskBox[{-10.500780644498622, -6.0626571836368015}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-17.61555948298242, 25.852655685766365}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-10.98428897447313, -5.187317423974724}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.499267514819143, 30.310084243134643}, NCache[
+     DiskBox[{-8.499782758172369, -2.5973152894394693}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-15.06945998364638, 31.213004774603043}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-7.589318683587292, -3.010903452821764}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.500497612387946, -4.3294883894620755}, NCache[
+     DiskBox[{-6.499850800882094, 0.8665966081042168}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.61773923674107, -4.799315645190484}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-5.500598419757039, 0.9052576843425643}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.500458829685197, -0.8654515702904277}, NCache[
+     DiskBox[{-4.4998174359124326, 4.3308309880066815}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-29.78001553414984, -1.8255807537802689}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-4.303515864784346, 5.311374558263835}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.499846245660184, 2.598406293712182}, NCache[
+     DiskBox[{-2.5004081503905944, 7.7950326697062104}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-27.957184073454982, 1.7091132535572866}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-1.7583735488243604, 7.124671088111292}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.499751970698444, 6.0613199077033935}, NCache[
+     DiskBox[{-0.500812015378028, 11.258401557763271}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-24.935590245293298, 6.886984214542371}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{0.3660876079039387, 11.756884298842222}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.500293398906006, 9.526469043767417}, NCache[
+     DiskBox[{1.5003192076888396, 14.723154359628243}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.593436455909288, 9.947907633527118}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{2.477800551950379, 14.934176210678446}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.500625154370795, 12.991149375720509}, NCache[
+     DiskBox[{-12.499674603670112, -16.45348583259563}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.283904432054616, 12.369479388387107}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-11.930815071775694, -15.631051134292557}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.500273630112247, 16.454240206077085}, NCache[
+     DiskBox[{-10.499025167615978, -12.991315442808764}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.50027311248273, 16.455257682740918}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-10.852969732485075, -13.9265818460328}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.499894909588658, 19.91835896453996}, NCache[
+     DiskBox[{-8.500385398779192, -9.525588405124296}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-18.38417686664385, 19.45140562594322}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-9.196595755963937, -10.243426227023289}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.499655019352657, 23.3821828552117}, NCache[
+     DiskBox[{-6.500300385094485, -6.062430384165186}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-16.460581102911185, 23.105377757829316}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-5.830169058287042, -6.804672935378261}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.499749703733603, 26.847455771768267}, NCache[
+     DiskBox[{-4.500935055821646, -2.597843149338821}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-14.056964119855303, 26.017087122031207}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-3.6647002171032885, -2.0494716561759447}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.500374637605324, 30.311390083154944}, NCache[
+     DiskBox[{-2.499972599008364, 0.866366561674535}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-11.52706909951242, 29.311746443799652}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-2.158304360285272, -0.07345406730094162}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.499619511869817, -11.25815417691769}, NCache[
+     DiskBox[{-0.5001427485740347, 4.3297622536137705}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.526132559184827, -11.02941162960283}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{0.4989908512465627, 4.288144352302747}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.50028860669252, -7.794718028267087}, NCache[
+     DiskBox[{1.5008180205013577, 7.7944235005880635}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.394723663024756, -7.347520163777603}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{1.3124487356159449, 6.812325230295443}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.49946560723803, -4.331055193222466}, NCache[
+     DiskBox[{3.4995827397446626, 11.258594666735952}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-27.275368568716615, -5.305622028963315}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.319849410268735, 11.8305759507194}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.499161387970894, -0.8664001574138551}, NCache[
+     DiskBox[{5.499016278994153, 14.723263513859319}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-25.54057908645643, 0.1327417615607024}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.847600537606155, 15.481984498063609}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.499275930081147, 2.5986380314663644}, NCache[
+     DiskBox[{-8.4995190224368, -16.454763952898393}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.530857188952425, 2.3493086472561195}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-8.889285083912528, -17.37567785621493}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.50038630998903, 6.061184022363051}, NCache[
+     DiskBox[{-6.49975477554184, -12.990262279111448}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.539551362083472, 6.338305300657097}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-5.712083923269356, -12.374165997285028}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.500945328855888, 9.52555983222939}, NCache[
+     DiskBox[{-4.500043658179041, -9.525650431743934}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-18.654134141657384, 8.993666221405327}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-4.595089163552615, -8.530177502976766}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.50027986505427, 12.990532952072202}, NCache[
+     DiskBox[{-2.4999178915157807, -6.062465105781271}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-16.920136863616506, 13.805047591524914}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-1.5703919986408734, -6.431221955853384}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500713553342546, 16.455100112977785}, NCache[
+     DiskBox[{-0.5009698858210598, -2.598635221169723}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-16.16147559273411, 15.704504664484324}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-0.766897855474229, -1.6346423192476478}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.500605155658883, 19.91940047403362}, NCache[
+     DiskBox[{1.4990704189955066, 0.8666637746051346}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-14.490221119466035, 20.06313719230019}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{1.5496081014147434, 1.8653859294889101}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499233616115164, 23.382852976648987}, NCache[
+     DiskBox[{3.5006011806800355, 4.329945908503097}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-11.707053131653911, 24.361020165303994}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{2.5473696313621765, 4.027704922888844}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500995173507485, 26.846718520175255}, NCache[
+     DiskBox[{5.499872931875744, 7.793490323532942}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-10.0860256166977, 27.65772985211869}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.766135196431806, 8.472923127852546}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499658521843058, 30.311802637161072}, NCache[
+     DiskBox[{7.499040371741409, 11.258962095341234}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-7.45609748573221, 29.312751869615724}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{6.504677188762208, 11.152934455852884}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.500759736427156, -18.187123747058052}, NCache[
+     DiskBox[{9.499372294095885, 14.72173604217778}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.672854312754346, -17.626256018040642}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{10.460305121114736, 14.998517728634013}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.500474431094066, -14.722534759556067}, NCache[
+     DiskBox[{-4.500279335800401, -16.45480191353266}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.52199544187198, -14.51618828478385}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-5.459105272084266, -16.738796321768753}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.49940569578924, -11.257394510285032}, NCache[
+     DiskBox[{-2.500992434740305, -12.990115797121254}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-26.49956247182862, -11.275101218054681}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-2.1795999452193286, -13.937061871446243}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.500259151268086, -7.793462197029383}, NCache[
+     DiskBox[{-0.5000796836988285, -9.526381154188027}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-24.631260914971666, -7.29864701404314}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-0.5467245885648729, -10.525292688233979}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.499808995521942, -4.330293956231789}, NCache[
+     DiskBox[{1.5006607784350199, -6.062257210299069}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-23.19827625889336, -5.283749780452964}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{2.2774765335955416, -6.691985153568532}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.49960543794855, -0.8665976526084496}, NCache[
+     DiskBox[{3.500734096834945, -2.597905517030437}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-21.185184469686046, 0.08268600084654887}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{3.5682930733003646, -3.595620799412613}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.50095869739977, 2.5987978341406266}, NCache[
+     DiskBox[{5.500786619052373, 0.8651063543837374}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.490532933894546, 2.742821549082925}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.7017796095622115, 1.4664280642742002}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.49926426036287, 6.062781683959215}, NCache[
+     DiskBox[{7.499203449710713, 4.329149117161461}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-18.132793660304173, 6.836500301681455}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{8.327689595025197, 3.769139557402033}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500781824668557, 9.526086223592861}, NCache[
+     DiskBox[{9.500621831186738, 7.795040665302725}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-15.900846542922578, 8.609599332683706}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{10.446556774818799, 7.470684252670246}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.500927756559278, 12.99099443644474}, NCache[
+     DiskBox[{11.500272058805713, 11.257497278560678}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-12.614990599184805, 13.45479973307603}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{12.486080035456869, 11.425374117853522}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.500677365866967, 16.455347584625592}, NCache[
+     DiskBox[{13.500269060853846, 14.721437358471233}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-12.141251570919847, 15.687451310496806}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{13.988470645674928, 13.848706464908858}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.499376963002401, 19.91885452497849}, NCache[
+     DiskBox[{-0.49978145034219973, -16.45397624715473}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-10.46515863487809, 20.178210963628082}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{-0.4851820831575996, -17.45386967071437}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.500872900207017, 23.38209407291506}, NCache[
+     DiskBox[{1.4996539302745697, -12.991189982550816}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-8.108044814117063, 22.587523580788144}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{0.8829738781262725, -13.778403875519158}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499774234208946, 26.84626419549714}, NCache[
+     DiskBox[{3.500286239452824, -9.52594754319047}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-5.489543642986737, 27.846211861629346}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.1747038306507225, -8.787597414401409}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5004424615530976, 30.310568659847096}, NCache[
+     DiskBox[{5.499438717945826, -6.063021372415315}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-3.079841848293506, 31.217814560430647}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.939088361665759, -5.234765688331708}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.50034127788098, -25.11410998565042}, NCache[
+     DiskBox[{7.499305130469614, -2.598222366714591}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-32.489346615032915, -25.261989812148133}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{8.41769716555958, -2.9938940360103743}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.500487354681727, -21.649906815056674}, NCache[
+     DiskBox[{9.499104773038484, 0.8654600208458253}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-30.152626272639512, -22.408006301723727}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{8.691219692972183, 0.2761199684089767}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.500787931385968, -18.186571834154876}, NCache[
+     DiskBox[{11.499854256878336, 4.329211234157642}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.393025521977037, -17.735005579950418}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{12.062039990241377, 5.156222238439362}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.499988690821162, -14.722880603129829}, NCache[
+     DiskBox[{13.500991187682182, 7.793501787930775}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-25.15077822236637, -13.785836287890904}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{13.338150449816501, 8.780154155328411}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.5005078672689, -11.257755471971654}, NCache[
+     DiskBox[{15.499341995005413, 11.258127518098464}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.507838126969272, -11.378614011982144}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{15.130931793161102, 12.18779085672005}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499671875679706, -7.794656310462727}, NCache[
+     DiskBox[{3.5001556616275566, -16.454893214888227}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-22.29092721142427, -8.406142200451825}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.394281645821565, -16.902708717510784}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.499015280187557, -4.329835364073503}, NCache[
+     DiskBox[{5.499943130149107, -12.99124424620324}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-20.496240505983046, -4.255391767726106}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{4.555017331558318, -12.6639596068485}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.500346353952377, -0.8665638109987274}, NCache[
+     DiskBox[{7.499667358265205, -9.527217069380285}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-18.109221099440923, -0.07329743435954295}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{7.175605628376822, -8.581181131785021}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500368488268153, 2.598665196793985}, NCache[
+     DiskBox[{9.499468958604528, -6.0626071436295526}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-16.376665817089176, 2.1168945132721015}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{9.373509675465435, -7.054642555795412}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.500249626930774, 6.061323366950814}, NCache[
+     DiskBox[{11.500899878532062, -2.5984785981095095}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-14.500127796156203, 6.045714180347884}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{10.648455760613897, -3.121296946894939}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499820148525886, 9.525984143882676}, NCache[
+     DiskBox[{13.500859250891114, 0.8655425992863548}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-12.338372686038305, 8.981163401040149}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{13.720855593182263, 1.8410432960459806}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.499587798202166, 12.989495767188323}, NCache[
+     DiskBox[{15.499940778807114, 4.330049117254122}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-10.499407838131248, 13.00846647503513}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{15.702913997892743, 5.309233406514329}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.500288627685252, 16.453888592134142}, NCache[
+     DiskBox[{7.499692757865815, -16.453767373749596}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-8.240467225494873, 15.781478268488986}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{8.367017741492171, -15.956025098292166}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499745808409462, 19.91825247790907}, NCache[
+     DiskBox[{9.499817416613677, -12.989860770115309}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-6.384132920246715, 19.451498328044114}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{10.492811921920376, -12.87170023342601}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5009368525810167, 23.3820212230701}, NCache[
+     DiskBox[{11.499471188987275, -9.525348001251242}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-2.643102982548064, 22.868094135416328}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{12.350772732923533, -10.050024741055612}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.500324608364423, 26.846363556129234}, NCache[
+     DiskBox[{13.499368208150255, -6.0626671808872}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-2.1218879774999855, 27.629727442295074}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{14.215312397464805, -5.364509664429251}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.4995768406431741, 30.310375342469356}, NCache[
+     DiskBox[{15.500748858393326, -2.5980159780345655}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{0.21990337471618193, 31.270470521322153}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{14.76547280066687, -3.275783725079409}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-31.49937755385332, -32.043764602906116}, NCache[
+     DiskBox[{11.50046097693664, -16.455090329727707}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-32.23918342942032, -31.370944220874968}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{11.35884167862539, -15.465169133699543}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-29.500332781070387, -28.579429939060894}, NCache[
+     DiskBox[{13.500571172171783, -12.989507881112475}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-28.99230129028766, -27.718091443245758}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{13.074219987920943, -12.084950161733603}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.50080426368242, -25.11518251581043}, NCache[
+     DiskBox[{15.499077912068133, -9.527016965590285}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-27.081830271404144, -26.023180750277}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
+     DiskBox[{14.568633959716223, -9.160582726562655}, NCache[
+      Rational[1, 2], 0.5]]}}, {{}, 
     {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.500948701341578, -21.651427961943316}, NCache[
+     DiskBox[{15.50009014710625, -16.455346793014428}, NCache[
       Rational[1, 2], 0.5]], 
-     DiskBox[{-24.501373376839958, -21.62228742921865}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.50039145825643, -18.186056773840992}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-24.431539010330866, -18.5506993882812}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499921996846215, -14.723061486924166}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-22.454238010508266, -15.021860660397207}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.500940303386088, -11.258779641175995}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-20.39614196168447, -10.813118344920838}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.50050640248313, -7.793435016020629}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-17.862603229558474, -6.861294528850392}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500574653145764, -4.330311983093007}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-14.86439050618008, -5.101849235044942}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.500693013237079, -0.8659064950135547}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-13.822606344143725, -1.8126756365599972}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499767026957148, 2.598528134747018}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-10.589268214373073, 3.012039818116412}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500709372803593, 6.061645837858702}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-9.318762439525491, 7.044954189023632}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499450101894277, 9.525310306861567}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-7.60947161732444, 10.519239512661683}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499684159683742, 12.990698906873986}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.222789597859941, 12.299961239390877}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5002403939154196, 16.453540688872092}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-3.420476791072688, 15.456726880951301}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.4998206451899845, 19.918983360735044}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.8474776712426159, 20.676907264792373}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.5009226313269346, 23.383079797657807}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.4587803419407491, 23.10206342251008}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.4993414679397614, 26.846036286316405}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{1.7091281314995146, 27.458868141650292}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499373672083776, 30.31051468530373}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.032283453136593, 29.464342619315826}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-27.50099368505457, -32.042769472157985}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-28.472059193158046, -31.80395619997291}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-25.50056429048488, -28.57899275323078}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-26.016492850233675, -27.722361139737828}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.500212737031315, -25.115027195831026}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-24.333604774721614, -24.562344907789864}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499121629475823, -21.6506354980518}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-21.996694449079882, -20.783213288749277}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.49938706199298, -18.18559549439263}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-18.60172902901623, -18.626288194391517}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.49967868959683, -14.723054811670256}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-17.146419217034314, -13.787529427169732}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500697727811374, -11.257904791098076}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-15.41674867008166, -12.254374838669147}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.499020933210454, -7.7941578279008485}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-14.456730886917397, -8.08189320037119}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499593976293513, -4.32919446643654}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-10.591458755438364, -3.9105174780046825}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500989535129671, -0.8662727709306844}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-9.078353494968633, -1.7725722675414888}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499526174935369, 2.5988682753410144}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-8.132518026552482, 1.824709818830761}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.500851693226553, 6.062122904615221}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-5.642488936031962, 7.052041533316834}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5003549432261307, 9.526357656968152}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-3.1061783004844927, 10.445392353982868}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.499045010304226, 12.990335520397963}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.7109982349421499, 12.37472015359704}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.49975246452386074, 16.45366460435705}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.07598685244104414, 17.271297920031497}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.500201948151634, 19.91853781646081}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{2.3778718969026498, 18.92604834117081}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499818564766125, 23.383085608494458}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.481993166980728, 23.195114731057057}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.499780101370554, 26.84595258523293}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.4758888548971525, 26.628670047304198}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.500090970765026, 30.309944554799838}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.470792766825252, 30.5502319309257}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-23.49913567634081, -32.042558752429905}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-22.741689152759694, -31.389661544659123}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-21.499925820224345, -28.578488208029917}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-20.577996156490233, -28.191130885745817}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.500327946619507, -25.114124050711165}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-20.115029077766067, -25.90288416593451}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.49917059287905, -21.651352679569676}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-16.50844216038348, -21.51549550072044}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500101776215734, -18.18736425192797}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-14.512278149878881, -18.342942152835235}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.499485895700271, -14.722453741702589}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-13.904534967344956, -13.808158795003342}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499531788168857, -11.258754966815637}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-10.974742532509184, -10.407522779252123}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500991990748643, -7.793819736036866}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-10.387818127944879, -7.331716498236478}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.500476899948522, -4.330969440030089}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.523524342435519, -4.117512886209872}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.5007759470229765, -0.8652349033077227}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.015854700278325, -0.008092045935093273}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.4991451373145415, 2.598359714594055}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-2.4995287240918267, 2.5706644728410923}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.4994097712777092, 6.062507028538998}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.569740598498603, 6.430902507860083}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.5009241849811907, 9.526031230115983}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{0.06346169897909504, 10.425267891591073}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.499114004034523, 12.991040922646954}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{3.4963736901573212, 12.917060395247793}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.500388799476587, 16.454284659887737}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{4.839303644212505, 17.395101713313974}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.500723171063988, 19.917746205437865}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{6.872504501961519, 18.989425871718915}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.500112139988751, 23.38350611876621}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.614332395599944, 22.919400263997602}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.49971426496951, 26.847114387217804}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.534600006312884, 26.585285306064332}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.499685916733439, 30.31078839104777}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.687238786122757, 30.893823261327814}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-19.499264107859986, -32.04340131538055}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-19.193847487036777, -31.091182491934525}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-17.500212417791023, -28.578897311484823}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-16.519528900231947, -28.383296088615538}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.500994188387043, -25.11502807245912}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-15.921878250205088, -26.022142512046287}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.499457593868287, -21.650836456441393}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-14.158537141978787, -22.402909690416955}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.499688869667512, -18.1855726687581}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-12.260767330252138, -17.536912837387188}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.499041140798987, -14.72152355161438}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-8.507287537562615, -14.849682790328066}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499775716026434, -11.258567410602199}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.696459877468522, -10.663014169051118}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.5002271036211265, -7.793761459733718}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-4.551314345684569, -7.478222907690967}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5006192592903105, -4.330061623571119}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-4.493092676758378, -4.452521884959272}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.499373914208599, -0.8668832678865588}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-2.499303964873393, -0.8787109378811969}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.4991600938257268, 2.5971984064191402}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{0.8411769612186177, 3.5368922195406025}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.49976546423864, 6.062809797375998}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{1.6996333314051197, 6.662633579838216}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499885889259317, 9.525900724278587}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.464858744247831, 9.788250470105254}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.4994496947899165, 12.99000503538136}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{6.567746245543203, 11.992339970765382}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.50061252200292, 16.453861307855398}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{8.79303097734843, 15.497570846241697}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.500869816517378, 19.918599944870003}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{10.364825423942236, 18.927897202747594}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.500004342256977, 23.382402398507438}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{12.798212194137683, 24.336903355592707}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.499416178060079, 26.847453335453533}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{13.844612999423076, 27.60325277792943}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.499534733906692, 30.31156415939922}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.498379248466993, 30.26350548970481}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-15.499569785774064, -32.04296976432552}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-14.499584538610794, -32.0375378718548}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-13.499326512204439, -28.57873902265288}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-13.923616857560633, -27.67321282047123}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.500084176303604, -25.114689542842502}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-12.247274256188117, -25.779299943394715}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500517542366731, -21.649682920795204}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-10.304548482700504, -21.055095461302496}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499647025039091, -18.18600280182221}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-8.481381026926346, -18.376261440360473}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499331763417012, -14.721745451805575}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.498851147072228, -14.752745479184554}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.5003668794023115, -11.25775076782896}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-4.499414425512831, -11.214115912374293}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.4997717888525022, -7.7949152931569055}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.727967222331871, -7.159055472836498}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.500801698607715, -4.331098445612106}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{0.012165620024176038, -3.4586107478727617}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.50014260381685, -0.8662193768522575}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{2.8778168011357366, -1.792157928096094}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499266808656375, 2.5981019842829487}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{4.801950950126951, 1.6450110597105758}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.4997757351957395, 6.062840520795351}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.985716260856288, 6.920595064264429}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.49983015708637, 9.527176835047575}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.92581572295307, 8.708331654682796}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.500082319896253, 12.990984645202207}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.313174244521393, 13.573119957745076}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.50078557442638, 16.45476592813298}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.952338042306385, 15.618580957859363}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.49985120933733, 19.91811048235388}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.264023739745086, 20.563122376639722}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.50036071639602, 23.38332497409603}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.594281406691339, 23.80643286166738}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.499037224742093, 26.846303811553646}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.088716234671757, 26.038666104875478}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.4998837606566, 30.311760071770752}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{20.05037643684377, 29.41848342602285}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-11.500568405757537, -32.04229761352}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-12.444247549245405, -31.711435596742607}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-9.500248782558085, -28.5798373788037}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-8.500906801132999, -28.543566120741946}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.5005854114205555, -25.115219621985908}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.555463563439841, -25.44193768464777}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499397095854542, -21.650665647164562}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.334881316430722, -22.200180084798564}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.499275007443065, -18.1862909265749}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-2.512617011804142, -18.34909755924625}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.4996761315367495, -14.722919079052772}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.5690854544125574, -15.088980537894779}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.49921781568432155, -11.257391704040808}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{1.1086478532578536, -12.050231555021524}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.500436740962303, -7.793329886591651}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{1.566322634390231, -7.436355327409824}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.4999349953638035, -4.330616947339488}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.1106171490061945, -5.1224927628703645}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.5003120848028475, -0.8655238788519127}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.475910056556717, -0.6459593154320955}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.499812426405278, 2.597446585000463}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.496719800220081, 2.676032130959451}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.499418081061965, 6.061829937578391}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.642351034415908, 6.57703482648513}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.50044286444065, 9.52652899017362}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{12.844142351632339, 8.587449301060833}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.500047461886917, 12.989793389627756}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.460448029164315, 12.711170435847468}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.49984017340062, 16.454442986361375}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.46320586602409, 16.186251744378904}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.50090006600711, 19.918718099706574}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.50791652029382, 19.80046549744064}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.49915027684126, 23.382039811782448}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.33345007656303, 23.933350834875778}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.499190121987105, 26.847238435299552}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{22.6600650696079, 25.86026363763347}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.49904716261927, 30.311272845664984}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.47906604427253, 30.112368367075145}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-7.499777180177481, -32.04216811946525}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.525122205311648, -31.81845473146783}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-5.499372837373705, -28.57902522869979}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-6.471776655674767, -28.81232935243856}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.499039250822722, -25.11538114993263}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-3.82281177056183, -26.061516106195104}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.5007391294222157, -21.65070882156692}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-1.0406031061754306, -22.538557254640175}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.500140081940688, -18.186572436135574}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.47263499570411305, -17.954821172248728}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.500287586946262, -14.72257302255384}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{2.3715174019261926, -13.730898560116747}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.500588090261859, -11.259236678790568}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{3.6002483365174585, -11.694424371433033}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.5001537144064425, -7.794256037279526}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.430577904145547, -8.160740453248787}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.499614029150793, -4.329673440576548}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.656633141394963, -4.867616953297346}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.499185472900077, -0.8651713090154208}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{10.52632002272057, -1.864803099329254}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.50047995732229, 2.5989779319795137}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{13.350546826295323, 3.125652706650166}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.499488239614823, 6.06272197839801}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{14.417483646685936, 7.059353929891924}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.500754081195833, 9.525629384054092}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{16.778240198257006, 8.564899736942943}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.500387514654427, 12.989508399943379}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{18.571616701112283, 11.992048424306986}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.500168260836446, 16.45540595042658}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.456020462244414, 16.161558083217127}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.49916906449139, 19.918912790969053}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.79024170829037, 20.624194297624253}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.49926066557098, 23.383594951204433}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.46594527665789, 23.63956538443402}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.49999476808346, 26.84625489112283}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.864582780683236, 26.074081590452508}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500272634968837, 30.310656420939655}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.44282447351483, 30.644716343189494}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-3.4995973569272576, -32.04194279126699}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-2.90536611721184, -32.84623703701681}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{-1.4999560776288403, -28.578417175796247}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-1.1300307041356128, -27.649355704177765}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.5004443398855841, -25.11566918693027}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{-0.23500983073981951, -24.438094716551035}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.5006064199822147, -21.650162948771907}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{1.7237602367253795, -22.27985335489168}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.500554350621152, -18.18631354509589}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.482892058085359, -18.373430162460476}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.499951531952528, -14.722145793695086}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{6.866311208219511, -13.791672479942589}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.499575405491944, -11.258443097588064}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.5330077625974745, -11.002031335553967}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.499250571572539, -7.794365057262339}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.293513157909679, -8.401939697899222}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.499246068771201, -4.331011235797487}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{12.100278856033496, -5.247976427699724}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.499807983688932, -0.8667437198270426}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{14.745222748903247, 0.10267445259123953}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.500637509408516, 2.597580984925909}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.11337604011029, 3.387866688322747}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.499778211135805, 6.061594413124538}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.671455523842912, 5.501343107266284}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.500795476509474, 9.526715882840406}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.59338582314056, 9.946963096957179}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.5002597776296, 12.990056353895788}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.96516695252364, 12.145263084201883}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.5005246998312, 16.454012907197388}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{24.371116232141894, 17.445604278927853}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.49989620937973, 19.919011780611203}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.89344222584365, 20.714130366643012}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.499914844717583, 23.381788322088763}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.87624982904322, 22.60009660010119}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.49951432343425, 26.8476212416673}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.501080360625572, 26.903564265451834}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{0.5006243509001376, -32.04304946429239}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{0.2692888910913393, -31.070175420525647}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{2.499178438721838, -28.579279504578338}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{2.9893968498873664, -27.70767987782627}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499936877144755, -25.11561060405855}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{4.073482604935604, -26.02011972712728}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.499030654006555, -21.650490119141903}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.513310519706598, -21.818881974157744}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.49945476037213, -18.185964713059594}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.85948138203547, -17.41756763145376}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.499480512362629, -14.72274996359833}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.51020604934333, -14.868818566719861}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.499158933556286, -11.257639291822723}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.815047285149115, -11.987016596455671}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.500496859706146, -7.7943394863163356}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.499329575012412, -7.746036206573523}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.499304643597814, -4.330364713423098}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{16.563340227346462, -3.3324170975564282}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.500128298930452, -0.8652653049073114}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{18.871941005932246, -1.7935730722517393}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.49941136586791, 2.5986428880177193}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{20.12503746795775, 3.5259207237085937}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.499963246173067, 6.0622835845377265}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{22.376076885945725, 5.069987172295083}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.499010617627118, 9.52577647708403}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.28816980787202, 10.139965187865995}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.500089563226506, 12.99136705550694}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{26.744571723879787, 12.021713265166127}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500564098629575, 16.455461092888047}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.660070899606257, 16.997283187671517}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.500463574484197, 19.919118103582868}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.7001044402786, 20.518638959178126}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{4.499298864005939, -32.04333497235731}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{5.498807300019436, -32.07468599048835}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{6.499626936950075, -28.57956372351045}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{6.666700188492658, -27.59361923794395}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.499685168281246, -25.11426395572241}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.342041337345753, -25.653185178573178}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.500409229221603, -21.650922108343455}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{9.506996003774642, -21.765509033893736}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.50004208856988, -18.186934768191016}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{13.448230688071334, -17.869226757943444}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.500692289503364, -14.722394910922114}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.332162407569882, -14.166825434832534}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.499738003385097, -11.257475460981974}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{15.511575960056167, -11.104061719341946}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.500001742680027, -7.79392680566185}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{18.052631167837834, -6.899578121554042}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.500017339791057, -4.331005233802828}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.74284435976255, -3.677790813941518}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.500535865798017, -0.8663043135340688}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{22.063018286383958, 0.03290554389836775}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.499580118365902, 2.597942335868553}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.07015155161956, 1.7766943589731043}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.499718886200814, 6.061322477382962}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.264174803153374, 5.4166464726827535}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.49997684235906, 9.526455338566688}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.978424690060102, 8.673235933939528}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.500238619509183, 12.991316897673913}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{31.31583456755908, 13.569938751326703}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{8.499582890395734, -32.0438158211224}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{7.515308919492384, -32.2204644842992}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{10.50035510844139, -28.578145523708624}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{10.217035301583, -27.619120035495865}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.50063949395479, -25.115261836998712}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{11.620973934109239, -25.59085462796764}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.50015099605441, -21.650239007412722}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{14.272279802490333, -20.676547722074456}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.499762804356806, -18.18557328926309}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.235379482663266, -17.508175250738198}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.500130973688815, -14.72301019353647}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.309420410078268, -14.13560010837582}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.49951696670716, -11.257455387197977}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.612069131887882, -10.796547217955363}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.50029694188105, -7.794041586109257}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.604006105151477, -8.237508310897717}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.499324963416605, -4.329536410735914}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.46091028653146, -4.604042633561738}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.499973411173332, -0.865434916870984}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.515195654901945, -1.0392531286702342}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500933280249903, 2.5987295901683196}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.47392070392906, 2.8295877140500503}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.49993000868055, 6.062143323715656}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{30.88150355617876, 6.986481804927831}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{12.500597957635295, -32.04246717425978}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{13.318929673361255, -32.61721338176097}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{14.499611337006922, -28.579148678509167}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{13.673964092171008, -28.014961983261163}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.50074354203221, -25.115591906267046}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{16.162333877581926, -26.056590789904345}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.500139113046142, -21.64988183878234}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{18.661040836505798, -20.662911405898093}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.49991935389715, -18.186249052031986}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.51993804185617, -18.385338549621498}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.50036953876669, -14.722001736931414}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{22.204984191363852, -15.67737993248525}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.499054219592885, -11.258891102993344}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{23.70354722951878, -10.652946692388511}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.499342948916667, -7.795006053789569}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.38699464151026, -7.334490611447263}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.499127818399707, -4.329222247592549}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.375504116659126, -3.8475952302345977}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.499330949777967, -0.8655102337341443}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{30.776141538866497, -1.826434735330633}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{16.499993010517233, -32.04300999128213}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{17.06705466604051, -32.86668533924102}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{18.49944562221392, -28.578564503888934}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{18.138883671656945, -27.64582923608217}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.499907183517568, -25.11540301118198}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.49714713470127, -25.189649086924245}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.500122025015887, -21.651076125700822}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{21.606446985799625, -21.202361378582104}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.500455803606073, -18.186395469733643}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{24.48956296582242, -17.18645479845108}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.499856970036593, -14.721864200895565}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.602641518182345, -15.163457263515417}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500716600114266, -11.258814899435217}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{27.61733198772355, -11.72746362352534}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.500562655801055, -7.79343473381454}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{30.13040554232466, -6.86446556783387}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{20.499008379268016, -32.04195506218929}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{19.756208465894204, -32.711468533817644}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{22.49956527346596, -28.579765861293776}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{23.472985441767865, -28.808792444779396}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.500265082640418, -25.11509364610337}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{23.836033364359995, -24.367566907832266}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.500380957514132, -21.65066867152616}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{26.520490551408543, -20.650870889855582}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500359139429378, -18.187428128889515}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.22796731846664, -17.501435171346888}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.50043484369015, -14.723319376323817}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{31.451808368279817, -14.415279741358058}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{24.499359375703754, -32.042898045260735}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{24.49645964573337, -31.042902249486524}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{26.49926024412892, -28.578314984155362}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{25.692696968699686, -29.169462751408922}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.500417192139924, -25.11471700590325}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{28.95370279844933, -24.223351671647585}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.49962687086807, -21.651181588055547}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{31.072000485793954, -20.831188633856137}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{28.499291821538918, -32.04326641474239}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{29.487395746834054, -32.19705403718432}, NCache[
-      Rational[1, 2], 0.5]]}}, {
-    {EdgeForm[GrayLevel[0]], FaceForm[None]}, 
-    {EdgeForm[GrayLevel[0]], FaceForm[GrayLevel[0.85]], 
-     DiskBox[{30.499722328945715, -28.57959189716065}, NCache[
-      Rational[1, 2], 0.5]], 
-     DiskBox[{31.193772683865134, -29.299518355096616}, NCache[
+     DiskBox[{15.305802371825052, -17.436291368602816}, NCache[
       Rational[1, 2], 0.5]]}}}]], "Output",
  CellChangeTimes->{
   3.8555687725521183`*^9, {3.8555688070346193`*^9, 3.85556881729799*^9}, 
@@ -1969,9 +574,18 @@ Cell[BoxData[
    3.8555985576555862`*^9, 3.855598591279344*^9, {3.855598679430558*^9, 
    3.8555987029841223`*^9}, {3.8556045486071663`*^9, 3.855604573974311*^9}, 
    3.8556129634975233`*^9, 3.8556130328420067`*^9, {3.855613160759651*^9, 
-   3.855613173217565*^9}},
+   3.855613173217565*^9}, {3.855614219524876*^9, 3.855614225718645*^9}, {
+   3.855644571424555*^9, 3.855644579758366*^9}, 3.855649146661079*^9, {
+   3.855649205592407*^9, 3.855649208019742*^9}, {3.8556494121964283`*^9, 
+   3.8556494156481953`*^9}, {3.855685631521467*^9, 3.8556856603904753`*^9}, 
+   3.8556859193731747`*^9, 3.855685999851454*^9, 3.8556862690725403`*^9, 
+   3.855686571751931*^9, 3.855686758806864*^9, 3.855686838289506*^9, 
+   3.8556870213463182`*^9, 3.855687053692973*^9, 3.855687189745648*^9, 
+   3.855688647865182*^9, 3.855688695831909*^9, 3.855688860183299*^9, 
+   3.85568898055687*^9, {3.855689312070053*^9, 3.855689318798374*^9}, {
+   3.855689905939582*^9, 3.8556899088218803`*^9}, 3.855689967944973*^9},
  CellLabel->
-  "Out[849]=",ExpressionUUID->"cbd1755f-b45e-40c9-a471-3bcf456143c2"]
+  "Out[638]=",ExpressionUUID->"6be2e6a6-fae5-4975-9bfc-29816da30c8d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1996,7 +610,7 @@ Cell[BoxData[
            RowBox[{"RandomInteger", "[", 
             RowBox[{"Range", "[", 
              RowBox[{"Length", "[", "#", "]"}], "]"}], "]"}], ",", "#", ",", 
-           ".1", ",", ".1", ",", 
+           ".05", ",", ".1", ",", 
            RowBox[{"RandomReal", "[", 
             RowBox[{"2", "\[Pi]"}], "]"}]}], "]"}], "&"}], "/@", 
         "listOfPositions"}], "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
@@ -2006,7 +620,7 @@ Cell[BoxData[
        RowBox[{
         RowBox[{
          RowBox[{"moveSingleChain", "[", 
-          RowBox[{"#", ",", ".1"}], "]"}], "&"}], "/@", "listOfPositions"}], 
+          RowBox[{"#", ",", ".05"}], "]"}], "&"}], "/@", "listOfPositions"}], 
        "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
     RowBox[{"multipleCollisionsDetection", "=", 
      RowBox[{"QuietEcho", "[", 
@@ -2035,35 +649,36 @@ Cell[BoxData[
   3.855589125347801*^9}, {3.855589448783801*^9, 3.8555894570880737`*^9}, {
   3.855589553722488*^9, 3.855589561024787*^9}, {3.855594708711916*^9, 
   3.8555947318083572`*^9}, {3.855598002997169*^9, 3.855598005536612*^9}, {
-  3.855605975149046*^9, 3.855605978449862*^9}},
+  3.855605975149046*^9, 3.855605978449862*^9}, {3.8556491514934607`*^9, 
+  3.855649154119042*^9}},
  CellLabel->
-  "In[850]:=",ExpressionUUID->"67923856-638c-4ab4-8c46-70718883e633"],
+  "In[639]:=",ExpressionUUID->"67923856-638c-4ab4-8c46-70718883e633"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Viscous Dragging Time:\"\>",
-   "EchoLabel"], "  ", "0.0156654375`"}]], "Echo",
+   "EchoLabel"], "  ", "0.00361059375`"}]], "Echo",
  CellChangeTimes->{
-  3.855613179749161*^9},ExpressionUUID->"504ff1f8-175a-4fe6-a781-\
-440953600f04"],
+  3.8556899749645853`*^9},ExpressionUUID->"4d8ad669-fbc2-4e1f-b7df-\
+dbf260f46d79"],
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Single Collision Detection Time:\"\>",
-   "EchoLabel"], "  ", "0.02666871875`"}]], "Echo",
+   "EchoLabel"], "  ", "0.0063903515625`"}]], "Echo",
  CellChangeTimes->{
-  3.8556131797987947`*^9},ExpressionUUID->"c78c7899-71b6-472c-a1a9-\
-eacf4265be6f"],
+  3.855689975024198*^9},ExpressionUUID->"18028d31-fb19-463d-88c5-\
+33b1f5d630a6"],
 
 Cell[BoxData[
  RowBox[{
   TagBox["\<\"Multiple Collisions Detection Time:\"\>",
-   "EchoLabel"], "  ", "0.14661625`"}]], "Echo",
+   "EchoLabel"], "  ", "0.01483090625`"}]], "Echo",
  CellChangeTimes->{
-  3.855613179860567*^9},ExpressionUUID->"41fd9dd4-3c35-47f8-8c01-\
-d2a51706c3ef"]
+  3.855689975049266*^9},ExpressionUUID->"7e7aa786-ced8-4f80-b1bb-\
+2ff0920ad354"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -2132,35 +747,48 @@ Cell["Dynamic", "Item",
   3.8555896643848267`*^9}},ExpressionUUID->"30e61af5-4dee-4d63-b5f8-\
 115f9a461117"],
 
+Cell[CellGroupData[{
+
 Cell[BoxData[
- RowBox[{"Dynamic", "[", "graphicMultiple", "]"}]], "Input",
+ RowBox[{"Dynamic", "[", 
+  RowBox[{"Graphics", "[", 
+   RowBox[{"chainGraphic", "/@", "listOfPositions"}], "]"}], "]"}]], "Input",
  CellChangeTimes->{{3.85558287683211*^9, 3.855582877958933*^9}, {
-  3.8555891391149883`*^9, 3.855589140194976*^9}, {3.855594743961315*^9, 
-  3.85559474422331*^9}},
+   3.8555891391149883`*^9, 3.855589140194976*^9}, {3.855594743961315*^9, 
+   3.85559474422331*^9}, 3.855689987431669*^9},
  CellLabel->
-  "In[833]:=",ExpressionUUID->"6e95c106-3d39-4c5d-ba29-2c3113cd5bf3"],
+  "In[641]:=",ExpressionUUID->"6e95c106-3d39-4c5d-ba29-2c3113cd5bf3"],
+
+Cell[BoxData[
+ DynamicBox[ToBoxes[
+   Graphics[
+    Map[$CellContext`chainGraphic, $CellContext`listOfPositions]], 
+   StandardForm],
+  ImageSizeCache->{450., {179., 185.62773925815128`}}]], "Output",
+ CellChangeTimes->{3.855689990120516*^9},
+ CellLabel->
+  "Out[641]=",ExpressionUUID->"cf39f27b-a3f5-4a6f-a888-aa78be07ee07"]
+}, Open  ]],
 
 Cell[BoxData[
  RowBox[{"QuietEcho", "[", "\[IndentingNewLine]", 
   RowBox[{"Do", "[", "\[IndentingNewLine]", 
    RowBox[{
-    RowBox[{
-     RowBox[{"listOfPositions", "=", 
-      RowBox[{"moveAllChains", "[", 
-       RowBox[{"listOfPositions", ",", ".1"}], "]"}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{"graphicMultiple", "=", 
-      RowBox[{"Graphics", "[", 
-       RowBox[{"chainGraphic", "/@", "listOfPositions"}], "]"}]}]}], ",", 
+    RowBox[{"listOfPositions", "=", 
+     RowBox[{"moveAllChains", "[", 
+      RowBox[{"listOfPositions", ",", ".05"}], "]"}]}], ",", 
     "\[IndentingNewLine]", 
-    RowBox[{"{", "10000", "}"}]}], "]"}], "\[IndentingNewLine]", 
+    RowBox[{"{", "5000", "}"}]}], "]"}], "\[IndentingNewLine]", 
   "]"}]], "Input",
- CellChangeTimes->{{3.8555915518080187`*^9, 3.855591555900703*^9}, {
-   3.855594197648202*^9, 3.855594254953134*^9}, 3.8555972229960546`*^9, {
-   3.85559842150701*^9, 3.855598424341134*^9}, {3.855598551543545*^9, 
-   3.855598552680728*^9}, 3.855598659760173*^9},
+ CellChangeTimes->{{3.8556865659252653`*^9, 3.855686580354068*^9}, {
+   3.855686703786871*^9, 3.855686705949273*^9}, 3.855686763833805*^9, {
+   3.8556868118311234`*^9, 3.85568681339431*^9}, 3.855687063641838*^9, {
+   3.855687197540307*^9, 3.855687197740484*^9}, {3.855688658520664*^9, 
+   3.855688669913681*^9}, {3.855688701818617*^9, 3.8556887020259237`*^9}, 
+   3.855688984196167*^9, {3.85568991666103*^9, 3.855689916756907*^9}, {
+   3.855689984422336*^9, 3.8556899940218773`*^9}},
  CellLabel->
-  "In[834]:=",ExpressionUUID->"daaed012-4ee0-49a0-ab49-e32debebc4da"]
+  "In[642]:=",ExpressionUUID->"f7022d37-7487-490e-bc51-132ffa073497"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -2177,7 +805,7 @@ Cell[BoxData[
   RowBox[{"Module", "[", 
    RowBox[{
     RowBox[{"{", 
-     RowBox[{"it", "=", "0"}], "}"}], ",", 
+     RowBox[{"it", "=", "0"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"PrintTemporary", "[", 
       RowBox[{"ProgressIndicator", "[", 
@@ -2192,11 +820,13 @@ Cell[BoxData[
           RowBox[{"it", "++"}], ";", 
           RowBox[{"f", "[", "#", "]"}]}], ")"}], "&"}], ",", "init", ",", 
        "n"}], "]"}]}]}], "]"}]}]], "Input",
- CellChangeTimes->{{3.855589778522884*^9, 3.8555897785328093`*^9}},
- CellLabel->
-  "In[851]:=",ExpressionUUID->"9920b141-8d8d-4ee2-94d0-984e5deb4a71"],
+ CellChangeTimes->{{3.855589778522884*^9, 3.8555897785328093`*^9}, {
+  3.8556491708700857`*^9, 3.855649193385756*^9}},
+ CellLabel->"In[49]:=",ExpressionUUID->"9920b141-8d8d-4ee2-94d0-984e5deb4a71"],
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SeedRandom", "[", "1111", "]"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"positions", "=", 
    RowBox[{"QuietEcho", "[", 
@@ -2204,529 +834,89 @@ Cell[BoxData[
      RowBox[{
       RowBox[{
        RowBox[{"moveAllChains", "[", 
-        RowBox[{"#", ",", "0.1"}], "]"}], "&"}], ",", "listOfPositions", ",", 
-      "10000"}], "]"}], "]"}]}], ";"}]], "Input",
+        RowBox[{"#", ",", "0.05"}], "]"}], "&"}], ",", "listOfPositions", ",",
+       "40000"}], "]"}], "]"}]}], ";"}]}], "Input",
  CellChangeTimes->{{3.855589793267735*^9, 3.855589850738955*^9}, {
    3.8555899188951*^9, 3.855589919104555*^9}, {3.85559077109051*^9, 
    3.855590771980744*^9}, {3.8555947578962517`*^9, 3.855594760329788*^9}, 
    3.8555972193696337`*^9, {3.855598722042598*^9, 3.855598722704713*^9}, {
    3.8556045946915617`*^9, 3.855604596074616*^9}, {3.85560532613591*^9, 
-   3.855605327738594*^9}, 3.855605761153418*^9, 3.8556058951038*^9},
- CellLabel->
-  "In[852]:=",ExpressionUUID->"4893888a-238c-4db5-a631-792d6cdce0a2"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{"frames", "=", 
-   RowBox[{"Table", "[", 
-    RowBox[{
-     RowBox[{"Graphics", "[", 
-      RowBox[{
-       RowBox[{"chainGraphic", "/@", 
-        RowBox[{"positions", "[", 
-         RowBox[{"[", "i", "]"}], "]"}]}], ",", 
-       RowBox[{"ImageSize", "\[Rule]", "350"}]}], "]"}], ",", 
-     RowBox[{"{", 
-      RowBox[{"i", ",", "10000"}], "}"}]}], "]"}]}], 
-  ";"}], "\[IndentingNewLine]", 
- RowBox[{"Manipulate", "[", 
-  RowBox[{
-   RowBox[{"frames", "[", 
-    RowBox[{"[", "a", "]"}], "]"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"a", ",", "1", ",", 
-     RowBox[{"Length", "[", "frames", "]"}], ",", "1"}], "}"}]}], 
-  "]"}]}], "Input",
- CellChangeTimes->{{3.8555902439663067`*^9, 3.855590248432164*^9}, {
-   3.855590801476776*^9, 3.855590830423931*^9}, {3.8555948724736633`*^9, 
-   3.855594872793796*^9}, {3.855605331440549*^9, 3.8556053320624943`*^9}, 
-   3.855606366586253*^9},
- CellLabel->
-  "In[854]:=",ExpressionUUID->"17f40099-cdde-4db5-9548-28dfec3bbe2f"],
+   3.855605327738594*^9}, 3.855605761153418*^9, 3.8556058951038*^9, {
+   3.855614256453285*^9, 3.85561425653277*^9}, {3.855644596388804*^9, 
+   3.855644600364277*^9}, {3.8556494224272413`*^9, 3.85564943605961*^9}},
+ CellLabel->"In[81]:=",ExpressionUUID->"4893888a-238c-4db5-a631-792d6cdce0a2"],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"ListLinePlot", "[", 
-  RowBox[{
-   RowBox[{"Length", "/@", "positions"}], ",", 
-   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.855597310111824*^9, 3.855597322393318*^9}},
- CellLabel->
-  "In[853]:=",ExpressionUUID->"4ea9d0c1-2fb5-4b66-be54-443f9d80fa56"],
+ RowBox[{"Length", "[", 
+  RowBox[{"cleanPositions", "=", 
+   RowBox[{"DeleteDuplicates", "[", "positions", "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.855649719231389*^9, 3.8556497275498133`*^9}},
+ CellLabel->"In[88]:=",ExpressionUUID->"47f304d7-ea0c-4202-801c-148825ff63fb"],
+
+Cell[BoxData["36332"], "Output",
+ CellChangeTimes->{3.855649729370316*^9},
+ CellLabel->"Out[88]=",ExpressionUUID->"4e607cb0-7280-4000-aba2-5f1b00fc68e3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
 
 Cell[BoxData[
- GraphicsBox[{{}, {{}, {}, 
-    {RGBColor[0.368417, 0.506779, 0.709798], PointSize[
-      NCache[
-       Rational[1, 180], 0.005555555555555556]], AbsoluteThickness[1.6], 
-     LineBox[CompressedData["
-1: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
-P8Gf4s/w5/gL/CX+Cn+Nv8Hf4u/w9/gH/CP+Cf+Mf8G/4t/w77h7/uQBuIHo
-uIHpuEHouEHpuL/QcYPRcYPTcUPQcUPScUPRcUPTccPQccPSccPRccPTcSPQ
-cSPScSPRcSPTcaPQcaPScaPRcX+l40an48ag48ak48ai48am48ah48al48aj
-48an4yag4yak4yai4yam4yah4yal4yaj4yan46ag46ak46ai46am46ah46al
-46aj46an42ag42ak42ai42am42ah42al42aj42an4+ag4+ak4+ai4+am4+ah
-4+al4+aj4+an4xag4xak4xai4xam4xah4xal4xaj4xan45ag45ak45ai45am
-45ah45al45aj45an41ag41ak41ai41am41ah41al41aj41an49ag49ak49ai
-49am49ah49al49aj49an4zag4zak4zai4zam4zah4zal4zaj4zan47ag47ak
-47ai47am47ah47al47aj47an43ag43ak43ai43am43ah43al43aj43an4/ag
-4/ak4/ai4/am4/ah4/al4/aj4wbQcfvTcQfQcQfScQfRcQfTcYfQcYfScYfR
-cYfTcUfQcUfScUfRcUfTccfQccfSccfRccfTcSfQcSfScSfRcSfTcafQcafS
-cafRcafTcWfQcWfScWfRcWfTcefQcX+j4/5Ox51Lx51Hx51Px11Ax11Ix11E
-x11Mx11Cx11Kx11Gx11Ox11Bx11Jx11Fx11Nx11Dx11Lx11Hx11Px91Ax91I
-x91Ex91Mx91Cx91Kx91Gx91Ox91Bx91Jx91Fx939h/uj4+6h4+6l4+6j4+6n
-4x6g4/5Bx/2TjvsXHfcgHfcQHfcwHfcIHfcoHfcYHfc4HfcEHfckHfcUHfc0
-HfcMHfcsHfccHfc8HfcCHfciHfcSHfcyHfcKHfcqHfcaHfc6HfdvOu4NOu5N
-Ou4tOu5tOu4dOu5dOu49Ou59Ou4DOu5DOu4jOu5jOu4TOu5TOu4zOu5zOu4L
-Ou5LOu4rOu5rOu4bOu5bOu47Ou57Ou4HOu5HOu4nOu5n+v88YJH/7i9/9gDc
-r3Tcb3Tc73T8n4P/c8cNRMcNTMcNQscNSsf9hY4bjI4bnI4bgo4bko4bio4b
-mo4bho4blo4bjo4bno4bgY4bkY4biY4bmY4bhY4blY4bjY77Kx03Oh03Bh03
-Jh03Fh03Nh03Dh03Lh03Hh03Ph03Af1/7o8+4Z89ADcRHTcxHTcJHTcpHTcZ
-HTc5HTcFHTclHTcVHTc1HTcNHTctHTcdHTc9HTcDHTcjHTcTHTczHTcLHTcr
-HTcbHTc7HTcHHTcnHTcXHTc3HTcPHTcvHTcfHTc/HbcAHbcgHbcQHbcwHbcI
-HbcoHbcYHbc4HbcEHbckHbcUHbc0HbcMHbcsHbccHbc8HbcCHbciHbcSHbcy
-HbcKHbcqHbcaHbc6HbcGHbcmHbcWHbc2HbcOHbcuHbceHbc+HbcBHbchHbcR
-HbcxHbcJHbcpHbcZHbc5HbcFHbclHbcVHbc1HbcNHbctHbcdHbc9HbcDHbcj
-HbcTHbczHbcLHbcrHbcbHbc7HbcHHbcnHbcXHbc3HbcPHbcvHbcfHTeAjtuf
-jjuAjjuQjjuIjjuYjjuEjjuUjjuMjjucjjuCjjuSjjuKjjuajjuGjjuWjjuO
-jjuejjuBjjuRjjuJjjuZjjuFjjuVjjuNjjudjjuDjjuTjjuLjjubjjuHjvsb
-Hfd3Ou5cOu48Ou58Ou4COu5COu4iOu5iOu4SOu5SOu4yOu5yOu4KOu5KOu4q
-Ou5qOu4aOu5aOu46Ou56Ou4GOu5GOu4mOu5mOu4WOu5WOu42Ou52Ou4OOu5O
-Ou4uOu5uOu4eOu5eOu4+Ou5+Ou4BOu4fdNw/6bh/0XEP0nEP0XEP03GP0HGP
-0nGP0XGP03FP0HFP0nFP0XFP03HP0HHP0nHP0XHP03Ev0HEv0nEv0XEv03Gv
-0HGv0nGv0XGv03H/puPeoOPepOPeouPepuPeoePepePeo+Pep+M+oOM+pOM+
-ouM+puM+oeM+peM+o+M+p+O+oOO+pOO+ouO+puO+oeO+peO+o+O+p+N+oON+
-pON+ouN+puN+oeN+peN+o+N+p+P/HPifO24gOm5gOm4QOm5QOu4vdNxgdNzg
-dNwQdNyQdNxQdNzQdNwwdNywdNxwdNzwdNwIdNyIdNxIdNzIdNwodNyodNxo
-dNxf6bjR6bgx/vCAhf/bcWPScWPRcWPTcePQcePScePRcePTcRPQcRPScRPR
-cRPTcZPQcZPScZPRcZPTcVPQcVPScVPRcVPTcdPQcdPScdPRcdPTcTPQcTPS
-cTPRcTPTcbPQcbPScbPRcbPTcXPQcXPScXPRcXPTcfPQcfPScfPRcfPTcQvQ
-cQvScQvRcQvTcYvQcYvScYvRcYvTcUvQcUvScUvRcUvTccvQccvSccvRccvT
-cSvQcSvScSvRcSvTcavQcavScavRcavTcWvQcWvScWvRcWvTcevQcevScevR
-cevTcRvQcRvScRvRcRvTcZvQcZvScZvRcZvTcVvQcVvScVvRcVvTcdvQcdvS
-cdvRcdvTcTvQcTvScTvRcTvTcbvQcbvScbvRcbvTcXvQcXvScXvRcXvTcfvQ
-cfvScfvRcQPouP3puAPouAPpuIPouIPpuEPouEPpuMPouMPpuCPouCPpuKPo
-uKPpuGPouGPpuOPouOPpuBPouBPpuJPouJPpuFPouFPpuNPouNPpuDPouDPp
-uLPouLPpuHPouL/94f7ouL/TcefScefRcefTcRfQcRfScRfRcRfTcZfQcZfS
-cZfRcZfTcVfQcVfScVfRcVfTcdfQcdfScdfRcdfTcTfQcTfScTfRcTfTcbfQ
-cbfScbfRcbfTcXfQcXfScXfRcXfTcffQcffScffRcffTcQ/Qcf+g4/5Jx/2L
-jnuQjnuIjnuYjnuEjnuUjnuMjnucjnuCjnuSjnuKjnuajnuGjnuWjnuOjnue
-jnuBjnuRjnuJjnuZjnuFjnuVjnuNjnudjvs3HfcGHfcmHfcWHfc2HfcOHfcu
-HfceHfc+HfcBHfchHfcRHfcxHfcJHfcpHfcZHfc5HfcFHfclHfcVHfc1HfcN
-HfctHfcdHfc9HfcDHfcjHfcTHfczHfcLHfcrHfcbHfc7Hf/noP/ccQPRcQPT
-cYPQcYPScX+h4waj4wan44ag44ak44ai44am44ah44al44aj44an40ag40ak
-40ai40am40ah40al40aj4/5Kx41Ox41Bx41Jx41Fx41Nx41Dx41Lx41Hx41P
-x01Ax01Ix01Ex01Mx01Cx01Kx01Gx01Ox01Bx01Jx01Fx01Nx01Dx01Lx01H
-x01Px81Ax81Ix81Ex81Mx81Cx81Kx81Gx81Ox81Bx81Jx81Fx81Nx81Dx81L
-x81Hx81Pxy1Axy1Ixy1Exy1Mxy1Cxy1Kxy1Gxy1Oxy1Bxy1Jxy1Fxy1Nxy1D
-xy1Lxy1Hxy1Px61Ax61Ix61Ex61Mx61Cx61Kx61Gx61Ox61Bx61Jx61Fx61N
-x61Dx61Lx61Hx61Px21Ax21Ix21Ex21Mx21Cx21Kx21Gx21Ox21Bx21Jx21F
-x21Nx21Dx21Lx21Hx21Px+1Ax+1Ix+1Ex+1Mx+1Cx+1Kx+1Gx+1Ox+1Bx+1J
-x+1Fx+1Nx+1Dx+1Lx+1Hxw2g4/an4w6g4w6k4w6i4w6m4w6h4w6l4w6j/z//
-H1/uH/Y=
-      "]]}}, {{}, {}}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->{True, True},
-  AxesLabel->{None, None},
-  AxesOrigin->{0, 0},
-  DisplayFunction->Identity,
-  Frame->{{False, False}, {False, False}},
-  FrameLabel->{{None, None}, {None, None}},
-  FrameTicks->{{Automatic, Automatic}, {Automatic, Automatic}},
-  GridLines->{None, None},
-  GridLinesStyle->Directive[
-    GrayLevel[0.5, 0.4]],
-  Method->{
-   "OptimizePlotMarkers" -> True, "OptimizePlotMarkers" -> True, 
-    "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
-        Identity[
-         Part[#, 1]], 
-        Identity[
-         Part[#, 2]]}& ), "CopiedValueFunction" -> ({
-        Identity[
-         Part[#, 1]], 
-        Identity[
-         Part[#, 2]]}& )}},
-  PlotRange->{{0, 10001}, {0, 304.}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{{
-     Scaled[0.02], 
-     Scaled[0.02]}, {
-     Scaled[0.02], 
-     Scaled[0.05]}},
-  Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.855613968201487*^9},
+ RowBox[{"Export", "[", 
+  RowBox[{
+  "\"\<step-growth-polymerization_85-dimers.mx\>\"", ",", "cleanPositions"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.855648848837454*^9, 3.855648890702115*^9}, {
+  3.855650202946732*^9, 3.855650208258513*^9}},
  CellLabel->
-  "Out[853]=",ExpressionUUID->"28d282c1-7e47-4504-b954-d7304771bd69"]
+  "In[140]:=",ExpressionUUID->"21e77caf-8966-4188-9581-46d5d4001b3e"],
+
+Cell[BoxData["\<\"step-growth-polymerization_85-dimers.mx\"\>"], "Output",
+ CellChangeTimes->{3.855648955963902*^9, 3.8556502404652967`*^9},
+ CellLabel->
+  "Out[140]=",ExpressionUUID->"debae5d4-1d40-4b6f-9b00-30787955d41b"]
 }, Open  ]],
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"selectFrames", "=", 
+  RowBox[{"numberChains", "=", 
+   RowBox[{"Length", "/@", "cleanPositions"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mergers", "=", 
+   RowBox[{"Extract", "[", 
+    RowBox[{"cleanPositions", ",", 
+     RowBox[{"List", "/@", 
+      RowBox[{"Most", "[", 
+       RowBox[{"Accumulate", "[", 
+        RowBox[{"Prepend", "[", 
+         RowBox[{
+          RowBox[{"Length", "/@", 
+           RowBox[{"Split", "[", "numberChains", "]"}]}], ",", "1"}], "]"}], 
+        "]"}], "]"}]}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mergerFrames", "=", 
    RowBox[{"Table", "[", 
     RowBox[{
      RowBox[{"Graphics", "[", 
       RowBox[{
        RowBox[{"chainGraphic", "/@", 
-        RowBox[{"positions", "[", 
+        RowBox[{"mergers", "[", 
          RowBox[{"[", "i", "]"}], "]"}]}], ",", 
-       RowBox[{"ImageSize", "\[Rule]", "125"}]}], "]"}], ",", 
+       RowBox[{"ImageSize", "\[Rule]", "200"}]}], "]"}], ",", 
      RowBox[{"{", 
-      RowBox[{"i", ",", "1", ",", 
-       RowBox[{
-        RowBox[{"Length", "[", "positions", "]"}], "-", "1"}], ",", "250"}], 
-      "}"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+      RowBox[{"i", ",", 
+       RowBox[{"Length", "[", "mergers", "]"}]}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{"Multicolumn", "[", 
-  RowBox[{"selectFrames", ",", "8", ",", 
+  RowBox[{"mergerFrames", ",", "5", ",", 
    RowBox[{"Appearance", "\[Rule]", "\"\<Horizontal\>\""}], ",", 
    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}]}], "Input",
- CellChangeTimes->{{3.855590056342778*^9, 3.8555900587246017`*^9}, {
-  3.8555901071156187`*^9, 3.855590118885854*^9}, {3.855590188543819*^9, 
-  3.855590222279961*^9}, {3.855590253797432*^9, 3.855590254217132*^9}, {
-  3.8555964776919413`*^9, 3.8555964878280573`*^9}, {3.8555973713280077`*^9, 
-  3.855597384146562*^9}},
+ CellChangeTimes->{{3.8556498101750307`*^9, 3.8556498458731117`*^9}, {
+  3.855649876468585*^9, 3.855649960760745*^9}, {3.85565002946625*^9, 
+  3.8556501437406693`*^9}},
  CellLabel->
-  "In[286]:=",ExpressionUUID->"e8e6c37b-30e8-49c3-98b9-f9ca294a4372"]
+  "In[136]:=",ExpressionUUID->"5cb0037f-77a6-495a-93c6-2374e7f7f6e5"]
 }, Open  ]]
 }, Open  ]],
 
@@ -2736,6 +926,112 @@ Cell["Initialization Functions", "Section",
  CellChangeTimes->{{3.855564687932888*^9, 
   3.855564692724567*^9}},ExpressionUUID->"8669e636-5bdb-4359-ad8f-\
 8c7bd0830fe1"],
+
+Cell[CellGroupData[{
+
+Cell["Visualization", "Subsection",
+ CellChangeTimes->{{3.8555647086692038`*^9, 
+  3.855564710557496*^9}},ExpressionUUID->"7e092983-3d4d-46ea-a6fe-\
+ca195ea60f9f"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"chainGraphic", "[", 
+    RowBox[{"positions_", ",", "bb_", ",", 
+     RowBox[{"col_", ":", 
+      RowBox[{"RandomColor", "[", "]"}]}]}], "]"}], ":=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"Opacity", "[", "0.25", "]"}], ",", "col", ",", 
+       RowBox[{"Rectangle", "@@", 
+        SuperscriptBox["bb", "\[Transpose]"]}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"FaceForm", "[", "None", "]"}], ",", 
+       RowBox[{"EdgeForm", "[", 
+        RowBox[{"col", "//", "Darker"}], "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Disk", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"positions", "[", 
+         RowBox[{"[", 
+          RowBox[{"2", ";;", 
+           RowBox[{"-", "2"}]}], "]"}], "]"}]}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"FaceForm", "[", 
+        RowBox[{"col", "//", "Darker"}], "]"}], ",", 
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Disk", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"positions", "[", 
+         RowBox[{"[", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]}]}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"chainGraphic", "[", "positions_", "]"}], ":=", " ", 
+   RowBox[{"{", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Circle", "[", 
+         RowBox[{"#", ",", 
+          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+       RowBox[{"positions", "[", 
+        RowBox[{"[", 
+         RowBox[{"2", ";;", 
+          RowBox[{"-", "2"}]}], "]"}], "]"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"FaceForm", "[", "LightGray", "]"}], ",", 
+       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Disk", "[", 
+          RowBox[{"#", ",", 
+           RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
+        RowBox[{"positions", "[", 
+         RowBox[{"[", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
+            RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]}]}], "}"}]}], 
+    "\[IndentingNewLine]", "}"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"chainGraphic", "[", 
+   RowBox[{"positions_", "?", "polymerLoopQ"}], "]"}], ":=", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Circle", "[", 
+      RowBox[{"#", ",", 
+       RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", "positions"}], 
+   "}"}]}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{
+  3.855409362482293*^9, 3.8555113533706083`*^9, {3.8555184838251543`*^9, 
+   3.855518533824648*^9}, {3.855518588835595*^9, 3.855518661291456*^9}, {
+   3.85556472210462*^9, 3.855564783414846*^9}, {3.855588558029476*^9, 
+   3.855588650500379*^9}, {3.8555887770397053`*^9, 3.855588794434122*^9}, {
+   3.855685055137466*^9, 3.8556851093377323`*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"a8fff896-3829-4ef5-8612-4504845ec4a1"]
+}, Closed]],
 
 Cell[CellGroupData[{
 
@@ -2962,7 +1258,7 @@ Cell[BoxData[{
    3.8555689243653316`*^9, {3.855573736222913*^9, 3.8555737688871202`*^9}, {
    3.855589283678935*^9, 3.85558935855928*^9}, {3.855589393526091*^9, 
    3.85558941123155*^9}},
- CellLabel->"In[1]:=",ExpressionUUID->"70d9fa47-85e8-495b-9b30-687646593dbd"]
+ CellLabel->"In[4]:=",ExpressionUUID->"70d9fa47-85e8-495b-9b30-687646593dbd"]
 }, Closed]],
 
 Cell[CellGroupData[{
@@ -5870,55 +4166,132 @@ Cell[BoxData[
    3.854704811311735*^9, 3.854704879625842*^9}, {3.854704929125875*^9, 
    3.854704929494216*^9}, 3.8547049932660522`*^9, {3.854705049109612*^9, 
    3.854705057821352*^9}, {3.8547070086988077`*^9, 3.85470700913976*^9}},
- CellLabel->"In[10]:=",ExpressionUUID->"cb6947db-33aa-4869-adb0-b6d9b08954ff"],
+ CellLabel->"In[1]:=",ExpressionUUID->"cb6947db-33aa-4869-adb0-b6d9b08954ff"],
 
-Cell[BoxData[
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"displacementsBase", "[", 
+    RowBox[{
+    "perturbedIndex_", ",", "positionList_", ",", "s_", ",", "\[Nu]_", ",", 
+     "\[Theta]_"}], "]"}], ":=", " ", "\[IndentingNewLine]", 
+   RowBox[{"Block", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"newPositions", ",", "betaList", ",", "\[CapitalDelta]"}], "  ",
+       "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"\[CapitalDelta]", "=", 
+       RowBox[{"precompute", "[", 
+        RowBox[{
+        "positionList", ",", "perturbedIndex", ",", "s", ",", "\[Nu]", ",", 
+         "\[Theta]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"newPositions", "[", "perturbedIndex", "]"}], " ", "=", 
+       RowBox[{
+        RowBox[{"positionList", "[", 
+         RowBox[{"[", "perturbedIndex", "]"}], "]"}], "+", 
+        RowBox[{"s", " ", 
+         RowBox[{"AngleVector", "[", "\[Theta]", "]"}]}]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"newPositions", "[", "index_", "]"}], " ", ":=", " ", 
+       RowBox[{
+        RowBox[{"newPositions", "[", "index", "]"}], "=", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Module", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"nextIndex", "=", 
+            RowBox[{"index", "-", 
+             RowBox[{"Sign", "[", 
+              RowBox[{"index", "-", "perturbedIndex"}], "]"}]}]}], "}"}], ",",
+           "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"newPositions", "[", "nextIndex", "]"}], " ", "+", " ", 
+           RowBox[{"\[CapitalDelta]", "[", 
+            RowBox[{"[", "index", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+         "]"}]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newPositions", "/@", 
+       RowBox[{"Range", "[", 
+        RowBox[{"Length", "[", "\[CapitalDelta]", "]"}], "]"}]}]}]}], 
+    "\[IndentingNewLine]", "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Clear", "[", "displacements", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"displacements", "[", 
+    RowBox[{
+    "perturbedIndex_", ",", "positionList_", ",", "s_", ",", "\[Nu]_", ",", 
+     "\[Theta]_"}], "]"}], ":=", " ", "\[IndentingNewLine]", 
+   RowBox[{"displacementsBase", "[", 
+    RowBox[{
+    "perturbedIndex", ",", "positionList", ",", "s", ",", "\[Nu]", ",", 
+     "\[Theta]"}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"displacements", "[", 
-   RowBox[{
-   "perturbedIndex_", ",", "positionList_", ",", "s_", ",", "\[Nu]_", ",", 
-    "\[Theta]_"}], "]"}], ":=", " ", "\[IndentingNewLine]", 
+   RowBox[{"perturbedIndex_", ",", 
+    RowBox[{"positionList_", "?", "polymerLoopQ"}], ",", "s_", ",", "\[Nu]_", 
+    ",", "\[Theta]_"}], "]"}], ":=", 
   RowBox[{"Block", "[", 
    RowBox[{
     RowBox[{"{", 
-     RowBox[{"newPositions", ",", "betaList", ",", "\[CapitalDelta]"}], "  ", 
-     "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+     "firstStep", ",", "angle", ",", "disp", ",", "squaredNorm", ",", 
+      "minimumS", ",", "newPositions"}], "}"}], ",", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
     RowBox[{
-     RowBox[{"\[CapitalDelta]", "=", 
-      RowBox[{"precompute", "[", 
+     RowBox[{"firstStep", "=", 
+      RowBox[{"displacementsBase", "[", 
        RowBox[{
-       "positionList", ",", "perturbedIndex", ",", "s", ",", "\[Nu]", ",", 
+       "perturbedIndex", ",", "positionList", ",", "s", ",", "\[Nu]", ",", 
         "\[Theta]"}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"newPositions", "[", "perturbedIndex", "]"}], " ", "=", 
+     RowBox[{"(*", 
       RowBox[{
-       RowBox[{"positionList", "[", 
-        RowBox[{"[", "perturbedIndex", "]"}], "]"}], "+", 
-       RowBox[{"s", " ", 
-        RowBox[{"AngleVector", "[", "\[Theta]", "]"}]}]}]}], ";", 
-     "\[IndentingNewLine]", 
-     RowBox[{
-      RowBox[{"newPositions", "[", "index_", "]"}], " ", ":=", " ", 
-      RowBox[{
-       RowBox[{"newPositions", "[", "index", "]"}], "=", 
-       "\[IndentingNewLine]", 
-       RowBox[{"Module", "[", 
+       RowBox[{"If", "[", 
         RowBox[{
+         RowBox[{"polymerLoopQ", "[", "firstStep", "]"}], ",", 
+         RowBox[{"Return", "[", "firstStep", "]"}]}], "]"}], ";"}], "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"angle", "=", 
+      RowBox[{"ArcTan", "@@", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{"firstStep", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], "-", 
+         RowBox[{"firstStep", "[", 
+          RowBox[{"[", 
+           RowBox[{"-", "1"}], "]"}], "]"}]}], ")"}]}]}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"newPositions", "=", 
+      RowBox[{"displacementsBase", "[", 
+       RowBox[{
+        RowBox[{"Length", "[", "positionList", "]"}], ",", "firstStep", ",", 
+        "ds", ",", "\[Nu]", ",", "angle"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"disp", "=", 
+      RowBox[{"Subtract", "@@", 
+       RowBox[{"newPositions", "[", 
+        RowBox[{"[", 
          RowBox[{"{", 
-          RowBox[{"nextIndex", "=", 
-           RowBox[{"index", "-", 
-            RowBox[{"Sign", "[", 
-             RowBox[{"index", "-", "perturbedIndex"}], "]"}]}]}], "}"}], ",", 
-         "\[IndentingNewLine]", 
-         RowBox[{
-          RowBox[{"newPositions", "[", "nextIndex", "]"}], " ", "+", " ", 
-          RowBox[{"\[CapitalDelta]", "[", 
-           RowBox[{"[", "index", "]"}], "]"}]}]}], "\[IndentingNewLine]", 
-        "]"}]}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"newPositions", "/@", 
-      RowBox[{"Range", "[", 
-       RowBox[{"Length", "[", "\[CapitalDelta]", "]"}], "]"}]}]}]}], 
-   "\[IndentingNewLine]", "]"}]}]], "Input",
+          RowBox[{"1", ",", 
+           RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"squaredNorm", "=", 
+      RowBox[{"disp", ".", "disp"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"enforceClosedLoopEnd", "[", 
+      RowBox[{"newPositions", "/.", 
+       RowBox[{"First", "[", 
+        RowBox[{"Quiet", "[", 
+         RowBox[{"FindRoot", "[", 
+          RowBox[{"squaredNorm", ",", 
+           RowBox[{"{", 
+            RowBox[{"ds", ",", "s", ",", "0.", ",", "1."}], "}"}], ",", 
+           RowBox[{"AccuracyGoal", "\[Rule]", "4"}], ",", 
+           RowBox[{"PrecisionGoal", "\[Rule]", "4"}]}], "]"}], "]"}], "]"}]}],
+       "]"}]}]}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "]"}]}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.854602201889028*^9, 3.854602292037822*^9}, {
    3.854602373515401*^9, 3.85460240055264*^9}, {3.854602431373596*^9, 
@@ -5939,9 +4312,42 @@ Cell[BoxData[
    3.854719411667338*^9, 3.854719461096405*^9, {3.855321557659398*^9, 
    3.8553215640013113`*^9}, {3.855321638758418*^9, 3.855321641552601*^9}, {
    3.855321672493623*^9, 3.855321672868025*^9}, {3.855321734776783*^9, 
-   3.855321766060038*^9}},
- CellLabel->"In[11]:=",ExpressionUUID->"ab1b8565-e048-4906-8bed-50906734d99c"]
-}, Closed]],
+   3.855321766060038*^9}, {3.85568498705716*^9, 3.855684990410359*^9}, {
+   3.855686177667906*^9, 3.8556862262586412`*^9}, {3.85568654630774*^9, 
+   3.8556865576092443`*^9}, {3.85568673329205*^9, 3.855686752875927*^9}, {
+   3.855686823836092*^9, 3.855686827268277*^9}, {3.8556869519810877`*^9, 
+   3.8556870130009537`*^9}, {3.8556876197381067`*^9, 3.855687656902032*^9}, {
+   3.855687702530624*^9, 3.855687744357156*^9}, {3.8556881252802*^9, 
+   3.85568814883259*^9}, {3.855688200240409*^9, 3.8556882103220387`*^9}, {
+   3.855688480131935*^9, 3.855688496956401*^9}},
+ CellLabel->
+  "In[436]:=",ExpressionUUID->"ab1b8565-e048-4906-8bed-50906734d99c"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"polymerLoopQ", "[", "particles_", "]"}], ":=", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Norm", "[", 
+     RowBox[{
+      RowBox[{"particles", "[", 
+       RowBox[{"[", "1", "]"}], "]"}], "-", 
+      RowBox[{"particles", "[", 
+       RowBox[{"[", 
+        RowBox[{"-", "1"}], "]"}], "]"}]}], "]"}], "//", "Chop"}], "//", 
+   "PossibleZeroQ"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"enforceClosedLoopEnd", "[", "positionList_", "]"}], ":=", 
+  RowBox[{"ReplacePart", "[", 
+   RowBox[{"positionList", ",", 
+    RowBox[{
+     RowBox[{"Length", "[", "positionList", "]"}], "->", 
+     RowBox[{"positionList", "[", 
+      RowBox[{"[", "1", "]"}], "]"}]}]}], "]"}]}]}], "Input",
+ InitializationCell->True,
+ CellChangeTimes->{{3.855685014366658*^9, 3.855685017298154*^9}},
+ CellLabel->"In[46]:=",ExpressionUUID->"7716cd1e-898c-4e55-83a2-b18306664ad3"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -5954,34 +4360,56 @@ Cell["Individual Chain Collision Detection", "Subsection",
 Cell[BoxData[{
  RowBox[{
   RowBox[{
-   RowBox[{"collisionFreeQ", "[", 
-    RowBox[{"positions_", ",", "nf_"}], "]"}], ":=", 
-   RowBox[{
-    RowBox[{"Total", "[", 
+   RowBox[{"collisionFreeQ", "[", "positions_", "]"}], ":=", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nf", "=", 
+       RowBox[{"Nearest", "[", "positions", "]"}]}], "}"}], ",", 
      RowBox[{
-      RowBox[{
-       RowBox[{"Length", "[", 
-        RowBox[{"nf", "[", 
-         RowBox[{"#", ",", 
-          RowBox[{"{", 
-           RowBox[{"All", ",", 
-            RowBox[{"1.", "-", 
-             SuperscriptBox["10", 
-              RowBox[{"-", "6"}]]}]}], "}"}]}], "]"}], "]"}], "&"}], "/@", 
-      "positions"}], "]"}], "<=", 
-    RowBox[{"Length", "[", "positions", "]"}]}]}], 
+      RowBox[{"Total", "[", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"Length", "[", 
+          RowBox[{"nf", "[", 
+           RowBox[{"#", ",", 
+            RowBox[{"{", 
+             RowBox[{"All", ",", 
+              RowBox[{"1.", "-", 
+               SuperscriptBox["10", 
+                RowBox[{"-", "6"}]]}]}], "}"}]}], "]"}], "]"}], "&"}], "/@", 
+        "positions"}], "]"}], "<=", 
+      RowBox[{"Length", "[", "positions", "]"}]}]}], "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
-   RowBox[{
-    RowBox[{"periodicDistanceFunction", "[", "size_", "]"}], "[", 
-    RowBox[{"u_", ",", "v_"}], "]"}], ":=", 
-   RowBox[{"Norm", "@", 
-    RowBox[{"Mod", "[", 
+   RowBox[{"collisionFreeLoopQ", "[", 
+    RowBox[{"positions_", "?", "polymerLoopQ"}], "]"}], ":=", 
+   RowBox[{"collisionFreeQ", "[", 
+    RowBox[{"Most", "[", "positions", "]"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"endPointsCollisionQ", "[", "positions_", "]"}], ":=", 
+   RowBox[{"With", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"dr", "=", 
+       RowBox[{
+        RowBox[{"positions", "[", 
+         RowBox[{"[", "1", "]"}], "]"}], "-", 
+        RowBox[{"positions", "[", 
+         RowBox[{"[", 
+          RowBox[{"-", "1"}], "]"}], "]"}]}]}], "}"}], ",", 
      RowBox[{
-      RowBox[{"u", "-", "v"}], ",", "size", ",", 
-      RowBox[{
-       RowBox[{"-", "size"}], "/", "2"}]}], "]"}]}]}], 
+      RowBox[{"dr", ".", "dr"}], "<", "1"}]}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"mergeEndPointsSingle", "[", "positions_", "]"}], ":=", 
+   RowBox[{"Append", "[", 
+    RowBox[{"positions", ",", 
+     RowBox[{"First", "[", "positions", "]"}]}], "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"moveSingleChain", "[", " ", 
@@ -5992,7 +4420,7 @@ Cell[BoxData[{
    RowBox[{
     RowBox[{"{", 
      RowBox[{"newPositions", ",", " ", "newEnergy", ",", "nf"}], "}"}], ",", 
-    "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"newPositions", "=", " ", 
       RowBox[{"displacements", "[", 
@@ -6003,21 +4431,43 @@ Cell[BoxData[{
            RowBox[{"Length", "[", "positions", "]"}]}], "}"}], "]"}], ",", 
         "positions", ",", "ds", ",", "stickiness", ",", 
         RowBox[{"RandomReal", "[", 
-         RowBox[{"2", "\[Pi]"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]", 
-     RowBox[{"nf", " ", "=", " ", 
-      RowBox[{"Nearest", "[", "newPositions", "]"}]}], ";", 
+         RowBox[{"2", "\[Pi]"}], "]"}]}], "]"}]}], ";", "\[IndentingNewLine]",
+      "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"polymerLoopQ", "[", "newPositions", "]"}], ",", 
+       RowBox[{"If", "[", 
+        RowBox[{
+         RowBox[{"collisionFreeLoopQ", "[", "newPositions", "]"}], ",", 
+         RowBox[{"Return", "[", "newPositions", "]"}], ",", 
+         RowBox[{"Return", "[", "positions", "]"}]}], "]"}]}], "]"}], ";", 
      "\[IndentingNewLine]", 
      RowBox[{"If", "[", 
       RowBox[{
-       RowBox[{"collisionFreeQ", "[", 
-        RowBox[{"newPositions", ",", "nf"}], "]"}], ",", "newPositions", ",", 
-       "positions"}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}]}], "Input",
+       RowBox[{"collisionFreeQ", "[", "newPositions", "]"}], ",", 
+       RowBox[{"Return", "[", "newPositions", "]"}]}], "]"}], ";", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"endPointsCollisionQ", "[", "newPositions", "]"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"mergeEndPointsSingle", "[", "newPositions", "]"}], 
+       "\[IndentingNewLine]", ",", "positions"}], "]"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.855564884263525*^9, 3.8555648845544853`*^9}, {
   3.855565131486293*^9, 3.8555652153973427`*^9}, {3.855565251958166*^9, 
-  3.8555652521154127`*^9}, {3.855595325502611*^9, 3.855595327046777*^9}},
- CellLabel->"In[58]:=",ExpressionUUID->"37e9c5c4-d3fa-493b-8a9d-eb2ed890e305"]
-}, Closed]],
+  3.8555652521154127`*^9}, {3.855595325502611*^9, 3.855595327046777*^9}, {
+  3.8556852897414503`*^9, 3.8556853061170387`*^9}, {3.855685404652623*^9, 
+  3.855685513938727*^9}, {3.855685561849402*^9, 3.855685608801805*^9}, {
+  3.855685827708252*^9, 3.855685893005348*^9}, {3.855686247436275*^9, 
+  3.855686247739051*^9}, {3.855688380617833*^9, 3.855688446314433*^9}, {
+  3.855688514815494*^9, 3.8556885465296803`*^9}, {3.8556885845219193`*^9, 
+  3.855688618843464*^9}, {3.855688752755394*^9, 3.855688850507618*^9}, {
+  3.8556889576049547`*^9, 3.8556889616608257`*^9}},
+ CellLabel->
+  "In[481]:=",ExpressionUUID->"37e9c5c4-d3fa-493b-8a9d-eb2ed890e305"]
+}, Open  ]],
 
 Cell[CellGroupData[{
 
@@ -6710,7 +5160,9 @@ Cell[BoxData[{
          RowBox[{
           RowBox[{"{", "i", "}"}], ",", 
           RowBox[{"{", "j", "}"}]}], "}"}], "->", "proposal"}], ",", 
-       RowBox[{"{", "}"}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
+       RowBox[{
+        RowBox[{"Echo", "[", "\"\<Intersecting Merger\>\"", "]"}], ";", 
+        RowBox[{"{", "}"}]}]}], "]"}]}], "\[IndentingNewLine]", "]"}]}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
@@ -6821,9 +5273,31 @@ Cell[BoxData[{
              RowBox[{"listOfPos", ",", 
               RowBox[{"List", "/@", "#"}]}], "]"}]}], "]"}], "&"}], "/@", 
          "nonzero"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
-       RowBox[{"Echo", "[", "lengths", "]"}], ";", "\[IndentingNewLine]", 
-       RowBox[{"Echo", "[", "collisions", "]"}], ";", "\[IndentingNewLine]", 
-       "\[IndentingNewLine]", 
+       RowBox[{"Do", "[", "\[IndentingNewLine]", 
+        RowBox[{
+         RowBox[{"If", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{
+            RowBox[{
+             RowBox[{"Length", "[", 
+              RowBox[{"collisions", "[", 
+               RowBox[{"[", "a", "]"}], "]"}], "]"}], ">", "0"}], "&&", 
+            "\[IndentingNewLine]", 
+            RowBox[{"Or", "@@", 
+             RowBox[{"polymerLoopQ", "/@", 
+              RowBox[{"Extract", "[", 
+               RowBox[{"listOfPos", ",", 
+                RowBox[{"List", "/@", 
+                 RowBox[{"nonzero", "[", 
+                  RowBox[{"[", "a", "]"}], "]"}]}]}], "]"}]}]}]}], 
+           "\[IndentingNewLine]", ",", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"Echo", "[", "\"\<Collision with loop\>\"", "]"}], ";", 
+            RowBox[{"Throw", "[", "oldListOfPositions", "]"}]}]}], "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"a", ",", 
+           RowBox[{"Length", "[", "collisions", "]"}]}], "}"}]}], "]"}], ";", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
        RowBox[{"Do", "[", "\[IndentingNewLine]", 
         RowBox[{
          RowBox[{"If", "[", "\[IndentingNewLine]", 
@@ -7012,111 +5486,17 @@ Cell[BoxData[{
    3.855605508563506*^9, 3.8556055499343023`*^9}, {3.855605608519807*^9, 
    3.855605628881599*^9}, {3.855605715719728*^9, 3.855605745612885*^9}, {
    3.855606573883854*^9, 3.8556066026450653`*^9}, {3.85560884005781*^9, 
-   3.855608840680168*^9}, {3.855612898669024*^9, 3.855612943058282*^9}},
+   3.855608840680168*^9}, {3.855612898669024*^9, 3.855612943058282*^9}, {
+   3.855689429775667*^9, 3.855689445390581*^9}, {3.85568970939284*^9, 
+   3.855689722825797*^9}, {3.855689763155456*^9, 3.855689888235806*^9}},
  CellLabel->
-  "In[793]:=",ExpressionUUID->"20e4edd9-4460-4868-99f0-0af27c4a6331"]
-}, Open  ]],
-
-Cell[CellGroupData[{
-
-Cell["Visualization", "Subsection",
- CellChangeTimes->{{3.8555647086692038`*^9, 
-  3.855564710557496*^9}},ExpressionUUID->"7e092983-3d4d-46ea-a6fe-\
-ca195ea60f9f"],
-
-Cell[BoxData[{
- RowBox[{
-  RowBox[{
-   RowBox[{"chainGraphic", "[", 
-    RowBox[{"positions_", ",", "bb_", ",", 
-     RowBox[{"col_", ":", 
-      RowBox[{"RandomColor", "[", "]"}]}]}], "]"}], ":=", " ", 
-   RowBox[{"{", "\[IndentingNewLine]", 
-    RowBox[{
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"Opacity", "[", "0.25", "]"}], ",", "col", ",", 
-       RowBox[{"Rectangle", "@@", 
-        SuperscriptBox["bb", "\[Transpose]"]}]}], "}"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"FaceForm", "[", "None", "]"}], ",", 
-       RowBox[{"EdgeForm", "[", 
-        RowBox[{"col", "//", "Darker"}], "]"}], ",", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"Disk", "[", 
-          RowBox[{"#", ",", 
-           RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
-        RowBox[{"positions", "[", 
-         RowBox[{"[", 
-          RowBox[{"2", ";;", 
-           RowBox[{"-", "2"}]}], "]"}], "]"}]}]}], "}"}], ",", 
-     "\[IndentingNewLine]", 
-     RowBox[{"{", 
-      RowBox[{
-       RowBox[{"FaceForm", "[", 
-        RowBox[{"col", "//", "Darker"}], "]"}], ",", 
-       RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
-       RowBox[{
-        RowBox[{
-         RowBox[{"Disk", "[", 
-          RowBox[{"#", ",", 
-           RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
-        RowBox[{"positions", "[", 
-         RowBox[{"[", 
-          RowBox[{"{", 
-           RowBox[{"1", ",", 
-            RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]}]}], "}"}]}], 
-    "\[IndentingNewLine]", "}"}]}], 
-  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{
-  RowBox[{"chainGraphic", "[", "positions_", "]"}], ":=", " ", 
-  RowBox[{"{", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"FaceForm", "[", "None", "]"}], ",", 
-      RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"Disk", "[", 
-         RowBox[{"#", ",", 
-          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
-       RowBox[{"positions", "[", 
-        RowBox[{"[", 
-         RowBox[{"2", ";;", 
-          RowBox[{"-", "2"}]}], "]"}], "]"}]}]}], "}"}], ",", 
-    "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"FaceForm", "[", "LightGray", "]"}], ",", 
-      RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
-      RowBox[{
-       RowBox[{
-        RowBox[{"Disk", "[", 
-         RowBox[{"#", ",", 
-          RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", 
-       RowBox[{"positions", "[", 
-        RowBox[{"[", 
-         RowBox[{"{", 
-          RowBox[{"1", ",", 
-           RowBox[{"-", "1"}]}], "}"}], "]"}], "]"}]}]}], "}"}]}], 
-   "\[IndentingNewLine]", "}"}]}]}], "Input",
- InitializationCell->True,
- CellChangeTimes->{
-  3.855409362482293*^9, 3.8555113533706083`*^9, {3.8555184838251543`*^9, 
-   3.855518533824648*^9}, {3.855518588835595*^9, 3.855518661291456*^9}, {
-   3.85556472210462*^9, 3.855564783414846*^9}, {3.855588558029476*^9, 
-   3.855588650500379*^9}, {3.8555887770397053`*^9, 3.855588794434122*^9}},
- CellLabel->"In[36]:=",ExpressionUUID->"a8fff896-3829-4ef5-8612-4504845ec4a1"]
+  "In[591]:=",ExpressionUUID->"20e4edd9-4460-4868-99f0-0af27c4a6331"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1440., 760.5},
-WindowMargins->{{0, Automatic}, {0, 24}},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
 Magnification:>1.25 Inherited,
 FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
 StyleDefinitions->"Default.nb",
@@ -7142,82 +5522,90 @@ Cell[1222, 43, 384, 8, 34, "Subitem",ExpressionUUID->"999d31e5-03b1-4b4e-8a0c-76
 Cell[CellGroupData[{
 Cell[1631, 55, 590, 11, 59, "Subitem",ExpressionUUID->"704f5dd8-54bd-4472-ac9a-bf4c3ede6aef"],
 Cell[CellGroupData[{
-Cell[2246, 70, 1320, 34, 138, "Input",ExpressionUUID->"71f1b1d7-38e3-4e5a-bcf3-afb41675e040"],
+Cell[2246, 70, 1535, 38, 164, "Input",ExpressionUUID->"71f1b1d7-38e3-4e5a-bcf3-afb41675e040"],
 Cell[CellGroupData[{
-Cell[3591, 108, 205, 6, 32, "Echo",ExpressionUUID->"e6a85da2-bfa9-4822-86c5-93924e0f2dc2"],
-Cell[3799, 116, 208, 6, 32, "Echo",ExpressionUUID->"86d7bf4b-bb3b-46f9-9178-a347d58dbf18"]
+Cell[3806, 112, 202, 6, 32, "Echo",ExpressionUUID->"756eb4a8-c4f7-49c2-b0c2-418fd0150cd7"],
+Cell[4011, 120, 208, 6, 32, "Echo",ExpressionUUID->"d81fdd98-ed97-4c2f-a408-6eb342ec3682"]
 }, Open  ]],
-Cell[4022, 125, 90696, 1848, 489, "Output",ExpressionUUID->"cbd1755f-b45e-40c9-a471-3bcf456143c2"]
+Cell[4234, 129, 23512, 458, 484, "Output",ExpressionUUID->"6be2e6a6-fae5-4975-9bfc-29816da30c8d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[94755, 1978, 2702, 61, 366, "Input",ExpressionUUID->"67923856-638c-4ab4-8c46-70718883e633"],
+Cell[27783, 592, 2755, 62, 366, "Input",ExpressionUUID->"67923856-638c-4ab4-8c46-70718883e633"],
 Cell[CellGroupData[{
-Cell[97482, 2043, 219, 6, 32, "Echo",ExpressionUUID->"504ff1f8-175a-4fe6-a781-440953600f04"],
-Cell[97704, 2051, 232, 6, 32, "Echo",ExpressionUUID->"c78c7899-71b6-472c-a1a9-eacf4265be6f"],
-Cell[97939, 2059, 230, 6, 32, "Echo",ExpressionUUID->"41fd9dd4-3c35-47f8-8c01-d2a51706c3ef"]
+Cell[30563, 658, 222, 6, 32, "Echo",ExpressionUUID->"4d8ad669-fbc2-4e1f-b7df-dbf260f46d79"],
+Cell[30788, 666, 232, 6, 32, "Echo",ExpressionUUID->"18028d31-fb19-463d-88c5-33b1f5d630a6"],
+Cell[31023, 674, 233, 6, 32, "Echo",ExpressionUUID->"7e7aa786-ced8-4f80-b1bb-2ff0920ad354"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[98230, 2072, 228, 4, 34, "Subitem",ExpressionUUID->"3463f613-96de-4d8c-98b6-320d04a29e1f"],
-Cell[98461, 2078, 236, 4, 31, "Subsubitem",ExpressionUUID->"55e7f387-e359-400a-bc46-5969dae8acc5"],
-Cell[98700, 2084, 261, 5, 31, "Subsubitem",ExpressionUUID->"a22a499b-04c0-4ef0-bd2f-b1aa91a6237f"]
+Cell[31317, 687, 228, 4, 34, "Subitem",ExpressionUUID->"3463f613-96de-4d8c-98b6-320d04a29e1f"],
+Cell[31548, 693, 236, 4, 31, "Subsubitem",ExpressionUUID->"55e7f387-e359-400a-bc46-5969dae8acc5"],
+Cell[31787, 699, 261, 5, 31, "Subsubitem",ExpressionUUID->"a22a499b-04c0-4ef0-bd2f-b1aa91a6237f"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[99010, 2095, 150, 3, 40, "Item",ExpressionUUID->"cc71456a-85d5-412a-9904-54b371731ec8"],
+Cell[32097, 710, 150, 3, 40, "Item",ExpressionUUID->"cc71456a-85d5-412a-9904-54b371731ec8"],
 Cell[CellGroupData[{
-Cell[99185, 2102, 309, 7, 34, "Subitem",ExpressionUUID->"d0ba974f-5a96-41c0-bdc3-04d6873271a0"],
-Cell[99497, 2111, 294, 4, 31, "Subsubitem",ExpressionUUID->"01e20724-09a5-4df2-90ce-0fa31c895756"]
+Cell[32272, 717, 309, 7, 34, "Subitem",ExpressionUUID->"d0ba974f-5a96-41c0-bdc3-04d6873271a0"],
+Cell[32584, 726, 294, 4, 31, "Subsubitem",ExpressionUUID->"01e20724-09a5-4df2-90ce-0fa31c895756"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[99840, 2121, 252, 4, 83, "Section",ExpressionUUID->"e42108e0-3029-4a53-883b-6c3ef718be3b"],
+Cell[32927, 736, 252, 4, 83, "Section",ExpressionUUID->"e42108e0-3029-4a53-883b-6c3ef718be3b"],
 Cell[CellGroupData[{
-Cell[100117, 2129, 153, 3, 40, "Item",ExpressionUUID->"30e61af5-4dee-4d63-b5f8-115f9a461117"],
-Cell[100273, 2134, 321, 6, 36, "Input",ExpressionUUID->"6e95c106-3d39-4c5d-ba29-2c3113cd5bf3"],
-Cell[100597, 2142, 904, 20, 189, "Input",ExpressionUUID->"daaed012-4ee0-49a0-ab49-e32debebc4da"]
+Cell[33204, 744, 153, 3, 40, "Item",ExpressionUUID->"30e61af5-4dee-4d63-b5f8-115f9a461117"],
+Cell[CellGroupData[{
+Cell[33382, 751, 416, 8, 36, "Input",ExpressionUUID->"6e95c106-3d39-4c5d-ba29-2c3113cd5bf3"],
+Cell[33801, 761, 325, 8, 403, "Output",ExpressionUUID->"cf39f27b-a3f5-4a6f-a888-aa78be07ee07"]
+}, Open  ]],
+Cell[34141, 772, 935, 18, 138, "Input",ExpressionUUID->"f7022d37-7487-490e-bc51-132ffa073497"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[101538, 2167, 148, 3, 40, "Item",ExpressionUUID->"09ea28fb-1e5b-4153-8945-0d0ad8e0badb"],
-Cell[101689, 2172, 843, 24, 62, "Input",ExpressionUUID->"9920b141-8d8d-4ee2-94d0-984e5deb4a71"],
-Cell[102535, 2198, 830, 17, 36, "Input",ExpressionUUID->"4893888a-238c-4db5-a631-792d6cdce0a2"],
-Cell[103368, 2217, 999, 27, 62, "Input",ExpressionUUID->"17f40099-cdde-4db5-9548-28dfec3bbe2f"],
+Cell[35113, 795, 148, 3, 40, "Item",ExpressionUUID->"09ea28fb-1e5b-4153-8945-0d0ad8e0badb"],
+Cell[35264, 800, 913, 24, 88, "Input",ExpressionUUID->"9920b141-8d8d-4ee2-94d0-984e5deb4a71"],
+Cell[36180, 826, 1060, 20, 62, "Input",ExpressionUUID->"4893888a-238c-4db5-a631-792d6cdce0a2"],
 Cell[CellGroupData[{
-Cell[104392, 2248, 315, 7, 36, "Input",ExpressionUUID->"4ea9d0c1-2fb5-4b66-be54-443f9d80fa56"],
-Cell[104710, 2257, 25842, 442, 297, "Output",ExpressionUUID->"28d282c1-7e47-4504-b954-d7304771bd69"]
+Cell[37265, 850, 294, 5, 36, "Input",ExpressionUUID->"47f304d7-ea0c-4202-801c-148825ff63fb"],
+Cell[37562, 857, 153, 2, 41, "Output",ExpressionUUID->"4e607cb0-7280-4000-aba2-5f1b00fc68e3"]
 }, Open  ]],
-Cell[130567, 2702, 1128, 26, 62, "Input",ExpressionUUID->"e8e6c37b-30e8-49c3-98b9-f9ca294a4372"]
+Cell[CellGroupData[{
+Cell[37752, 864, 345, 8, 36, "Input",ExpressionUUID->"21e77caf-8966-4188-9581-46d5d4001b3e"],
+Cell[38100, 874, 223, 3, 41, "Output",ExpressionUUID->"debae5d4-1d40-4b6f-9b00-30787955d41b"]
+}, Open  ]],
+Cell[38338, 880, 1464, 38, 113, "Input",ExpressionUUID->"5cb0037f-77a6-495a-93c6-2374e7f7f6e5"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[131744, 2734, 169, 3, 83, "Section",ExpressionUUID->"8669e636-5bdb-4359-ad8f-8c7bd0830fe1"],
+Cell[39851, 924, 169, 3, 83, "Section",ExpressionUUID->"8669e636-5bdb-4359-ad8f-8c7bd0830fe1"],
 Cell[CellGroupData[{
-Cell[131938, 2741, 169, 3, 68, "Subsection",ExpressionUUID->"91bb0962-f267-4ba1-8d13-bca55e87d938"],
-Cell[132110, 2746, 8157, 218, 1019, "Input",ExpressionUUID->"70d9fa47-85e8-495b-9b30-687646593dbd",
+Cell[40045, 931, 163, 3, 68, "Subsection",ExpressionUUID->"7e092983-3d4d-46ea-a6fe-ca195ea60f9f"],
+Cell[40211, 936, 3397, 96, 343, "Input",ExpressionUUID->"a8fff896-3829-4ef5-8612-4504845ec4a1",
  InitializationCell->True]
 }, Closed]],
 Cell[CellGroupData[{
-Cell[140304, 2969, 164, 3, 47, "Subsection",ExpressionUUID->"ebced280-fc50-424d-b0a8-32680f1d82c2"],
-Cell[140471, 2974, 170676, 2803, 197, "Input",ExpressionUUID->"08b75340-64f7-48a7-ba15-278d665f02fe"],
-Cell[311150, 5779, 4937, 93, 317, "Input",ExpressionUUID->"cb6947db-33aa-4869-adb0-b6d9b08954ff",
+Cell[43645, 1037, 169, 3, 47, "Subsection",ExpressionUUID->"91bb0962-f267-4ba1-8d13-bca55e87d938"],
+Cell[43817, 1042, 8157, 218, 1019, "Input",ExpressionUUID->"70d9fa47-85e8-495b-9b30-687646593dbd",
+ InitializationCell->True]
+}, Closed]],
+Cell[CellGroupData[{
+Cell[52011, 1265, 164, 3, 47, "Subsection",ExpressionUUID->"ebced280-fc50-424d-b0a8-32680f1d82c2"],
+Cell[52178, 1270, 170676, 2803, 197, "Input",ExpressionUUID->"08b75340-64f7-48a7-ba15-278d665f02fe"],
+Cell[222857, 4075, 4936, 93, 317, "Input",ExpressionUUID->"cb6947db-33aa-4869-adb0-b6d9b08954ff",
  InitializationCell->True],
-Cell[316090, 5874, 3368, 68, 285, "Input",ExpressionUUID->"ab1b8565-e048-4906-8bed-50906734d99c",
- InitializationCell->True]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[319495, 5947, 237, 4, 47, "Subsection",ExpressionUUID->"2f71ba31-8eb7-416a-b5e5-96ddcf590555"],
-Cell[319735, 5953, 2466, 65, 287, "Input",ExpressionUUID->"37e9c5c4-d3fa-493b-8a9d-eb2ed890e305",
- InitializationCell->True]
-}, Closed]],
-Cell[CellGroupData[{
-Cell[322238, 6023, 185, 3, 47, "Subsection",ExpressionUUID->"8ed1063c-705e-4e8d-afc4-8d03d6f62807"],
-Cell[322426, 6028, 37830, 988, 4499, "Input",ExpressionUUID->"20e4edd9-4460-4868-99f0-0af27c4a6331",
+Cell[227796, 4170, 6971, 153, 766, "Input",ExpressionUUID->"ab1b8565-e048-4906-8bed-50906734d99c",
+ InitializationCell->True],
+Cell[234770, 4325, 884, 23, 82, "Input",ExpressionUUID->"7716cd1e-898c-4e55-83a2-b18306664ad3",
  InitializationCell->True]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[360293, 7021, 163, 3, 68, "Subsection",ExpressionUUID->"7e092983-3d4d-46ea-a6fe-ca195ea60f9f"],
-Cell[360459, 7026, 3100, 86, 292, "Input",ExpressionUUID->"a8fff896-3829-4ef5-8612-4504845ec4a1",
+Cell[235691, 4353, 237, 4, 68, "Subsection",ExpressionUUID->"2f71ba31-8eb7-416a-b5e5-96ddcf590555"],
+Cell[235931, 4359, 4422, 109, 566, "Input",ExpressionUUID->"37e9c5c4-d3fa-493b-8a9d-eb2ed890e305",
+ InitializationCell->True]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[240390, 4473, 185, 3, 68, "Subsection",ExpressionUUID->"8ed1063c-705e-4e8d-afc4-8d03d6f62807"],
+Cell[240578, 4478, 38982, 1014, 4600, "Input",ExpressionUUID->"20e4edd9-4460-4868-99f0-0af27c4a6331",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
