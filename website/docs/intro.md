@@ -120,21 +120,21 @@ If you feel that we are not living up to this pledge, please speak directly to o
 
 ## (Tentative) Schedule of Topics
 
-|      Week     	|                        Monday Lecture                       	|   Tuesday Session   		|         Wednesday Lecture         	|           Assignments          	|
-|:-------------:	|:-----------------------------------------------------------:	|:------------------------:	|:---------------------------------:	|:------------------------------:	|
-| 01/31 - 02/04 	|                   Intro & Simple Pendulum                   	|             -            	|       Hamiltonian Mechanics       	|                -               	|
-| 02/07 - 02/11 	|                       Lattice Dynamics                      	|       Data-Viz Hour      	|    VdW Gas - Equation of State    	|          P1 Out: 02/07         	|
-| 02/14 - 02/18 	|              VdW Gas - Helmoltz Common Tangent              	|     Code Show & Tell     	|      Legendre Transformations     	| P1 Due: 02/16<br/>P2 Out: 02/16 	|
-| 02/21 - 02/25 	| **Note:** Tues 02/22 (Pres day)<br/>Stability Conditions 	|       Data-Viz Hour      	|  Physical Properties of Crystals  	|                -               	|
-| 02/28 - 03/04 	|                      Polymer Statistics                     	|     Code Show & Tell     	|      Step-Wise Polymerization     	| P2 Due: 03/02<br/>P3 Out: 03/02 	|
-| 03/07 - 03/11 	|                      Molecular Dynamics                     	|       Data-Viz Hour      	|        Ideal Solution Model       	|                -               	|
-| 03/14 - 03/18 	|                    Regular Solution Model                   	|     Code Show & Tell     	| Chemical Potential Common Tangent 	| P3 Due: 03/16<br/>P4 Out: 03/16 	|
-| 03/21 - 03/25 	|                   **_N/A (Spring Break)_**                  	| **_N/A (Spring Break)_** 	|      **_N/A (Spring Break)_**     	|                -               	|
-| 03/28 - 04/01 	|                    Binary Phase Diagrams                    	|       Data-Viz Hour      	|      Tertiary Phase Diagrams      	| P4 Due: 03/30<br/>P5 Out: 03/30 	|
-| 04/04 - 04/08 	|                        Surface Energy                       	|     Code Show & Tell     	|         Wulff Construction        	|                -               	|
-| 04/11 - 04/15 	|                   Statistical Mechanics I                   	|       Data-Viz Hour      	|      Statistical Mechanics II     	| P5 Due: 04/13<br/>P6 Out: 04/13 	|
-| 04/18 - 04/22 	|                  **_N/A (Patriots' Day)_**                  	|     Code Show & Tell     	|        Kinetic Monte Carlo        	|                -               	|
-| 04/25 - 04/29 	|                  Order-Disorder Transitions                 	|       Data-Viz Hour      	|    Fourier Series & Transforms    	|          P6 Due: 04/27         	|
-| 05/02 - 05/06 	|                    Diffraction & Imaging                    	|     Code Show & Tell     	|        Final Presentations        	|                -               	|
-| 05/09 - 05/13 	|                       Students' Choice                      	|             -            	|                 -                 	|    Final Projects Due: 05/09   	|
+|      Week     |                       Monday Lecture                        |      Tuesday Session     |           Wednesday Lecture           |           Assignments           |
+|:-------------:|:-----------------------------------------------------------:|:------------------------:|:-------------------------------------:|:-------------------------------:|
+| 01/31 - 02/04 |                   Intro & Simple Pendulum                   |             -            |         Hamiltonian Mechanics         |                -                |
+| 02/07 - 02/11 |                      Lattice Dynamics                       |       Data-Viz Hour      |      VdW Gas - Equation of State      |          P1 Out: 02/07          |
+| 02/14 - 02/18 |                  Helmholtz Common Tangent                   |     Code Show & Tell     |        Legendre Transformations       | P1 Due: 02/16<br/>P2 Out: 02/18 |
+| 02/21 - 02/25 | **Note:** Tues 02/22 (Pres day)<br/>Thermodynamic Stability |       Data-Viz Hour      |   Physical Properties of Crystals I   |                -                |
+| 02/28 - 03/04 |             Physical Properties of Crystals II              |     Code Show & Tell     |           Polymer Statistics          |          P2 Due: 03/04          |
+| 03/07 - 03/11 |                      Polymer Reptation                      |       Data-Viz Hour      |       Step-Growth Polymerization      |          P3 Out: 03/09          |
+| 03/14 - 03/18 |                     Molecular Dynamics                      |     Code Show & Tell     |            Solution Models            |          P3 Due: 03/18          |
+| 03/21 - 03/25 |                  **_N/A (Spring Break)_**                   | **_N/A (Spring Break)_** |        **_N/A (Spring Break)_**       |                -                |
+| 03/28 - 04/01 |    Chemical Potential<br/>Common Tangent Construction       |       Data-Viz Hour      |         Binary Phase Diagrams         |          P4 Out: 03/30          |
+| 04/04 - 04/08 |                   Tertiary Phase Diagrams                   |     Code Show & Tell     | Surface Energy<br/>Wulff Construction |                -                |
+| 04/11 - 04/15 |                   Statistical Mechanics I                   |       Data-Viz Hour      |        Statistical Mechanics II       | P4 Due: 04/13<br/>P5 Out: 04/13 |
+| 04/18 - 04/22 |                  **_N/A (Patriots' Day)_**                  |     Code Show & Tell     |          Kinetic Monte Carlo          |                -                |
+| 04/25 - 04/29 |                 Order-Disorder Transitions                  |       Data-Viz Hour      |      Fourier Series & Transforms      |          P5 Due: 04/27          |
+| 05/02 - 05/06 |                    Diffraction & Imaging                    |     Code Show & Tell     |          Final Presentations          |                -                |
+| 05/09 - 05/13 |                      Students' Choice                       |             -            |                   -                   |    Final Projects Due: 05/09    |
 
