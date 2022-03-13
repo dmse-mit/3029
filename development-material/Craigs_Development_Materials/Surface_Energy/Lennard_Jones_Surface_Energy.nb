@@ -1,0 +1,896 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     34306,        888]
+NotebookOptionsPosition[     28824,        804]
+NotebookOutlinePosition[     29221,        820]
+CellTagsIndexPosition[     29178,        817]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["\<\
+Computing the surface contribution to the energy of a round particle from LJ\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.8561734034157476`*^9, 
+  3.856173420405712*^9}},ExpressionUUID->"6d01aa50-8178-466b-b9c9-\
+aaef1ce89163"],
+
+Cell[BoxData[
+ RowBox[{"hexLatticeVectors", " ", "=", " ", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"1", ",", "0"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"1", "/", "2"}], ",", 
+      RowBox[{
+       RowBox[{"Sqrt", "[", "3", "]"}], "/", "2"}]}], "}"}]}], 
+   "}"}]}]], "Input",
+ CellChangeTimes->{{3.856158350332882*^9, 3.856158360128243*^9}},
+ CellLabel->
+  "3/13/22 18:14:52 (extra_kernel) \
+In[474]:=",ExpressionUUID->"53c95543-3459-42a9-88f6-30e9b7e541ba"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"latticePoints", " ", "=", " ", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#", ".", "hexLatticeVectors"}], "&"}], "/@", 
+    RowBox[{"N", "@", 
+     RowBox[{"Tuples", "[", 
+      RowBox[{
+       RowBox[{"N", "@", 
+        RowBox[{"Range", "[", 
+         RowBox[{
+          RowBox[{"-", "60"}], ",", "60"}], "]"}]}], ",", "2"}], "]"}]}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.856172995660925*^9, 3.856173003231523*^9}, {
+  3.856173057149798*^9, 3.8561730598551683`*^9}, {3.856173281157015*^9, 
+  3.8561732893685713`*^9}},
+ CellLabel->
+  "3/13/22 18:14:52 (extra_kernel) \
+In[475]:=",ExpressionUUID->"6a5fdc4f-2f6d-40fa-ba80-7c14fd39efce"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"particle", " ", "=", " ", 
+   RowBox[{
+    RowBox[{"Select", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Norm", "[", "#", "]"}], "<", "50"}], "&"}], "]"}], "[", 
+    "latticePoints", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.856158362520439*^9, 3.856158412340231*^9}, {
+  3.856158483486549*^9, 3.8561584947331953`*^9}, {3.856172075687044*^9, 
+  3.8561720787287197`*^9}, {3.856173011974629*^9, 3.856173065905594*^9}},
+ CellLabel->
+  "3/13/22 18:14:52 (extra_kernel) \
+In[476]:=",ExpressionUUID->"372964e7-e720-428e-b0c1-77d82a1b7602"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+We can make round particles up to about size 50 with the part of the lattice \
+we chose.\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.856173428050024*^9, 
+  3.856173451531467*^9}},ExpressionUUID->"de24c588-66e9-4683-9f87-\
+bf4ab18ce5f5"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Point", "/@", "latticePoints"}], ",", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Circle", "[", 
+        RowBox[{"#", ",", 
+         RowBox[{"1", "/", "2"}]}], "]"}], "&"}], "/@", "particle"}]}], "}"}],
+    ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8561584141722317`*^9, 3.856158427671036*^9}, {
+  3.8561733289617853`*^9, 3.856173371721746*^9}},
+ CellLabel->
+  "3/13/22 18:14:52 (extra_kernel) \
+In[477]:=",ExpressionUUID->"ced8d0eb-2e8f-4c0b-85ad-b9802f9d00e3"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"roundParticle", "[", 
+   RowBox[{"radius_", ",", "latticePoints_"}], "]"}], ":=", " ", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Norm", "[", "#", "]"}], "<", "radius"}], "&"}], "]"}], "[", 
+   "latticePoints", "]"}]}]], "Input",
+ CellChangeTimes->{{3.856173160597064*^9, 3.856173196821446*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[478]:=",ExpressionUUID->"804ddfe8-0748-48e8-8dc4-020b38591b00"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Using DistanceMatrix, find the energy of each particle", "Subsubsection",
+ CellChangeTimes->{{3.856173464594947*^9, 
+  3.8561734802627907`*^9}},ExpressionUUID->"b70ee6d5-a891-4acb-b623-\
+e3afae1df60e"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"lennardJonesTotalEnergyPerParticle", "[", "positions_", "]"}], ":=",
+   "\[IndentingNewLine]", 
+  RowBox[{"Block", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"augmentedDistanceMatrix", "=", " ", 
+       RowBox[{
+        RowBox[{"DistanceMatrix", "[", 
+         RowBox[{"positions", ",", " ", 
+          RowBox[{"DistanceFunction", "\[Rule]", "EuclideanDistance"}]}], 
+         "]"}], "+", " ", 
+        RowBox[{"IdentityMatrix", "[", 
+         RowBox[{"Length", "[", "positions", "]"}], "]"}]}]}], ",", 
+      "\[IndentingNewLine]", "pairEnergies", ",", "\[IndentingNewLine]", 
+      "energiesPerParticle"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"pairEnergies", " ", "=", " ", 
+      RowBox[{
+       FractionBox["1", 
+        SuperscriptBox["augmentedDistanceMatrix", "12"]], "-", " ", 
+       FractionBox["2", 
+        SuperscriptBox["augmentedDistanceMatrix", "6"]]}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"energiesPerParticle", " ", "=", " ", 
+      RowBox[{
+       FractionBox[
+        RowBox[{"Total", "[", "pairEnergies", "]"}], "2"], "+", "1"}]}]}]}], 
+   "\[IndentingNewLine]", "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.856173099158537*^9, 3.856173119771336*^9}, 
+   3.856173510810082*^9, {3.8561759562659483`*^9, 3.8561759605662327`*^9}, 
+   3.856176020118181*^9, {3.856178193495118*^9, 3.856178198994865*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[479]:=",ExpressionUUID->"bde4faf5-cc42-443a-b0e1-fb3afab88459"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["For a particle of size 20, here are the range of energies:", \
+"Subsubsection",
+ CellChangeTimes->{{3.856173560231655*^9, 
+  3.856173579818132*^9}},ExpressionUUID->"8e02905c-dcf3-4058-9c12-\
+101bdb25c37b"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"eMin", ",", "eMax"}], "}"}], "=", 
+  RowBox[{"MinMax", "[", 
+   RowBox[{"lennardJonesTotalEnergyPerParticle", "[", 
+    RowBox[{"roundParticle", "[", 
+     RowBox[{"20", ",", "latticePoints"}], "]"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856173539384419*^9, 3.856173587584989*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[480]:=",ExpressionUUID->"12ce7295-b269-4e8c-9b53-6a8d25ee61c1"],
+
+Cell[BoxData[
+ RowBox[{"Histogram", "[", 
+  RowBox[{
+   RowBox[{"lennardJonesTotalEnergyPerParticle", "[", 
+    RowBox[{"roundParticle", "[", 
+     RowBox[{"20", ",", "latticePoints"}], "]"}], "]"}], ",", 
+   RowBox[{"{", ".05", "}"}], ",", 
+   RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Particle Energy\>\"", ",", 
+      "\"\<Number of Particles with Energy\>\""}], "}"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.856173124797874*^9, 3.85617313906318*^9}, {
+  3.85617320361158*^9, 3.856173217809478*^9}, {3.85617352500745*^9, 
+  3.856173528805608*^9}, {3.856173594660151*^9, 3.856173648981514*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[481]:=",ExpressionUUID->"ee906a7e-3d47-4f31-9ad3-1dfc81ecbd08"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Function to color particles according to their energy, Give more contrast to \
+the lower energy part of the distribution\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.856173661345887*^9, 3.856173691482901*^9}, {
+  3.856174102397635*^9, 3.8561741286958838`*^9}, {3.856174450186247*^9, 
+  3.85617445093782*^9}},ExpressionUUID->"9bbe8e28-bebc-4c45-98e9-\
+c6e725572ad5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"energyColor", "[", 
+   RowBox[{"energy_", ",", 
+    RowBox[{"{", 
+     RowBox[{"eMin_", ",", " ", "eMax_"}], "}"}]}], "]"}], ":=", " ", 
+  RowBox[{
+   RowBox[{"ColorData", "[", "\"\<DarkRainbow\>\"", "]"}], "[", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"Rescale", "[", 
+      RowBox[{
+       RowBox[{"Clip", "[", 
+        RowBox[{"energy", ",", 
+         RowBox[{"{", 
+          RowBox[{"eMin", ",", "eMax"}], "}"}]}], "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"eMin", ",", "eMax"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "1"}], "}"}]}], "]"}], ")"}], "^", 
+    RowBox[{"(", ".25", ")"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856173700074259*^9, 3.856173743162994*^9}, 
+   3.8561737734072647`*^9, {3.856173805102912*^9, 3.8561738257138567`*^9}, {
+   3.856173884773543*^9, 3.856173891764206*^9}, {3.856173942870275*^9, 
+   3.8561739662608547`*^9}, {3.856174073446301*^9, 3.856174090633658*^9}, {
+   3.856174134857634*^9, 3.856174154950768*^9}, {3.856174431656274*^9, 
+   3.856174496298533*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[482]:=",ExpressionUUID->"2f59d4cc-e31c-4fcc-927e-5d3db8d22eb9"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"energyColor", "[", 
+    RowBox[{"#", ",", 
+     RowBox[{"{", 
+      RowBox[{"eMin", ",", "eMax"}], "}"}]}], "]"}], "&"}], "/@", 
+  RowBox[{"Range", "[", 
+   RowBox[{"eMin", ",", "eMax", ",", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"eMax", "-", "eMin"}], ")"}], "/", "24"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8561739730565243`*^9, 3.856174047464904*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[483]:=",ExpressionUUID->"54bfb6d4-96c2-4b6d-8d7f-96edcdd1652a"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"particleGraphic", "[", "positions_", "]"}], ":=", " ", 
+  RowBox[{"MapThread", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"energyColor", "[", 
+        RowBox[{"#1", ",", 
+         RowBox[{"{", 
+          RowBox[{"eMin", ",", "eMax"}], "}"}]}], "]"}], ",", 
+       RowBox[{"Disk", "[", 
+        RowBox[{"#2", ",", 
+         RowBox[{"1", "/", "2"}]}], "]"}]}], "}"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"lennardJonesTotalEnergyPerParticle", "[", "positions", "]"}], 
+      ",", "positions"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856174177688568*^9, 3.856174291098742*^9}, {
+  3.8561743605399733`*^9, 3.856174366149775*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[484]:=",ExpressionUUID->"5168ca57-52dd-4761-a42a-0dc59cd55d34"],
+
+Cell[BoxData[
+ RowBox[{"GraphicsRow", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"Graphics", "[", 
+     RowBox[{"particleGraphic", "[", 
+      RowBox[{"roundParticle", "[", 
+       RowBox[{"#", ",", "latticePoints"}], "]"}], "]"}], "]"}], "&"}], "/@", 
+   
+   RowBox[{"{", 
+    RowBox[{"5", ",", "10", ",", "20"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.8561743249991703`*^9, 3.856174350294703*^9}, {
+  3.856174383595064*^9, 3.856174403852112*^9}, {3.856174439640061*^9, 
+  3.856174439875573*^9}},
+ CellLabel->
+  "3/13/22 18:14:54 (extra_kernel) \
+In[485]:=",ExpressionUUID->"53eceb66-e172-41c4-92f5-634e88adad45"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Compute excess energy due to surface", "Subsubsection",
+ CellChangeTimes->{{3.856174512564981*^9, 
+  3.856174539072236*^9}},ExpressionUUID->"a206fd32-b231-4f12-9a48-\
+213c590b4a4d"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"totalLennardJonesTotalEnergy", "[", "positions_", "]"}], ":=", 
+  RowBox[{"Total", "[", 
+   RowBox[{"lennardJonesTotalEnergyPerParticle", "[", "positions", "]"}], 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.856158505923479*^9, 3.856158506623184*^9}, {
+   3.856172099894043*^9, 3.856172343684623*^9}, {3.8561724545587893`*^9, 
+   3.85617247761558*^9}, {3.856172536164126*^9, 3.856172547980056*^9}, {
+   3.8561727844373217`*^9, 3.856172784771879*^9}, {3.856172817407494*^9, 
+   3.8561728177263603`*^9}, 3.8561728503823347`*^9, {3.8561729119882183`*^9, 
+   3.8561729212304792`*^9}, {3.8561745775382347`*^9, 3.856174624192006*^9}, {
+   3.856175071772605*^9, 3.856175076256165*^9}},
+ CellLabel->
+  "3/13/22 17:37:51 (extra_kernel) \
+In[419]:=",ExpressionUUID->"7b35eeed-c57f-4b1d-a00b-d952730c5ee2"],
+
+Cell[BoxData[
+ RowBox[{"energyData", "=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"#", ",", 
+      RowBox[{"totalLennardJonesTotalEnergy", "[", 
+       RowBox[{"roundParticle", "[", 
+        RowBox[{"#", ",", "latticePoints"}], "]"}], "]"}]}], "}"}], "&"}], "/@", 
+   RowBox[{"Range", "[", 
+    RowBox[{"5", ",", "50"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8561724871046658`*^9, 3.856172514378763*^9}, {
+   3.8561726150238943`*^9, 3.856172638989401*^9}, {3.856172678526238*^9, 
+   3.856172678881032*^9}, 3.856172824940461*^9, {3.856172954317831*^9, 
+   3.8561729543775253`*^9}, {3.8561746355182*^9, 3.856174695376851*^9}, {
+   3.856174816734864*^9, 3.856174817282235*^9}, 3.8561750870410233`*^9},
+ CellLabel->
+  "3/13/22 16:44:50 (extra_kernel) \
+In[332]:=",ExpressionUUID->"ca383083-3061-4e51-94b6-02471a2fee95"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"energyData", ",", 
+   RowBox[{"Frame", "->", "True"}], ",", 
+   RowBox[{"FrameLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{"\"\<Particle Radius\>\"", ",", "\"\<Total Energy\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.856174720160969*^9, 3.8561747945484447`*^9}, {
+  3.8561751251370583`*^9, 
+  3.856175144026956*^9}},ExpressionUUID->"d7faf72d-30bd-44c2-9892-\
+3da5cbad5bf6"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Average Energy per particle:", "Subsubsection",
+ CellChangeTimes->{{3.8561751505796432`*^9, 
+  3.856175157792666*^9}},ExpressionUUID->"cf1a45d5-0409-4d31-8b6c-\
+41c155c883e0"],
+
+Cell[BoxData[
+ RowBox[{"energyDataPerParticle", "=", " ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"#", ",", 
+      RowBox[{"With", "[", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"particle", " ", "=", 
+          RowBox[{"roundParticle", "[", 
+           RowBox[{"#", ",", "latticePoints"}], "]"}]}], "}"}], ",", " ", 
+        RowBox[{
+         RowBox[{"totalLennardJonesTotalEnergy", "[", "particle", "]"}], "/", 
+         
+         RowBox[{"Length", "[", "particle", "]"}]}]}], "]"}]}], "}"}], "&"}], 
+   "/@", 
+   RowBox[{"Range", "[", 
+    RowBox[{"5", ",", "50"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8561751737337313`*^9, 3.856175232518939*^9}},
+ CellLabel->
+  "3/13/22 16:47:14 (extra_kernel) \
+In[334]:=",ExpressionUUID->"4f74188b-f3ba-4b0a-a62c-b8313476c47c"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{"energyDataPerParticle", ",", 
+   RowBox[{"Frame", "->", "True"}], ",", 
+   RowBox[{"FrameLabel", "->", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<Particle Radius\>\"", ",", "\"\<Average Energy Per Atom\>\""}], 
+     "}"}]}], ",", 
+   RowBox[{"ImageSize", "\[Rule]", "Large"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.856175245557642*^9, 3.856175269020988*^9}},
+ CellLabel->
+  "3/13/22 16:47:49 (extra_kernel) \
+In[335]:=",ExpressionUUID->"018c376a-0006-4fe6-ad6f-e73a7227654e"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Suppose that the excess energy goes as the particle\[CloseCurlyQuote]s area \
+over the particle\[CloseCurlyQuote]s perimeter \
+\>", "Subsubsection",
+ CellChangeTimes->{{3.856174805558317*^9, 3.856174812006475*^9}, {
+  3.856174846003146*^9, 
+  3.8561749357495403`*^9}},ExpressionUUID->"15f904bc-74ab-4aef-a671-\
+14eddd1af528"],
+
+Cell[BoxData[
+ RowBox[{"model", " ", "=", " ", 
+  RowBox[{
+   RowBox[{"bulkEnergy", " ", 
+    RowBox[{"(", 
+     RowBox[{"Pi", " ", 
+      RowBox[{"radius", "^", "2"}]}], ")"}]}], " ", "+", " ", 
+   RowBox[{"\[Gamma]", " ", 
+    RowBox[{"(", 
+     RowBox[{"2", " ", "Pi", " ", "radius"}], ")"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.856174947341819*^9, 3.856175006522944*^9}, {
+  3.856175279011228*^9, 3.8561752800256233`*^9}},
+ CellLabel->
+  "3/13/22 16:48:02 (extra_kernel) \
+In[336]:=",ExpressionUUID->"b00f7c1e-f15e-4bbf-979e-e7793af8c212"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"{", 
+   RowBox[{"bulkEnergy", ",", " ", "\[Gamma]"}], "}"}], "=", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"bulkEnergy", ",", " ", "\[Gamma]"}], "}"}], "/.", " ", 
+   RowBox[{"FindFit", "[", 
+    RowBox[{"energyData", ",", "model", ",", 
+     RowBox[{"{", 
+      RowBox[{"bulkEnergy", ",", "\[Gamma]"}], "}"}], ",", "radius"}], 
+    "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.8561752848042707`*^9, 3.856175316180482*^9}, {
+  3.8561806279066477`*^9, 3.85618064477258*^9}},
+ CellLabel->
+  "3/13/22 18:17:25 (extra_kernel) \
+In[493]:=",ExpressionUUID->"5352d6e1-3fd3-413b-9743-fa5029561fbb"]
+}, Open  ]],
+
+Cell["\<\
+We conclude that the surface tension for LJ is about 1.64 eMin/rMin^2.\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.856175356969129*^9, 
+  3.8561754314004583`*^9}},ExpressionUUID->"45ec1621-4c48-47db-a36c-\
+f9b589b0ba97"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Surface Relaxation
+The positions we specified were as if they were on a perfect lattice, in a \
+real system they would all relax to an equilbrium with lower internal energy.\
+\
+\>", "Subsubsection",
+ CellChangeTimes->{{3.8561754388600273`*^9, 3.856175445832012*^9}, {
+  3.856179829635302*^9, 
+  3.8561798732714767`*^9}},ExpressionUUID->"67d773c9-9b8b-4867-a731-\
+be90c3c76cfa"],
+
+Cell["\<\
+Trying to find the equilibrium positions with FindMinimum. I thought I had \
+done this once, but can\[CloseCurlyQuote]t figure it out now\
+\>", "Text",
+ CellChangeTimes->{{3.856179773139044*^9, 
+  3.856179801168268*^9}},ExpressionUUID->"b2f672cd-baaf-4113-8929-\
+63e01f900777"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"p", " ", "=", 
+   RowBox[{"roundParticle", "[", 
+    RowBox[{"5", ",", "latticePoints"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.856175474356134*^9, 3.856175497576139*^9}},
+ CellLabel->
+  "3/13/22 17:01:07 (extra_kernel) \
+In[367]:=",ExpressionUUID->"de546e9b-9b08-4b62-a50c-a908efad074e"],
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "p", "]"}]], "Input",
+ CellChangeTimes->{{3.856175499864192*^9, 3.8561755018451767`*^9}},
+ CellLabel->
+  "3/13/22 17:01:08 (extra_kernel) \
+In[368]:=",ExpressionUUID->"8e190b8e-dd13-4ed0-b8bd-ad3d2b614624"],
+
+Cell[BoxData[
+ RowBox[{"  ", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"pairs", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"x", "[", "#", "]"}], ",", 
+         RowBox[{"y", "[", "#", "]"}]}], "}"}], "&"}], "/@", 
+      RowBox[{"Range", "[", 
+       RowBox[{"Length", "[", "p", "]"}], "]"}]}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"vars", " ", "=", " ", 
+    RowBox[{"Flatten", "[", "pairs", "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.856175504526444*^9, 3.8561756257362137`*^9}, 
+   3.856175734464373*^9, {3.856175911243248*^9, 3.856175919632909*^9}},
+ CellLabel->
+  "3/13/22 17:01:10 (extra_kernel) \
+In[369]:=",ExpressionUUID->"12070c7e-c6a2-4dd9-a8bb-b023606be4cd"],
+
+Cell[BoxData[
+ RowBox[{"energyTotal", "[", 
+  RowBox[{"Flatten", "[", "p", "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.856179497137803*^9, 3.856179503254314*^9}, {
+  3.856179589683564*^9, 3.856179592640979*^9}},
+ CellLabel->
+  "3/13/22 18:00:56 (extra_kernel) \
+In[439]:=",ExpressionUUID->"e48a4638-555d-4dba-b236-b326a2adc7a7"],
+
+Cell[BoxData[
+ RowBox[{"guess", "=", 
+  RowBox[{"Transpose", "[", 
+   RowBox[{"{", 
+    RowBox[{"vars", ",", 
+     RowBox[{"Flatten", "[", "p", "]"}]}], "}"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856175755970922*^9, 3.856175822815093*^9}, {
+  3.856176344886807*^9, 3.856176374121223*^9}, {3.856176561521245*^9, 
+  3.856176563761816*^9}, {3.856176639733781*^9, 3.856176662124875*^9}, {
+  3.856176698009595*^9, 3.856176706981864*^9}, {3.8561768859343367`*^9, 
+  3.856176896075872*^9}, {3.85617831130249*^9, 3.8561783122244797`*^9}},
+ CellLabel->
+  "3/13/22 18:02:06 (extra_kernel) \
+In[441]:=",ExpressionUUID->"dfbd6b3d-7a26-473d-b93a-cea827865385"],
+
+Cell[BoxData[
+ RowBox[{"totalLennardJonesTotalEnergy", "[", "p", "]"}]], "Input",
+ CellChangeTimes->{{3.856176048152269*^9, 3.8561760550054407`*^9}},
+ CellLabel->
+  "3/13/22 18:02:09 (extra_kernel) \
+In[442]:=",ExpressionUUID->"8dd8317b-fbb6-492a-9fa5-ab7b0cd41938"],
+
+Cell[BoxData[
+ RowBox[{"totalLennardJonesTotalEnergy", "[", "p", "]"}]], "Input",
+ CellChangeTimes->{{3.856178947387958*^9, 3.856178961409789*^9}},
+ CellLabel->
+  "3/13/22 18:02:14 (extra_kernel) \
+In[443]:=",ExpressionUUID->"7ee192a2-4583-41b5-8cc1-ef82d3b9c7f2"],
+
+Cell[BoxData[
+ RowBox[{"Reap", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"min", ",", "sol"}], "}"}], "=", 
+   RowBox[{"FindMinimum", "[", 
+    RowBox[{
+     RowBox[{"lennardJonesTotalEnergy", "[", "pairs", "]"}], ",", "guess", 
+     ",", 
+     RowBox[{"PrecisionGoal", "\[Rule]", "50"}], ",", " ", 
+     RowBox[{"AccuracyGoal", "\[Rule]", "40"}], ",", 
+     RowBox[{"MaxIterations", "\[Rule]", "100"}], ",", 
+     RowBox[{"Method", "\[Rule]", "\"\<ConjugateGradient\>\""}], ",", 
+     RowBox[{"StepMonitor", "\[RuleDelayed]", 
+      RowBox[{"Sow", "[", 
+       RowBox[{"totalLennardJonesTotalEnergy", "[", "pairs", "]"}], "]"}]}]}],
+     "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.856175447436082*^9, 3.8561754497861347`*^9}, {
+  3.8561756375728283`*^9, 3.856175656522662*^9}, {3.856175826862224*^9, 
+  3.856175841122448*^9}, {3.8561758914745083`*^9, 3.856175893896762*^9}, {
+  3.8561761134228363`*^9, 3.856176120689207*^9}, {3.856176291123609*^9, 
+  3.8561762921612062`*^9}, {3.856176499488435*^9, 3.856176532621426*^9}, {
+  3.85617661292934*^9, 3.856176618323556*^9}, {3.8561768008315*^9, 
+  3.856176819690982*^9}, {3.8561795236631823`*^9, 3.856179537473729*^9}, {
+  3.85617971257231*^9, 3.856179714354597*^9}},
+ CellLabel->
+  "3/13/22 18:02:18 (extra_kernel) \
+In[444]:=",ExpressionUUID->"692f0769-68fd-496b-8bcf-0abe029deaf9"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Energy as a function of orientation", "Subsubsection",
+ CellChangeTimes->{{3.856179879235777*^9, 
+  3.856179885063156*^9}},ExpressionUUID->"9d09f5d3-8db7-42b2-bc20-\
+d5a8bec93298"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"semiRoundParticle", "[", 
+   RowBox[{"radius_", ",", "rotation_", ",", "latticePoints_"}], "]"}], ":=", 
+  " ", 
+  RowBox[{
+   RowBox[{"Select", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Norm", "[", "#", "]"}], "<", "radius"}], " ", "&&", " ", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Normal", "[", "#", "]"}], ".", 
+        RowBox[{"AngleVector", "[", "rotation", "]"}]}], ">=", " ", "0"}]}], 
+     "&"}], "]"}], "[", "latticePoints", "]"}]}]], "Input",
+ CellChangeTimes->{{3.856179905666535*^9, 3.8561800487682247`*^9}, {
+  3.85618037409715*^9, 3.856180397970626*^9}, {3.856182639594293*^9, 
+  3.856182656733808*^9}},
+ CellLabel->
+  "3/13/22 18:50:57 (extra_kernel) \
+In[510]:=",ExpressionUUID->"441accc3-ea4c-493e-804b-5afcb9d6be54"],
+
+Cell[BoxData[
+ RowBox[{"lennardJonesTotalEnergy", "[", 
+  RowBox[{"semiRoundParticle", "[", 
+   RowBox[{"10", ",", "1.2", ",", "latticePoints"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.856179968044518*^9, 3.8561799791170797`*^9}, 
+   3.856180066121463*^9, {3.856180160563101*^9, 3.8561801680336*^9}},
+ CellLabel->
+  "3/13/22 18:50:59 (extra_kernel) \
+In[511]:=",ExpressionUUID->"087f486e-5839-4877-8203-6acc6d94de6a"],
+
+Cell[BoxData[
+ RowBox[{"semiRoundParticle", "[", 
+  RowBox[{"5", ",", "0", ",", "latticePoints"}], "]"}]], "Input",
+ CellChangeTimes->{3.856180261546164*^9, 3.856180315224642*^9},
+ CellLabel->
+  "3/13/22 18:13:23 (extra_kernel) \
+In[471]:=",ExpressionUUID->"25b5b941-1cab-4a57-9a2a-7b4c31aec0a0"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"Point", "[", 
+   RowBox[{"semiRoundParticle", "[", 
+    RowBox[{"10", ",", ".6", ",", "latticePoints"}], "]"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.856180227064823*^9, 3.856180339204509*^9}},
+ CellLabel->
+  "3/13/22 18:15:03 (extra_kernel) \
+In[486]:=",ExpressionUUID->"d3bb8538-751f-4568-a077-a282682c0225"],
+
+Cell[BoxData[
+ RowBox[{"Graphics", "[", 
+  RowBox[{"particleGraphic", "[", 
+   RowBox[{"semiRoundParticle", "[", 
+    RowBox[{"10", ",", ".4", ",", "latticePoints"}], "]"}], "]"}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.856180460663275*^9, 3.856180462369502*^9}, {
+  3.856180511673111*^9, 3.8561805151764402`*^9}},
+ CellLabel->
+  "3/13/22 18:15:15 (extra_kernel) \
+In[488]:=",ExpressionUUID->"70e182ba-364e-4c7e-8d95-5bd8a41e1cef"],
+
+Cell[BoxData[
+ RowBox[{"semiRoundParticle", "[", 
+  RowBox[{"20", ",", ".2", ",", "latticePoints"}], "]"}]], "Input",
+ CellChangeTimes->{{3.856180185630138*^9, 3.856180187077739*^9}},
+ CellLabel->
+  "3/13/22 18:09:47 (extra_kernel) \
+In[456]:=",ExpressionUUID->"90a2be7d-7cca-4def-bbfb-5cf2771752a4"],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Graphics", "[", 
+    RowBox[{
+     RowBox[{"particleGraphic", "[", 
+      RowBox[{"semiRoundParticle", "[", 
+       RowBox[{"30", ",", "r", ",", "latticePoints"}], "]"}], "]"}], ",", 
+     RowBox[{"PlotRange", "->", 
+      RowBox[{"30", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "}"}]}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"r", ",", "0", ",", 
+     RowBox[{"2", "Pi"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Dynamic", "[", 
+    RowBox[{"totalLennardJonesTotalEnergy", "[", 
+     RowBox[{"semiRoundParticle", "[", 
+      RowBox[{"35", ",", "r", ",", "latticePoints"}], "]"}], "]"}], "]"}]}], 
+  "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.8561800679378033`*^9, 3.856180071259316*^9}, {
+  3.856180112315866*^9, 3.856180133552087*^9}, {3.856180206648074*^9, 
+  3.856180211877063*^9}, {3.85618041353055*^9, 3.8561804136236753`*^9}, {
+  3.856180540537362*^9, 3.85618058276502*^9}, {3.856182419240074*^9, 
+  3.8561824291552134`*^9}, {3.8561827164922028`*^9, 3.856182722092783*^9}},
+ CellLabel->
+  "3/13/22 18:52:02 (extra_kernel) \
+In[513]:=",ExpressionUUID->"61b2e8f7-e1e8-4d8e-b2dc-cfc66e571735"],
+
+Cell[BoxData[
+ RowBox[{"orientationData", " ", "=", 
+  RowBox[{"Table", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"rot", ",", "\[IndentingNewLine]", 
+      FractionBox[
+       RowBox[{" ", 
+        RowBox[{"totalLennardJonesTotalEnergy", "[", 
+         RowBox[{"semiRoundParticle", "[", 
+          RowBox[{"50", ",", "rot", ",", "latticePoints"}], "]"}], "]"}]}], 
+       RowBox[{"2", " ", "50"}]]}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{"rot", ",", "0", ",", 
+      RowBox[{"2", "Pi"}], ",", 
+      RowBox[{"2", 
+       RowBox[{"Pi", "/", "128"}]}]}], "}"}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.856180600508665*^9, 3.856180612668108*^9}, {
+  3.8561806527581797`*^9, 3.8561807282150717`*^9}, {3.856180796343289*^9, 
+  3.856180842166494*^9}, {3.856180956881074*^9, 3.85618096056219*^9}, {
+  3.8561809964894323`*^9, 3.85618103812045*^9}, {3.856182116198214*^9, 
+  3.856182124612561*^9}, {3.8561822487786093`*^9, 3.8561822500100203`*^9}},
+ CellLabel->
+  "3/13/22 18:44:13 (extra_kernel) \
+In[502]:=",ExpressionUUID->"fa65708c-f760-48a9-bfbc-bfb97ff47bd7"],
+
+Cell[BoxData[
+ RowBox[{"refEnergy", " ", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{"Last", "/@", "orientationData"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.856182308688511*^9, 3.8561823236595383`*^9}, {
+  3.856182366772987*^9, 3.8561823748004932`*^9}},
+ CellLabel->
+  "3/13/22 18:46:15 (extra_kernel) \
+In[504]:=",ExpressionUUID->"a6e250b9-b60f-4015-a3c6-e68224d56548"],
+
+Cell[BoxData[
+ RowBox[{"orientationData", "=", 
+  RowBox[{"orientationData", "/.", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"r_", ",", "e_"}], "}"}], ":>", " ", 
+    RowBox[{"{", 
+     RowBox[{"r", ",", " ", 
+      RowBox[{"1", " ", "+", " ", "e", "-", "refEnergy"}]}], 
+     "}"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.85618232949807*^9, 3.856182380791914*^9}, {
+  3.85618248509772*^9, 3.8561824870597343`*^9}},
+ CellLabel->
+  "3/13/22 18:48:07 (extra_kernel) \
+In[508]:=",ExpressionUUID->"19917af2-039d-4f2a-8895-c37323bb605a"],
+
+Cell["\<\
+What\[CloseCurlyQuote]s up with the points along the axes?  Is the selection \
+routine bad?\
+\>", "Text",
+ CellChangeTimes->{{3.856182821664171*^9, 
+  3.856182838308978*^9}},ExpressionUUID->"ad9432fd-2643-4b56-822e-\
+796b0e5bbcc0"],
+
+Cell[BoxData[
+ RowBox[{"ListPlot", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"Last", "[", "#", "]"}], " ", 
+      RowBox[{"AngleVector", "[", 
+       RowBox[{"First", "[", "#", "]"}], "]"}]}], "&"}], "/@", 
+    "orientationData"}], ",", " ", 
+   RowBox[{"AspectRatio", "\[Rule]", "1"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.856180744428158*^9, 3.856180771384857*^9}, {
+  3.856180904916185*^9, 3.856180929832821*^9}},
+ CellLabel->
+  "3/13/22 18:53:31 (extra_kernel) \
+In[514]:=",ExpressionUUID->"e58384b8-430b-4735-b346-e284bcf739be"]
+}, Open  ]]
+},
+WindowSize->{1122, 713},
+WindowMargins->{{28, Automatic}, {Automatic, 29}},
+FrontEndVersion->"13.0 for Mac OS X ARM (64-bit) (October 26, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"b6889f29-a16a-45db-8d01-301230e27bea"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 237, 5, 56, "Subsubsection",ExpressionUUID->"6d01aa50-8178-466b-b9c9-aaef1ce89163"],
+Cell[820, 29, 501, 15, 51, "Input",ExpressionUUID->"53c95543-3459-42a9-88f6-30e9b7e541ba"],
+Cell[1324, 46, 676, 19, 51, "Input",ExpressionUUID->"6a5fdc4f-2f6d-40fa-ba80-7c14fd39efce"],
+Cell[2003, 67, 581, 14, 51, "Input",ExpressionUUID->"372964e7-e720-428e-b0c1-77d82a1b7602"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2621, 86, 247, 6, 56, "Subsubsection",ExpressionUUID->"de24c588-66e9-4683-9f87-bf4ab18ce5f5"],
+Cell[2871, 94, 611, 17, 51, "Input",ExpressionUUID->"ced8d0eb-2e8f-4c0b-85ad-b9802f9d00e3"],
+Cell[3485, 113, 485, 13, 51, "Input",ExpressionUUID->"804ddfe8-0748-48e8-8dc4-020b38591b00"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4007, 131, 207, 3, 56, "Subsubsection",ExpressionUUID->"b70ee6d5-a891-4acb-b623-e3afae1df60e"],
+Cell[4217, 136, 1534, 36, 332, "Input",ExpressionUUID->"bde4faf5-cc42-443a-b0e1-fb3afab88459"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5788, 177, 211, 4, 56, "Subsubsection",ExpressionUUID->"8e02905c-dcf3-4058-9c12-101bdb25c37b"],
+Cell[6002, 183, 461, 11, 51, "Input",ExpressionUUID->"12ce7295-b269-4e8c-9b53-6a8d25ee61c1"],
+Cell[6466, 196, 877, 20, 104, "Input",ExpressionUUID->"ee906a7e-3d47-4f31-9ad3-1dfc81ecbd08"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7380, 221, 375, 7, 89, "Subsubsection",ExpressionUUID->"9bbe8e28-bebc-4c45-98e9-c6e725572ad5"],
+Cell[7758, 230, 1211, 30, 78, "Input",ExpressionUUID->"2f59d4cc-e31c-4fcc-927e-5d3db8d22eb9"],
+Cell[8972, 262, 533, 15, 51, "Input",ExpressionUUID->"54bfb6d4-96c2-4b6d-8d7f-96edcdd1652a"],
+Cell[9508, 279, 848, 23, 78, "Input",ExpressionUUID->"5168ca57-52dd-4761-a42a-0dc59cd55d34"],
+Cell[10359, 304, 644, 16, 78, "Input",ExpressionUUID->"53eceb66-e172-41c4-92f5-634e88adad45"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11040, 325, 187, 3, 56, "Subsubsection",ExpressionUUID->"a206fd32-b231-4f12-9a48-213c590b4a4d"],
+Cell[11230, 330, 830, 15, 51, "Input",ExpressionUUID->"7b35eeed-c57f-4b1d-a00b-d952730c5ee2"],
+Cell[12063, 347, 840, 18, 51, "Input",ExpressionUUID->"ca383083-3061-4e51-94b6-02471a2fee95"],
+Cell[12906, 367, 498, 12, 37, "Input",ExpressionUUID->"d7faf72d-30bd-44c2-9892-3da5cbad5bf6"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13441, 384, 181, 3, 56, "Subsubsection",ExpressionUUID->"cf1a45d5-0409-4d31-8b6c-41c155c883e0"],
+Cell[13625, 389, 802, 22, 104, "Input",ExpressionUUID->"4f74188b-f3ba-4b0a-a62c-b8313476c47c"],
+Cell[14430, 413, 530, 13, 78, "Input",ExpressionUUID->"018c376a-0006-4fe6-ad6f-e73a7227654e"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14997, 431, 335, 7, 56, "Subsubsection",ExpressionUUID->"15f904bc-74ab-4aef-a671-14eddd1af528"],
+Cell[15335, 440, 545, 14, 51, "Input",ExpressionUUID->"b00f7c1e-f15e-4bbf-979e-e7793af8c212"],
+Cell[15883, 456, 623, 16, 51, "Input",ExpressionUUID->"5352d6e1-3fd3-413b-9743-fa5029561fbb"]
+}, Open  ]],
+Cell[16521, 475, 231, 5, 56, "Subsubsection",ExpressionUUID->"45ec1621-4c48-47db-a36c-f9b589b0ba97"],
+Cell[CellGroupData[{
+Cell[16777, 484, 387, 9, 110, "Subsubsection",ExpressionUUID->"67d773c9-9b8b-4867-a731-be90c3c76cfa"],
+Cell[17167, 495, 287, 6, 44, "Text",ExpressionUUID->"b2f672cd-baaf-4113-8929-63e01f900777"],
+Cell[17457, 503, 333, 8, 51, "Input",ExpressionUUID->"de546e9b-9b08-4b62-a50c-a908efad074e"],
+Cell[17793, 513, 244, 5, 51, "Input",ExpressionUUID->"8e190b8e-dd13-4ed0-b8bd-ad3d2b614624"],
+Cell[18040, 520, 722, 20, 78, "Input",ExpressionUUID->"12070c7e-c6a2-4dd9-a8bb-b023606be4cd"],
+Cell[18765, 542, 330, 7, 51, "Input",ExpressionUUID->"e48a4638-555d-4dba-b236-b326a2adc7a7"],
+Cell[19098, 551, 652, 13, 51, "Input",ExpressionUUID->"dfbd6b3d-7a26-473d-b93a-cea827865385"],
+Cell[19753, 566, 266, 5, 51, "Input",ExpressionUUID->"8dd8317b-fbb6-492a-9fa5-ab7b0cd41938"],
+Cell[20022, 573, 264, 5, 51, "Input",ExpressionUUID->"7ee192a2-4583-41b5-8cc1-ef82d3b9c7f2"],
+Cell[20289, 580, 1339, 27, 104, "Input",ExpressionUUID->"692f0769-68fd-496b-8bcf-0abe029deaf9"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[21665, 612, 186, 3, 56, "Subsubsection",ExpressionUUID->"9d09f5d3-8db7-42b2-bc20-d5a8bec93298"],
+Cell[21854, 617, 801, 21, 78, "Input",ExpressionUUID->"441accc3-ea4c-493e-804b-5afcb9d6be54"],
+Cell[22658, 640, 424, 8, 51, "Input",ExpressionUUID->"087f486e-5839-4877-8203-6acc6d94de6a"],
+Cell[23085, 650, 296, 6, 51, "Input",ExpressionUUID->"25b5b941-1cab-4a57-9a2a-7b4c31aec0a0"],
+Cell[23384, 658, 373, 9, 51, "Input",ExpressionUUID->"d3bb8538-751f-4568-a077-a282682c0225"],
+Cell[23760, 669, 434, 10, 51, "Input",ExpressionUUID->"70e182ba-364e-4c7e-8d95-5bd8a41e1cef"],
+Cell[24197, 681, 300, 6, 51, "Input",ExpressionUUID->"90a2be7d-7cca-4def-bbfb-5cf2771752a4"],
+Cell[24500, 689, 1438, 34, 176, "Input",ExpressionUUID->"61b2e8f7-e1e8-4d8e-b2dc-cfc66e571735"],
+Cell[25941, 725, 1146, 25, 207, "Input",ExpressionUUID->"fa65708c-f760-48a9-bfbc-bfb97ff47bd7"],
+Cell[27090, 752, 370, 8, 51, "Input",ExpressionUUID->"a6e250b9-b60f-4015-a3c6-e68224d56548"],
+Cell[27463, 762, 533, 14, 51, "Input",ExpressionUUID->"19917af2-039d-4f2a-8895-c37323bb605a"],
+Cell[27999, 778, 241, 6, 44, "Text",ExpressionUUID->"ad9432fd-2643-4b56-822e-796b0e5bbcc0"],
+Cell[28243, 786, 565, 15, 51, "Input",ExpressionUUID->"e58384b8-430b-4735-b346-e284bcf739be"]
+}, Open  ]]
+}
+]
+*)
+
