@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    216149,       4659]
+NotebookDataLength[    216160,       4659]
 NotebookOptionsPosition[    202784,       4424]
-NotebookOutlinePosition[    203309,       4443]
-CellTagsIndexPosition[    203266,       4440]
+NotebookOutlinePosition[    203320,       4443]
+CellTagsIndexPosition[    203277,       4440]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -4422,8 +4422,8 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1440, 786},
-WindowMargins->{{1440, -1440}, {0, 24}},
+WindowSize->{1440., 760.5},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
 PrivateNotebookOptions->{"CloudPublishPath"->"/Published/3029-SP22__L13__\
 molecular-dynamics__03-14-22.nb"},
 Magnification:>1.25 Inherited,
