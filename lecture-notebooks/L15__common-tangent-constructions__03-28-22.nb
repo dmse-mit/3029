@@ -1,0 +1,631 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25735,        623]
+NotebookOptionsPosition[     23385,        575]
+NotebookOutlinePosition[     24282,        601]
+CellTagsIndexPosition[     24203,        596]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["Solution Models Overview", "Section",
+ CellChangeTimes->{{3.8564567887493477`*^9, 3.8564567917244177`*^9}, {
+  3.8564568468484173`*^9, 3.856456847738762*^9}, {3.856457866204562*^9, 
+  3.856457870129093*^9}},ExpressionUUID->"5063ea6c-044f-485d-9578-\
+67111fcdfbb3"],
+
+Cell["\<\
+Recall the molar GIbbs Free Energy of mixing for an ideal solution, is given \
+simply by the configurational entropy\
+\>", "Item",
+ CellChangeTimes->{{3.856456848777323*^9, 
+  3.856456914292417*^9}},ExpressionUUID->"c49fdc5e-4e09-4ab1-af8a-\
+02a5759e8b20"],
+
+Cell[BoxData[
+ RowBox[{"\t", 
+  RowBox[{
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[CapitalDelta]", 
+         SubsuperscriptBox[
+          UnderscriptBox[
+           StyleBox["G", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"], 
+          StyleBox["ideal", FontSlant -> "Plain"]], "\[LongEqual]", "-", 
+         StyleBox["T", "TI"], "\[CapitalDelta]", 
+         SubscriptBox[
+          UnderscriptBox[
+           StyleBox["S", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"]]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\Delta \\underline{G}_{\\mathrm{mix}}^{\\mathrm{ideal}} = - T \\Delta \
+\\underline{S}_{\\mathrm{mix}}", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], "\[LineSeparator]", "\t", 
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[CapitalDelta]", 
+         SubsuperscriptBox[
+          UnderscriptBox[
+           StyleBox["G", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"], 
+          StyleBox["ideal", FontSlant -> "Plain"]], "\[LongEqual]", 
+         StyleBox["R", "TI"], 
+         StyleBox["T", "TI"], 
+         RowBox[{"[", 
+           RowBox[{
+             StyleBox["x", "TI"], "log", 
+             StyleBox["x", "TI"], "+", 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 StyleBox["x", "TI"]}], ")"}], "log", 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 StyleBox["x", "TI"]}], ")"}]}], "]"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\Delta \\underline{G}_{\\mathrm{mix}}^{\\mathrm{ideal}} = R T \\left \
+[x \\log x + \\left(1-x \\right) \\log \\left(1-x\\right) \\right]", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"]}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.7735647893570647`*^9, 3.7735647902824917`*^9}, {
+   3.7735660158612933`*^9, 3.773566016706119*^9}, {3.7735676244674263`*^9, 
+   3.773567625284314*^9}, {3.7735678890224657`*^9, 3.773567891494249*^9}, {
+   3.7735683430528593`*^9, 3.7735683437834396`*^9}, 3.773724600013646*^9, {
+   3.853362665796761*^9, 3.853362666140524*^9}, {3.8533633046775913`*^9, 
+   3.8533633120769987`*^9}, 3.853753756131023*^9, 3.8537540469197702`*^9, {
+   3.853845341671569*^9, 3.8538453442330313`*^9}, {3.856374420720639*^9, 
+   3.856374437234189*^9}, 3.856374787461862*^9, 3.856374915535125*^9, 
+   3.8563753956491117`*^9, 3.856376013709388*^9, 3.856378704576075*^9, 
+   3.8563791026258717`*^9, {3.856379748987887*^9, 3.85637975853432*^9}, 
+   3.8563806752483473`*^9, {3.856380733131955*^9, 3.856380749826585*^9}, 
+   3.856383216504706*^9, 3.8563850847030373`*^9, 3.856385370922572*^9, 
+   3.856385647963335*^9, {3.856385804112977*^9, 3.856385807263814*^9}, 
+   3.856456932475713*^9, {3.856456981196165*^9, 3.856457006843153*^9}, 
+   3.85645705325445*^9},
+ FontSize->18,
+ CellTags->
+  "eq:van-der-waals",ExpressionUUID->"4ce60f54-1605-4e9c-baa2-5fedc8dfa8ed"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"molarGibbsEnergy", "[", "\"\<Ideal\>\"", "]"}], "[", 
+     RowBox[{"T_", ",", 
+      RowBox[{"R_", ":", "8.314"}]}], "]"}], "[", "xB_", "]"}], "=", 
+   RowBox[{"R", " ", "T", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"1", "-", "xB"}], ")"}], " ", 
+       RowBox[{"Log", "[", 
+        RowBox[{"1", "-", "xB"}], "]"}]}], "+", 
+      RowBox[{"xB", " ", 
+       RowBox[{"Log", "[", "xB", "]"}]}]}], ")"}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.856457421417231*^9, 3.856457448653925*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"952e7a9f-4988-448a-a7a9-4577a6eba8e2"],
+
+Cell["\<\
+Similarly for the regular solution, we introduce an enthalpic contribution\
+\>", "Item",
+ CellChangeTimes->{{3.85645701362176*^9, 3.85645702434079*^9}, {
+  3.856457060939459*^9, 
+  3.85645707684127*^9}},ExpressionUUID->"0e6317c5-ecb1-46cc-87d7-\
+b327d4b8e8b7"],
+
+Cell[BoxData[
+ RowBox[{"\t", 
+  RowBox[{
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[CapitalDelta]", 
+         SubsuperscriptBox[
+          UnderscriptBox[
+           StyleBox["G", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"], 
+          StyleBox["regular", FontSlant -> "Plain"]], "\[LongEqual]", 
+         "\[CapitalDelta]", 
+         SubscriptBox[
+          UnderscriptBox[
+           StyleBox["H", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"]], "-", 
+         StyleBox["T", "TI"], "\[CapitalDelta]", 
+         SubscriptBox[
+          UnderscriptBox[
+           StyleBox["S", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"]]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\Delta \\underline{G}_{\\mathrm{mix}}^{\\mathrm{regular}} = \\Delta \
+\\underline{H}_{\\mathrm{mix}} - T \\Delta \\underline{S}_{\\mathrm{mix}}", 
+     "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], "\[LineSeparator]", "\t", 
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[CapitalDelta]", 
+         SubsuperscriptBox[
+          UnderscriptBox[
+           StyleBox["G", "TI"], "_"], 
+          StyleBox["mix", FontSlant -> "Plain"], 
+          StyleBox["regular", FontSlant -> "Plain"]], "\[LongEqual]", 
+         StyleBox["R", "TI"], 
+         StyleBox["T", "TI"], 
+         RowBox[{"[", 
+           RowBox[{
+             StyleBox["x", "TI"], "log", 
+             StyleBox["x", "TI"], "+", 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 StyleBox["x", "TI"]}], ")"}], "log", 
+             RowBox[{"(", 
+               RowBox[{"1", "-", 
+                 StyleBox["x", "TI"]}], ")"}]}], "]"}], "+", "\[Omega]", 
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             StyleBox["x", "TI"]}], ")"}], 
+         StyleBox["x", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+     "\\Delta \\underline{G}_{\\mathrm{mix}}^{\\mathrm{regular}} = R T \\left \
+[x \\log x + \\left(1-x \\right) \\log \\left(1-x\\right) \\right] + \\omega \
+(1-x)x", "state" -> "Boxes"|>,
+    "TeXAssistantTemplate"], " "}]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.7735647893570647`*^9, 3.7735647902824917`*^9}, {
+   3.7735660158612933`*^9, 3.773566016706119*^9}, {3.7735676244674263`*^9, 
+   3.773567625284314*^9}, {3.7735678890224657`*^9, 3.773567891494249*^9}, {
+   3.7735683430528593`*^9, 3.7735683437834396`*^9}, 3.773724600013646*^9, {
+   3.853362665796761*^9, 3.853362666140524*^9}, {3.8533633046775913`*^9, 
+   3.8533633120769987`*^9}, 3.853753756131023*^9, 3.8537540469197702`*^9, {
+   3.853845341671569*^9, 3.8538453442330313`*^9}, {3.856374420720639*^9, 
+   3.856374437234189*^9}, 3.856374787461862*^9, 3.856374915535125*^9, 
+   3.8563753956491117`*^9, 3.856376013709388*^9, 3.856378704576075*^9, 
+   3.8563791026258717`*^9, {3.856379748987887*^9, 3.85637975853432*^9}, 
+   3.8563806752483473`*^9, {3.856380733131955*^9, 3.856380749826585*^9}, 
+   3.856383216504706*^9, 3.8563850847030373`*^9, 3.856385370922572*^9, 
+   3.856385647963335*^9, {3.856385804112977*^9, 3.856385807263814*^9}, 
+   3.856456932475713*^9, {3.856456981196165*^9, 3.856457006843153*^9}, 
+   3.85645705325445*^9, {3.8564571111772842`*^9, 3.856457139209527*^9}, 
+   3.856457177332877*^9, {3.856457258536426*^9, 3.8564572719657373`*^9}},
+ FontSize->18,
+ CellTags->
+  "eq:van-der-waals",ExpressionUUID->"a1d22062-7550-43e8-8711-41b5831d420d"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Where we\[CloseCurlyQuote]ve introduced ",
+ Cell[BoxData[
+  FormBox[
+   TemplateBox[<|"boxes" -> FormBox[
+       RowBox[{"\[Omega]", "\[LongEqual]", 
+         StyleBox["z", "TI"], 
+         RowBox[{"(", 
+           RowBox[{
+             SubscriptBox[
+              StyleBox["E", "TI"], 
+              RowBox[{
+                StyleBox["A", "TI"], 
+                StyleBox["A", "TI"]}]], "+", 
+             SubscriptBox[
+              StyleBox["E", "TI"], 
+              RowBox[{
+                StyleBox["B", "TI"], 
+                StyleBox["B", "TI"]}]], "-", "2", 
+             SubscriptBox[
+              StyleBox["E", "TI"], 
+              RowBox[{
+                StyleBox["A", "TI"], 
+                StyleBox["B", "TI"]}]]}], ")"}]}], TraditionalForm], 
+     "errors" -> {}, "input" -> 
+     "\\omega = z \\left( E_{AA} + E_{BB} - 2 E_{AB} \\right)", "state" -> 
+     "Boxes"|>,
+    "TeXAssistantTemplate"], TraditionalForm]],ExpressionUUID->
+  "c3543fc6-ba03-4e18-b53c-ae06fa4ef969"]
+}], "Subitem",
+ CellChangeTimes->{{3.856457181115168*^9, 
+  3.856457202968961*^9}},ExpressionUUID->"508c0a86-85ca-49e1-9763-\
+26fe938e5253"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"molarGibbsEnergy", "[", "\"\<Regular\>\"", "]"}], "[", 
+     RowBox[{"\[Omega]_", ",", "T_", ",", 
+      RowBox[{"R_", ":", "8.314"}]}], "]"}], "[", "xB_", "]"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "xB"}], ")"}], " ", "xB", " ", "\[Omega]"}], "+", 
+    RowBox[{"R", " ", "T", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", "xB"}], ")"}], " ", 
+        RowBox[{"Log", "[", 
+         RowBox[{"1", "-", "xB"}], "]"}]}], "+", 
+       RowBox[{"xB", " ", 
+        RowBox[{"Log", "[", "xB", "]"}]}]}], ")"}]}]}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.856457390610367*^9, 3.8564574146610518`*^9}, {
+  3.856457453250856*^9, 3.856457459796372*^9}},
+ CellLabel->"In[4]:=",ExpressionUUID->"90e171ba-23fb-4445-b101-84409817598d"]
+}, Open  ]],
+
+Cell["\<\
+Finally, for a general solution model - we additionally introduce activity \
+coefficients in the configurational entropy\
+\>", "Item",
+ CellChangeTimes->{{3.856457220200642*^9, 
+  3.856457242187159*^9}},ExpressionUUID->"8955f43a-7af7-4c27-a9bf-\
+a41a9ab1679c"],
+
+Cell[BoxData[
+ RowBox[{"\t", 
+  TemplateBox[<|"boxes" -> FormBox[
+      RowBox[{"\[CapitalDelta]", 
+        SubsuperscriptBox[
+         UnderscriptBox[
+          StyleBox["G", "TI"], "_"], 
+         StyleBox["mix", FontSlant -> "Plain"], 
+         StyleBox["general", FontSlant -> "Plain"]], "\[LongEqual]", 
+        StyleBox["R", "TI"], 
+        StyleBox["T", "TI"], 
+        RowBox[{"[", 
+          RowBox[{
+            StyleBox["x", "TI"], "log", 
+            RowBox[{"(", 
+              RowBox[{
+                SubscriptBox["\[Gamma]", 
+                 StyleBox["B", "TI"]], 
+                StyleBox["x", "TI"]}], ")"}], "+", 
+            RowBox[{"(", 
+              RowBox[{"1", "-", 
+                StyleBox["x", "TI"]}], ")"}], "log", 
+            RowBox[{"(", 
+              RowBox[{
+                SubscriptBox["\[Gamma]", 
+                 StyleBox["A", "TI"]], "(", 
+                RowBox[{"1", "-", 
+                  StyleBox["x", "TI"]}], ")"}], ")"}]}], "]"}], "+", 
+        "\[Omega]", 
+        RowBox[{"(", 
+          RowBox[{"1", "-", 
+            StyleBox["x", "TI"]}], ")"}], 
+        StyleBox["x", "TI"]}], TraditionalForm], "errors" -> {}, "input" -> 
+    "\\Delta \\underline{G}_{\\mathrm{mix}}^{\\mathrm{general}} = R T \\left \
+[x \\log \\left( \\gamma_B x\\right) + \\left(1-x \\right) \\log \
+\\left(\\gamma_A \\left(1-x\\right) \\right) \\right] + \\omega (1-x)x", 
+    "state" -> "Boxes"|>,
+   "TeXAssistantTemplate"]}]], "DisplayFormulaNumbered",
+ CellChangeTimes->{{3.7735647893570647`*^9, 3.7735647902824917`*^9}, {
+   3.7735660158612933`*^9, 3.773566016706119*^9}, {3.7735676244674263`*^9, 
+   3.773567625284314*^9}, {3.7735678890224657`*^9, 3.773567891494249*^9}, {
+   3.7735683430528593`*^9, 3.7735683437834396`*^9}, 3.773724600013646*^9, {
+   3.853362665796761*^9, 3.853362666140524*^9}, {3.8533633046775913`*^9, 
+   3.8533633120769987`*^9}, 3.853753756131023*^9, 3.8537540469197702`*^9, {
+   3.853845341671569*^9, 3.8538453442330313`*^9}, {3.856374420720639*^9, 
+   3.856374437234189*^9}, 3.856374787461862*^9, 3.856374915535125*^9, 
+   3.8563753956491117`*^9, 3.856376013709388*^9, 3.856378704576075*^9, 
+   3.8563791026258717`*^9, {3.856379748987887*^9, 3.85637975853432*^9}, 
+   3.8563806752483473`*^9, {3.856380733131955*^9, 3.856380749826585*^9}, 
+   3.856383216504706*^9, 3.8563850847030373`*^9, 3.856385370922572*^9, 
+   3.856385647963335*^9, {3.856385804112977*^9, 3.856385807263814*^9}, 
+   3.856456932475713*^9, {3.856456981196165*^9, 3.856457006843153*^9}, 
+   3.85645705325445*^9, {3.8564571111772842`*^9, 3.856457139209527*^9}, 
+   3.856457177332877*^9, {3.856457258536426*^9, 3.8564572719657373`*^9}, 
+   3.856457368357592*^9},
+ FontSize->18,
+ CellTags->
+  "eq:van-der-waals",ExpressionUUID->"a6e3f743-95dd-46d3-b698-8a4ef29dd9d1"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+The General Solution model, additionally adds activity coefficients in the \
+configurational entropy\
+\>", "Item",
+ CellChangeTimes->{{3.8564567928978987`*^9, 
+  3.85645681987466*^9}},ExpressionUUID->"d9765f0e-e0bf-475c-8395-\
+720c7fbb6cf5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"molarGibbsEnergy", "[", "\"\<General\>\"", "]"}], "[", 
+     RowBox[{
+     "\[Gamma]A_", ",", "\[Gamma]B_", ",", "\[Omega]_", ",", "T_", ",", 
+      RowBox[{"R_", ":", "8.314"}]}], "]"}], "[", "xB_", "]"}], "=", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"1", "-", "xB"}], ")"}], " ", "xB", " ", "\[Omega]"}], "+", 
+    RowBox[{"R", " ", "T", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "-", "xB"}], ")"}], " ", 
+        RowBox[{"Log", "[", 
+         RowBox[{"\[Gamma]A", 
+          RowBox[{"(", 
+           RowBox[{"1", "-", "xB"}], ")"}]}], "]"}]}], "+", 
+       RowBox[{"xB", " ", 
+        RowBox[{"Log", "[", 
+         RowBox[{"\[Gamma]B", " ", "xB"}], "]"}]}]}], ")"}]}]}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.856457469778426*^9, 3.85645750158048*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"ad989793-3ec0-452f-a7be-8ed4c9146224"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"molarGibbsEnergy", "[", "\"\<Ideal\>\"", "]"}], "[", 
+         "temperature", "]"}], "[", "xB", "]"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"molarGibbsEnergy", "[", "\"\<Regular\>\"", "]"}], "[", 
+         RowBox[{"\[Omega]", ",", "temperature"}], "]"}], "[", "xB", "]"}], 
+       ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"molarGibbsEnergy", "[", "\"\<General\>\"", "]"}], "[", 
+         RowBox[{
+         "\[Gamma]A", ",", "\[Gamma]B", ",", "\[Omega]", ",", "temperature"}],
+          "]"}], "[", "xB", "]"}]}], "\[IndentingNewLine]", "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"xB", ",", "0", ",", "1"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
+      RowBox[{"Thread", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"Red", ",", "Blue", ",", "Black"}], "}"}], ",", "Thick"}], 
+        "}"}], "]"}]}], ",", 
+     RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+     RowBox[{"LabelStyle", "->", 
+      RowBox[{"Directive", "[", 
+       RowBox[{"Black", ",", "16"}], "]"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", "550"}], ",", 
+     RowBox[{"PlotLegends", "\[Rule]", 
+      RowBox[{"LineLegend", "[", 
+       RowBox[{"Automatic", ",", 
+        RowBox[{"{", 
+         RowBox[{
+         "\"\<Ideal Solution Model\>\"", ",", 
+          "\"\<Regular Solution Model\>\"", ",", 
+          "\"\<General Solution Model\>\""}], "}"}]}], "]"}]}], ",", 
+     RowBox[{"FrameLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+       "\"\<Mole Fraction B, \!\(\*SubscriptBox[\(x\), \(B\)]\)\>\"", ",", 
+        "\"\<Molar Gibbs Energy, \!\(\*UnderscriptBox[\(G\), \(_\)]\)\>\""}], 
+       "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"temperature", ",", "1"}], "}"}], ",", ".001", ",", "10"}], 
+    "}"}], ",", "\[IndentingNewLine]", "Delimiter", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Omega]", ",", "1"}], "}"}], ",", 
+     RowBox[{"-", "5"}], ",", "5"}], "}"}], ",", "\[IndentingNewLine]", 
+   "Delimiter", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Gamma]A", ",", "0.8"}], "}"}], ",", "0.5", ",", "1.5"}], 
+    "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Gamma]B", ",", "1.2"}], "}"}], ",", "0.5", ",", "1.5"}], 
+    "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Paneled", "\[Rule]", "False"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.856457549885662*^9, 3.8564578108229523`*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"e53b4186-7418-4599-8cd3-7fd17c38e566"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`temperature$$ = 
+    1, $CellContext`\[Gamma]A$$ = 0.8, $CellContext`\[Gamma]B$$ = 
+    1.2, $CellContext`\[Omega]$$ = 1, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`temperature$$], 1}, 0.001, 10}, {{
+       Hold[$CellContext`\[Omega]$$], 1}, -5, 5}, {{
+       Hold[$CellContext`\[Gamma]A$$], 0.8}, 0.5, 1.5}, {{
+       Hold[$CellContext`\[Gamma]B$$], 1.2}, 0.5, 1.5}}, Typeset`size$$ = {
+    759., {176., 181.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`temperature$$ = 
+        1, $CellContext`\[Gamma]A$$ = 0.8, $CellContext`\[Gamma]B$$ = 
+        1.2, $CellContext`\[Omega]$$ = 1}, "ControllerVariables" :> {}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[{
+         $CellContext`molarGibbsEnergy[
+         "Ideal"][$CellContext`temperature$$][$CellContext`xB], 
+         $CellContext`molarGibbsEnergy[
+         "Regular"][$CellContext`\[Omega]$$, \
+$CellContext`temperature$$][$CellContext`xB], 
+         $CellContext`molarGibbsEnergy[
+         "General"][$CellContext`\[Gamma]A$$, $CellContext`\[Gamma]B$$, \
+$CellContext`\[Omega]$$, $CellContext`temperature$$][$CellContext`xB]}, \
+{$CellContext`xB, 0, 1}, PlotStyle -> Thread[{{Red, Blue, Black}, Thick}], 
+        Frame -> True, LabelStyle -> Directive[Black, 16], ImageSize -> 550, 
+        PlotLegends -> 
+        LineLegend[
+         Automatic, {
+          "Ideal Solution Model", "Regular Solution Model", 
+           "General Solution Model"}], 
+        FrameLabel -> {
+         "Mole Fraction B, \!\(\*SubscriptBox[\(x\), \(B\)]\)", 
+          "Molar Gibbs Energy, \!\(\*UnderscriptBox[\(G\), \(_\)]\)"}], 
+      "Specifications" :> {{{$CellContext`temperature$$, 1}, 0.001, 10}, 
+        Delimiter, {{$CellContext`\[Omega]$$, 1}, -5, 5}, 
+        Delimiter, {{$CellContext`\[Gamma]A$$, 0.8}, 0.5, 
+         1.5}, {{$CellContext`\[Gamma]B$$, 1.2}, 0.5, 1.5}}, 
+      "Options" :> {Paneled -> False}, "DefaultOptions" :> {}],
+     ImageSizeCache->{779., {260.1875, 265.8125}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`molarGibbsEnergy["Ideal"][
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Optional[
+          Pattern[$CellContext`R, 
+           Blank[]], 8.314]][
+         Pattern[$CellContext`xB, 
+          Blank[]]] = $CellContext`R $CellContext`T ((1 - $CellContext`xB) 
+          Log[1 - $CellContext`xB] + $CellContext`xB 
+          Log[$CellContext`xB]), $CellContext`molarGibbsEnergy["Regular"][
+         Pattern[$CellContext`\[Omega], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Optional[
+          Pattern[$CellContext`R, 
+           Blank[]], 8.314]][
+         Pattern[$CellContext`xB, 
+          Blank[]]] = (
+          1 - $CellContext`xB) $CellContext`xB $CellContext`\[Omega] + \
+$CellContext`R $CellContext`T ((1 - $CellContext`xB) 
+           Log[1 - $CellContext`xB] + $CellContext`xB 
+           Log[$CellContext`xB]), $CellContext`molarGibbsEnergy["Regular"][
+         Pattern[$CellContext`\[Gamma]A, 
+          Blank[]], 
+         Pattern[$CellContext`\[Gamma]B, 
+          Blank[]], 
+         Pattern[$CellContext`\[Omega], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Optional[
+          Pattern[$CellContext`R, 
+           Blank[]], 8.314]][
+         Pattern[$CellContext`xB, 
+          Blank[]]] = (
+          1 - $CellContext`xB) $CellContext`xB $CellContext`\[Omega] + \
+$CellContext`R $CellContext`T ((1 - $CellContext`xB) 
+           Log[(1 - $CellContext`xB) $CellContext`\[Gamma]A] + \
+$CellContext`xB 
+           Log[$CellContext`xB $CellContext`\[Gamma]B]), \
+$CellContext`molarGibbsEnergy["General"][
+         Pattern[$CellContext`\[Gamma]A, 
+          Blank[]], 
+         Pattern[$CellContext`\[Gamma]B, 
+          Blank[]], 
+         Pattern[$CellContext`\[Omega], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Optional[
+          Pattern[$CellContext`R, 
+           Blank[]], 8.314]][
+         Pattern[$CellContext`xB, 
+          Blank[]]] = (
+          1 - $CellContext`xB) $CellContext`xB $CellContext`\[Omega] + \
+$CellContext`R $CellContext`T ((1 - $CellContext`xB) 
+           Log[(1 - $CellContext`xB) $CellContext`\[Gamma]A] + \
+$CellContext`xB Log[$CellContext`xB $CellContext`\[Gamma]B])}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.856457675423616*^9, 3.856457743024412*^9}, {
+  3.856457779228714*^9, 3.856457811084856*^9}},
+ CellLabel->"Out[15]=",ExpressionUUID->"3dc5dcd5-4cde-4ab3-b9a1-94c1bfb5beff"]
+}, {2}]]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{1440., 850.5},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"13.0 for Linux x86 (64-bit) (December 2, 2021)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"a6978902-320a-4b34-9993-1c2efaab4843"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "eq:van-der-waals"->{
+  Cell[1122, 36, 2912, 60, 63, "DisplayFormulaNumbered",ExpressionUUID->"4ce60f54-1605-4e9c-baa2-5fedc8dfa8ed",
+   CellTags->"eq:van-der-waals"],
+  Cell[5001, 127, 3412, 70, 68, "DisplayFormulaNumbered",ExpressionUUID->"a1d22062-7550-43e8-8711-41b5831d420d",
+   CellTags->"eq:van-der-waals"],
+  Cell[10771, 270, 2788, 57, 36, "DisplayFormulaNumbered",ExpressionUUID->"a6e3f743-95dd-46d3-b698-8a4ef29dd9d1",
+   CellTags->"eq:van-der-waals"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"eq:van-der-waals", 23738, 586}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 270, 4, 68, "Section",ExpressionUUID->"5063ea6c-044f-485d-9578-67111fcdfbb3"],
+Cell[853, 28, 266, 6, 32, "Item",ExpressionUUID->"c49fdc5e-4e09-4ab1-af8a-02a5759e8b20"],
+Cell[1122, 36, 2912, 60, 63, "DisplayFormulaNumbered",ExpressionUUID->"4ce60f54-1605-4e9c-baa2-5fedc8dfa8ed",
+ CellTags->"eq:van-der-waals"],
+Cell[4037, 98, 688, 19, 29, "Input",ExpressionUUID->"952e7a9f-4988-448a-a7a9-4577a6eba8e2"],
+Cell[4728, 119, 270, 6, 32, "Item",ExpressionUUID->"0e6317c5-ecb1-46cc-87d7-b327d4b8e8b7"],
+Cell[5001, 127, 3412, 70, 68, "DisplayFormulaNumbered",ExpressionUUID->"a1d22062-7550-43e8-8711-41b5831d420d",
+ CellTags->"eq:van-der-waals"],
+Cell[CellGroupData[{
+Cell[8438, 201, 1152, 32, 28, "Subitem",ExpressionUUID->"508c0a86-85ca-49e1-9763-26fe938e5253"],
+Cell[9593, 235, 890, 24, 29, "Input",ExpressionUUID->"90e171ba-23fb-4445-b101-84409817598d"]
+}, Open  ]],
+Cell[10498, 262, 270, 6, 32, "Item",ExpressionUUID->"8955f43a-7af7-4c27-a9bf-a41a9ab1679c"],
+Cell[10771, 270, 2788, 57, 36, "DisplayFormulaNumbered",ExpressionUUID->"a6e3f743-95dd-46d3-b698-8a4ef29dd9d1",
+ CellTags->"eq:van-der-waals"],
+Cell[CellGroupData[{
+Cell[13584, 331, 251, 6, 32, "Item",ExpressionUUID->"d9765f0e-e0bf-475c-8395-720c7fbb6cf5"],
+Cell[13838, 339, 989, 28, 29, "Input",ExpressionUUID->"ad989793-3ec0-452f-a7be-8ed4c9146224"],
+Cell[CellGroupData[{
+Cell[14852, 371, 3006, 76, 319, "Input",ExpressionUUID->"e53b4186-7418-4599-8cd3-7fd17c38e566"],
+Cell[17861, 449, 5487, 121, 545, "Output",ExpressionUUID->"3dc5dcd5-4cde-4ab3-b9a1-94c1bfb5beff"]
+}, {2}]]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
