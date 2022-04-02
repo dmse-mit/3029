@@ -130,8 +130,8 @@ If you feel that we are not living up to this pledge, please speak directly to o
 | 03/07 - 03/11 |                      Polymer Reptation                      |       Data-Viz Hour      |       Step-Growth Polymerization      |          P3 Out: 03/09          |
 | 03/14 - 03/18 |                     Molecular Dynamics                      |     Code Show & Tell     |            Solution Models            |          P3 Due: 03/18          |
 | 03/21 - 03/25 |                  **_N/A (Spring Break)_**                   | **_N/A (Spring Break)_** |        **_N/A (Spring Break)_**       |                -                |
-| 03/28 - 04/01 |    Chemical Potential<br/>Common Tangent Construction       |       Data-Viz Hour      |         Binary Phase Diagrams         |          P4 Out: 03/30          |
-| 04/04 - 04/08 |                   Tertiary Phase Diagrams                   |     Code Show & Tell     | Surface Energy<br/>Wulff Construction |                -                |
+| 03/28 - 04/01 |                 Common Tangent Construction                 |       Data-Viz Hour      |        Chemical Phase Diagrams        |          P4 Out: 03/30          |
+| 04/04 - 04/08 |                        Surface Energy                       |     Code Show & Tell     |            Wulff Construction         |                -                |
 | 04/11 - 04/15 |                   Statistical Mechanics I                   |       Data-Viz Hour      |        Statistical Mechanics II       | P4 Due: 04/13<br/>P5 Out: 04/13 |
 | 04/18 - 04/22 |                  **_N/A (Patriots' Day)_**                  |     Code Show & Tell     |          Kinetic Monte Carlo          |                -                |
 | 04/25 - 04/29 |                 Order-Disorder Transitions                  |       Data-Viz Hour      |      Fourier Series & Transforms      |          P5 Due: 04/27          |
