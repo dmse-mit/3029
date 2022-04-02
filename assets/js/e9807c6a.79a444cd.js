@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebsite=self.webpackChunkwebsite||[]).push([[5784],{1046:function(e){e.exports=JSON.parse('{"allTagsPath":"/3029/announcements/tags","name":"psets","count":1,"permalink":"/3029/announcements/tags/psets"}')}}]);
