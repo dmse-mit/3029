@@ -134,7 +134,7 @@ If you feel that we are not living up to this pledge, please speak directly to o
 | 04/04 - 04/08 |                        Surface Energy                       |     Code Show & Tell     |            Wulff Construction         |                -                |
 | 04/11 - 04/15 |                   Statistical Mechanics I                   |       Data-Viz Hour      |        Statistical Mechanics II       | P4 Due: 04/13<br/>P5 Out: 04/13 |
 | 04/18 - 04/22 |                  **_N/A (Patriots' Day)_**                  |     Code Show & Tell     |          Kinetic Monte Carlo          |                -                |
-| 04/25 - 04/29 |                 Order-Disorder Transitions                  |       Data-Viz Hour      |      Fourier Series & Transforms      |          P5 Due: 04/27          |
+| 04/25 - 04/29 |               Order-Disorder Transformations           |       Data-Viz Hour      |      Fourier Series & Transforms      |          P5 Due: 04/27          |
 | 05/02 - 05/06 |                    Diffraction & Imaging                    |     Code Show & Tell     |          Final Presentations          |                -                |
 | 05/09 - 05/13 |                      Students' Choice                       |             -            |                   -                   |    Final Projects Due: 05/09    |
 
