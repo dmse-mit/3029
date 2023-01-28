@@ -6,11 +6,11 @@ hide_title: true
 
 ## 👋 Hi there!
   
-This is the website for MIT course **3.029** as taught in the spring of 2022. The full name of the course is _Mathematics and Computational Thinking for Materials Scientists and Engineers I_, and this is exactly what we hope to achieve this semester -- that is, introduce you to a rigorous (and fun) way of approaching your MSE courses and research using mathematics, computation, and visualization.
+This is the website for MIT course **3.029** as taught in the spring of 2023. The full name of the course is _Mathematics and Computational Thinking for Materials Scientists and Engineers I_, and this is exactly what we hope to achieve this semester -- that is, introduce you to a rigorous (and fun) way of approaching your MSE courses and research using mathematics, computation, and visualization.
 
 We will be drawing examples from concepts you have seen in your previous MSE courses (notably, stucture concepts from 3.010), courses you are taking concurrently (notably, thermodynamics concepts from 3.020), and courses you will take in subsequent semesters (notably, solid-state concepts from 3.033).
 
-To be clear -- this is a tall order.
+To be clear--this is a tall order.
 It means that, at times, you will be asked to code and visualize concepts that are new to you, and we understand this is challenging.
 We ask that you trust us when we say this approach will bear fruit, if not by the end of this semester then by the time you see these concepts again in your lecture-based courses.
 On our end, we promise to put great effort and passion in teaching, and provide you with the necessary resources to succeed!
@@ -19,38 +19,11 @@ On our end, we promise to put great effort and passion in teaching, and provide 
 
 There are three main ways in which we'll communicate for this class:
 * [Website](https://dmse-mit.github.io/3029/): Main access point. Here, we will post the reading/lecture [notebooks](https://dmse-mit.github.io/3029/docs/intro), as well as post any [announcements](https://dmse-mit.github.io/3029/announcements).
-* [Canvas](https://canvas.mit.edu/courses/13469): We will use this to submit/grade assignments.
-* [Slack](https://mit-3029-sp22.slack.com): To engage with the class outside of lecture hours.
+* [Canvas](https://canvas.mit.edu/courses/??): We will use this to submit/grade assignments.
+* [Slack](https://mit-3029-sp23.slack.com): To engage with the class outside of lecture hours.
 
 
 ## Teaching Staff
-
-**Dr. Georgios Varnavides**  
-George is a graduate student researcher who recently defended his PhD thesis co-advised by Prof. Narang (Harvard, SEAS) and Prof. Anikeeva (DMSE).
-George was an undergraduate in DMSE and took the predecessor to this class **3.016** -- so he understands the challenges and merits such an ambitious class poses.  
-
-His roles in 3.029 include:
- - Preparing reading materials and assignents
- - Delivering lectures
- - Holding office hours and answering questions via Slack/email
-
-_Office hours:_ Mondays 4-5pm, 36-705  
-_email:_ gvarnavi [at] mit [dot] edu  
-_Preferred pronouns:_ he/him, and thank you for asking!
-
-
-**Prof. Elsa Olivetti**  
-Elsa is the Esther and Harold E. Edgerton Associate Professor in Materials Science and Engineering.
-Her research focuses on improving the environmental and economic sustainability of materials in the context of rapid-expanding global demand.
-
-Her roles in 3.029 include:
- - Supporting teaching team
- - Linking to the rest of the sophomore curriculum
- - Answering questions via Slack/email
-
-_Office hours:_ By appointment  
-_email:_ elsao [at] mit [dot] edu
-
 
 ## Grading  
 
