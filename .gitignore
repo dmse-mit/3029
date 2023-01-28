@@ -3,4 +3,5 @@
 *.swo
 .ipynb_checkpoints
 pset-submissions/*
-
+.DS_Store
+*scratch*
