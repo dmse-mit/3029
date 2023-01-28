@@ -9,7 +9,7 @@
     <icon>https://dmse-mit.github.io/3029/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Assignment 01]]></title>
-        <id>pset-01</id>
+        <id>https://dmse-mit.github.io/3029/announcements/pset-01</id>
         <link href="https://dmse-mit.github.io/3029/announcements/pset-01"/>
         <updated>2022-02-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey everyone,]]></summary>
@@ -24,7 +24,7 @@ As we discussed in lecture today, it should be fairly short - consisting of two 
     </entry>
     <entry>
         <title type="html"><![CDATA[Welcome!]]></title>
-        <id>welcome</id>
+        <id>https://dmse-mit.github.io/3029/announcements/welcome</id>
         <link href="https://dmse-mit.github.io/3029/announcements/welcome"/>
         <updated>2022-01-30T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Hey everyone,]]></summary>
