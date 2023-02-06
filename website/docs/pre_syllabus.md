@@ -65,6 +65,8 @@ __This requires that you maintain the discipline to watch, otherwise getting tog
 Moreover, if you are not watching the videos, I would would be doing a lot of work for no reason.
 I would also include videos that I have seen and learned from into the mix.
 
+* Each student can take turns setting a homework assignment.  That homework assignment is to be solved by the other students and Prof Carter as a team.
+
 * I could skip traditional homework assignments:  I could set a problem that I haven't solved and we can work through the solutions as a team.
 
 * You could do a special project with help from me.  In this case, we would have some lecture times where only one student shows up and we work together.
