@@ -16,9 +16,10 @@ Please  trust that  this approach will bear fruit, if not by the end of this sem
 
 :::note
 
-This is the second iteration of the class, previously being taught in the spring of 2022 by Dr. Georgios Varnavides.
+This is the second iteration of the class, previously taught in the spring of 2022 by Dr. Georgios Varnavides
 If you want to get a feel for the topics we will cover this semester, you can find last year's materials by using the versions dropdown on the right.
-The content on this website is jointly authored by Prof. W Craig Carter and Dr. Georgios Varnavides and constitute working drafts of material that will go into a book they are writing.
+
+The content on this website is jointly authored by Prof. W Craig Carter and Dr. Georgios Varnavides and constitute working drafts of material that will go into a materials science textbook they are writing.
 
 :::
 
