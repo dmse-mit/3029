@@ -89,7 +89,7 @@ const config = {
             items: [
               {
                 label: 'Notebooks',
-                to: '/docs/intro',
+                to: '/docs/2023/intro',
               },
             ],
           },
