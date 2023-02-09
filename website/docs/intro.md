@@ -11,103 +11,71 @@ This is the website for MIT course **3.029** as taught in the spring of 2023. Th
 We will be drawing examples from concepts you have seen in your previous MSE courses (notably, stucture concepts from 3.010), courses you are taking concurrently (notably, thermodynamics concepts from 3.020), and courses you will take in subsequent semesters (notably, solid-state concepts from 3.033).
 
 To be clear--this is a tall order.
-It means that, at times, you will be asked to code and visualize concepts that are new to you, and we understand this is challenging.
-We ask that you trust us when we say this approach will bear fruit, if not by the end of this semester then by the time you see these concepts again in your lecture-based courses.
-On our end, we promise to put great effort and passion in teaching, and provide you with the necessary resources to succeed!
+It means that, at times, you will be asked to code and visualize concepts that are new to you, and this may be challenging.
+Please  trust that  this approach will bear fruit, if not by the end of this semester then by the time you see these concepts again in your lecture-based courses.
 
-## Communication
+:::note
 
-There are three main ways in which we'll communicate for this class:
-* [Website](https://dmse-mit.github.io/3029/): Main access point. Here, we will post the reading/lecture [notebooks](https://dmse-mit.github.io/3029/docs/intro), as well as post any [announcements](https://dmse-mit.github.io/3029/announcements).
-* [Canvas](https://canvas.mit.edu/courses/??): We will use this to submit/grade assignments.
-* [Slack](https://mit-3029-sp23.slack.com): To engage with the class outside of lecture hours.
+This is the second iteration of the class, previously being taught in the spring of 2022 by Dr. Georgios Varnavides.
+If you want to get a feel for the topics we will cover this semester, you can find last year's materials by using the versions dropdown on the right.
+The content on this website is jointly authored by Prof. W Craig Carter and Dr. Georgios Varnavides and constitute working drafts of material that will go into a book they are writing.
+
+:::
+
+## Pre-Syllabus
+
+1. Goals
+
+The goal of 3.029 is to give you tools to help you understand topics
+in materials science (and many other disciplines) better.
+These tools include mathematics, coding, visualization and just plain old critical thinking.
+
+These tools also help you become a self-sufficient learner and a science
+explorer.
+
+Your primary goal for you is to learn---not to discharge some assessment metric.
+My primary goal is to help you learn and to experience the joy I get from
+applying such tools to learn, explore, and amuse myself.
+
+2. 3.029 in Spring 2023
+
+There are not very many students.
+
+This is good and bad.
+
+It's too bad other students won't be taking advantage of opportunities
+to learn topics from other subjects deeply.
+
+It is very good in that we can tailor this semester's class to personal tastes
+and interests.
+
+It is very good that I don't need to use traditional assessment exercises to give you a grade.
+I'll have opportunities to work with you and see you work.
+
+All you have to do is participate in exercises and demonstrate to me that
+you are learning.
+It helps me if you are enthusiastic.
+
+3. Possible Modalities
+
+I haven't written a syllabus yet because we have the flexibility to
+structure this subject together.
+I have some suggestions of things we can try this semester.
+
+* I can record videos of lectures the week before.
+You can watch and then we can work through the confusing parts together.
+__This requires that you maintain the discipline to watch, otherwise getting together and talking through the material will be boring and frustrating.__
+Moreover, if you are not watching the videos, I would would be doing a lot of work for no reason.
+I would also include videos that I have seen and learned from into the mix.
+
+* Each student can take turns setting a homework assignment.  That homework assignment is to be solved by the other students and Prof Carter as a team.
+
+* I could skip traditional homework assignments:  I could set a problem that I haven't solved and we can work through the solutions as a team.
+
+* You could do a special project with help from me.  In this case, we would have some lecture times where only one student shows up and we work together.
+
+* We can brainstorm about other modalities.
 
 
-## Teaching Staff
 
-## Grading  
-
-There will be no exams in 3.029. The grades will be determined from a combination of classroom participation, homework assignments, and final project according to the breakdown:
-- 55% problem sets (approximately biweekly)
-- 35% final project and presentation
-- 10% class participation. 
-
-Problem sets will be submitted electronically on the 3.029 [canvas page](https://canvas.mit.edu/courses/13469).
-Unless previous arrangements are made, late problem sets will be accepted for 1 week after the initial due date with a 50% penalty.
-
-### Collaboration Policy
-
-You should try and make a reasonable effort to solve the first few problem sets on your own -- computational thinking is an acquired skill so we want to make sure you give yourself the opportunity to find the most effective way to learn it.
-For some of you, the most effective way might be by working in small groups.
-This is OK, as long as **all students contribute and understand all parts** of the assignment, i.e. you are not allowed to "divvy-up" the assignment.
-Even if you work with others, you should write-up and submit your own solutions, indicating the names of any potential collaborators. 
-
-## Lectures
-
-We hope you are as excited as we are to be returning to in-person instruction!
-3.029 lectures will take place **Mondays and Wednesdays 1:00pm-2:30pm in room 4-261**.
-Of-course, we understand there might be times when you can't attend in-person for personal or health reasons.
-As such, all lectures will additionally be recorded and uploaded on the 3.029 [canvas page](https://canvas.mit.edu/courses/13469).
-
-### Want More?
-
-In addition to lectures, we will be piloting two **optional** regularly-scheduled sessions, every **Tuesday 4-5pm in 8-425**:   
-- **Data-Visualization Hour** (biweekly, starting 02/10)  
-  We will visualize raw datasets from recent materials science journal articles and see if we can **a)** arrive at the same conclusions as the authors and **b)** uncover more facets of the dataset!
-- **Show and Tell** (biweekly, starting 02/17)  
-  _Reading_ code others have written can be just as effective as writing code.
-  In these sessions, you are encouraged to bring a blog or stack-exchange post you saw recently which inspired you and we will dissect the code together!
-  
-You should not feel pressured to join these -- we won't be covering concepts directly related to the problem sets, nor will attendance in these count towards your class participation grade.
-
-## Programming Languages
-
-While there are many great programming and scripting languages to choose from, 3.029 will be taught predominantly using the Wolfram Language.
-This choice is partly due to the following reasons (aside from the instructors' familiarity with the language):
-
-- Ease of prototyping (and learning) code
-- Built-in (high-level) visualization functions
-- The interactive notebook format compliments the way we prototype and think computationally
-
-Keen readers will notice these benefits are not unique to the Wolfram Language, and we agree!
-If there's sufficient interest, we will be happy to show you other interactive notebook environments, such as Jupyter for Python/Julia, and ObservableHQ for Javascript.
-
-### Installation Instructions
-
-You can get a free academic license for the Wolfram Language's desktop software, Mathematica, following [IST's instructions here](https://ist.mit.edu/mathematica/desktop).
-If you don't have access to an academic license, you can sign up for a [free Wolfram Cloud license here](https://www.wolframcloud.com/).
-We will quickly go over these on the first day of class.
-
-## Accessibility and Diversity Statement
-
-We are commited to providing an inclusive environment which is conducive to learning for all students.
-If you have a disability or other conditions that might require accommodations or modifications of the course procedures, we ask that you inform us early in the semester so we can make the appropriate accommodations.
-
-We believe that every individual has the right to be treated equally and with dignity.
-This includes individuals of all backgrounds, belief, ethnicity, national origin, gender expression, sexual orientation, physical characteristics, religious and political affiliations, age, ability, and other visible and non-visible differences.
-
-The classroom is an inclusive space for learning where we value a diversity of thoughts, perspectives and experiences.
-You are expected to treat everyone with respect and dignity during your interactions and to be welcoming, fair, and considerate.
-Similarly, you can expect to be treated in the same manner.
-If you feel that we are not living up to this pledge, please speak directly to one of the instructors or to anyone else who you believe can resolve the problem in a fair and confidential manner.
-
-## (Tentative) Schedule of Topics
-
-|      Week     |                       Monday Lecture                        |      Tuesday Session     |           Wednesday Lecture           |           Assignments           |
-|:-------------:|:-----------------------------------------------------------:|:------------------------:|:-------------------------------------:|:-------------------------------:|
-| 01/31 - 02/04 |                   Intro & Simple Pendulum                   |             -            |         Hamiltonian Mechanics         |                -                |
-| 02/07 - 02/11 |                      Lattice Dynamics                       |       Data-Viz Hour      |      VdW Gas - Equation of State      |          P1 Out: 02/07          |
-| 02/14 - 02/18 |                  Helmholtz Common Tangent                   |     Code Show & Tell     |        Legendre Transformations       | P1 Due: 02/16<br/>P2 Out: 02/18 |
-| 02/21 - 02/25 | **Note:** Tues 02/22 (Pres day)<br/>Thermodynamic Stability |       Data-Viz Hour      |   Physical Properties of Crystals I   |                -                |
-| 02/28 - 03/04 |             Physical Properties of Crystals II              |     Code Show & Tell     |           Polymer Statistics          |          P2 Due: 03/04          |
-| 03/07 - 03/11 |                      Polymer Reptation                      |       Data-Viz Hour      |       Step-Growth Polymerization      |          P3 Out: 03/09          |
-| 03/14 - 03/18 |                     Molecular Dynamics                      |     Code Show & Tell     |            Solution Models            |          P3 Due: 03/18          |
-| 03/21 - 03/25 |                  **_N/A (Spring Break)_**                   | **_N/A (Spring Break)_** |        **_N/A (Spring Break)_**       |                -                |
-| 03/28 - 04/01 |                 Common Tangent Construction                 |       Data-Viz Hour      |        Chemical Phase Diagrams        |          P4 Out: 03/30          |
-| 04/04 - 04/08 |                        Surface Energy                       |     Code Show & Tell     |            Wulff Construction         |                -                |
-| 04/11 - 04/15 |                   Statistical Mechanics I                   |       Data-Viz Hour      |        Statistical Mechanics II       | P4 Due: 04/13<br/>P5 Out: 04/13 |
-| 04/18 - 04/22 |                  **_N/A (Patriots' Day)_**                  |     Code Show & Tell     |          Kinetic Monte Carlo          |                -                |
-| 04/25 - 04/29 |               Order-Disorder Transformations           |       Data-Viz Hour      |      Fourier Series & Transforms      |          P5 Due: 04/27          |
-| 05/02 - 05/06 |                    Diffraction & Imaging                    |     Code Show & Tell     |          Final Presentations          |                -                |
-| 05/09 - 05/13 |                      Students' Choice                       |             -            |                   -                   |    Final Projects Due: 05/09    |
 

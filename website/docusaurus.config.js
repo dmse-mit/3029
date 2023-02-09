@@ -26,6 +26,18 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl: 'https://github.com/dmse-mit/3029/edit/main/website/',
+	  lastVersion: 'current',
+	  includeCurrentVersion: true,
+	  versions: {
+	    'current': {
+	      label: '2023',
+	      path: '2023',
+	    },
+	    '2022': {
+	      label: '2022',
+	      path: '2022',
+	    },
+	  }
         },
         blog: {
 	  path: 'announcements',
@@ -58,6 +70,10 @@ const config = {
             label: 'Notebooks',
           },
           {to: '/announcements', label: 'Announcements', position: 'left'},
+          {
+            type: 'docsVersionDropdown',
+            position: 'right',
+          },
           {
             href: 'https://github.com/dmse-mit/3029',
             label: 'GitHub',
